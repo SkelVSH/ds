@@ -340,6 +340,13 @@ a:hover .c-link {
   font-weight: 700;
 }
 
+.promotion__list li {
+  position: relative;
+  padding-left: 13px;
+}
+
 .promotion__list li::before {
-  
+  content: '•';
+  position: absolute;
+  left: 0;
 }
