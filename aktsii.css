@@ -183,7 +183,8 @@ a:hover .c-link {
 
 /* Основная часть */
 
-.promotions {
+.promotions,
+.promotions-single {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -276,6 +277,91 @@ a:hover .c-link {
   display: none;
 }
 
+.promotion-single__buy {
+  display: block;
+  width: fit-content;
+  padding: 9px 68px 8px;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 700;
+  background: #0B79C9;
+  box-shadow: 0px 3px 0px #025EBB;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.promotion-single__buy:hover {
+  box-shadow: 0px 2px 0px #025EBB;
+  transform: translateY(1px);
+  transition: 0.08s;
+}
+
+.promotion-single__buy:active {
+  box-shadow: inset 0px 3px 7px rgba(0, 24, 41, 0.35);
+  transform: translateY(3px);
+  transition: 0.08s;
+}
+
+.promotion-single__img {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.promotions-single .c-h2 {
+  margin-bottom: 35px;
+}
+
+
+.promotions__text--bold {
+  font-weight: 700;
+}
+
+.promotion__list li {
+  position: relative;
+  padding-left: 13px;
+}
+
+.promotion__list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
+
+.promotion__list li.promotion__list--plus::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+}
+
+.promotion-single__img_sign {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ACACAC;
+}
+
+.promotions-single .c-p2:not(:last-child),
+.promotions-single .promotion__list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.promotions-single .c-h3 {
+  margin-bottom: 20px;
+}
+
+
+.promotions-single .c-p2.promotions__text--bold {
+  margin-bottom: 15px;
+}
+
+.promotion-single-block {
+  margin-bottom: 30px;
+}
+
+
 @media screen and (max-width: 768px) {
   .wrapper {
     width: 330px;
@@ -328,25 +414,26 @@ a:hover .c-link {
     line-height: 63px;
   }
   .promotions-aside-item,
-  .promotion-snippets__item {
+  .promotion-snippets__item,
+  .promotions-single .c-h2,
+  .promotion-single-block {
     margin-bottom: 20px;
   }
   .promotion-snippets {
     margin-top: 30px;
   }
-}
-
-.promotions__text--bold {
-  font-weight: 700;
-}
-
-.promotion__list li {
-  position: relative;
-  padding-left: 13px;
-}
-
-.promotion__list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
+  .promotions-single .c-p2.promotions__text--bold,
+  .promotions-single .c-h3 {
+    margin-bottom: 10px;
+  }
+  .promotion-single__img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .promotion-single__buy {
+    margin-top: 25px;
+  }
+  .promotion-single-block:last-child {
+    margin-bottom: 40px;
+  }
 }
