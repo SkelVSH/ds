@@ -59,6 +59,35 @@ select {
   font: inherit;
 }
 
+.date {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.btn {
+  font-family: "PT Sans";
+  cursor: pointer;
+  border: none;
+  padding: 9px 46px;
+  font-size: 22px;
+  line-height: 28px;
+  border-radius: 3px;
+}
+
+.btn-blue {
+  border: none;
+  color: #FFFFFF;
+  background: #0B79C9;
+  box-shadow: 0px 3px 0px #025EBB;
+}
+
+.btn-gray {
+  background: #F9F9F9;
+  border: 1px solid #E2E2E2;
+  box-shadow: 0px 2px 0px #E2E2E2;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
