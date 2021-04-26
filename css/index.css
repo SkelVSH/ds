@@ -182,3 +182,7 @@ a:hover .c-link {
     width: 330px;
   }
 }
+
+.pointer {
+  cursor: pointer;
+}
