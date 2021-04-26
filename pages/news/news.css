@@ -110,9 +110,8 @@
     margin-top: 44px;
 }
 
-.news__newsCard:first-child {
+.news__newsCard:nth-child(2) {
     margin-top: 0;
-    margin-left: 0!important;
 }
 
 .news__newsCard {
@@ -142,7 +141,7 @@
     float: right;
 }
 
-.news__newsCard-rightBig {
+.news__newsCard-rightBig:first-child {
     margin-top: 0;
 }
 
