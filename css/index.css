@@ -169,6 +169,12 @@ body * {
   line-height: 36px;
   color: #292E31;
 }
+.c-h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #292E31;
+}
 .c-p1 {
   font-size: 20px;
   line-height: 28px;
@@ -229,6 +235,10 @@ a:hover .c-link {
   .c-h3 {
     font-size: 22px;
     line-height: 26px;
+  }
+  .c-h4 {
+    font-size: 18px;
+    line-height: 22px;
   }
   .c-p1 {
     font-size: 18px;
