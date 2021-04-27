@@ -577,6 +577,7 @@
 
 .card-floating__wrapper {
   height: 132px;
+  margin-bottom: 80px;
 }
 
 .card-floating {
@@ -677,4 +678,50 @@
   transform: translateY(3px);
   box-shadow: inset 0px 3px 7px rgba(0, 24, 41, 0.35);
   transition: 0.08s;
+}
+
+.card-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.card-reviews > h2 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.card-reviews-item {
+  width: 539px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-reviews-item__img {
+  max-width: 139px;
+  max-height: 186px;
+}
+
+.card-reviews-item-main .c-p2 {
+  max-width: 370px;
+  margin-bottom: 20px;
+}
+
+.card-reviews-item-main .c-h4 {
+  margin-bottom: 15px;
+}
+
+.card-reviews-item-main__mark {
+  display: flex;
+}
+
+.card-reviews-item-main__mark li {
+  width: 19px;
+  height: 18px;
+  background: url(../static/images/item-card/rating-star.svg);
+}
+
+.card-reviews-item-main__mark li:not(:last-child) {
+  margin-right: 8px;
 }
