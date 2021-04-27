@@ -90,3 +90,12 @@ rotatePhoto = (block) => {
     }
   })
 })();
+
+(similarSliderInit = () => {
+  const slider = new Swiper('.card-similar-slider.swiper-container',{
+    slidesPerView: 2,
+    spaceBetween: 70,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  })
+})();

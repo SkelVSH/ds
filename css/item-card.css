@@ -725,3 +725,30 @@
 .card-reviews-item-main__mark li:not(:last-child) {
   margin-right: 8px;
 }
+
+.card-similar {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-similar > .c-h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-similar-slider {
+  width: 910px;
+}
+
+.card-similar__arrow {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.card-similar__arrow:hover {
+  opacity: 1;
+}
