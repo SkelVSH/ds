@@ -82,6 +82,26 @@ select {
   box-shadow: 0px 3px 0px #025EBB;
 }
 
+.btn-blue:hover {
+  box-shadow: 0px 2px 0px #025EBB;
+  transform: translateY(1px);
+}
+
+.btn-blue:active {
+  box-shadow: inset 0px 3px 7px rgba(0, 24, 41, 0.35);
+  transform: translateY(2px);
+}
+
+.btn-gray:hover {
+  box-shadow: 0px 1px 0px #E2E2E2;
+  transform: translateY(1px);
+}
+
+.btn-gray:active {
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.08);
+  transform: translateY(2px);
+}
+
 .btn-gray {
   background: #F9F9F9;
   border: 1px solid #E2E2E2;
