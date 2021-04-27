@@ -1,0 +1,149 @@
+
+.closers__wrapper:first-child {
+    margin-top: 100px;
+}
+
+.closers__features {
+    width: 1170px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.closers__gerkon {
+    width: 744px;
+    margin-bottom: 0!important;
+}
+
+.closers__gerkonBlock {
+    margin-top: 60px;
+}
+
+.closers__gerkonBlock > div {
+    display: inline-block!important;
+}
+
+.closers__gerkonExamples {
+    width: 350px;
+    float: right;
+}
+
+.closers__gerkonExamples-description {
+    margin-top: 20px;
+}
+
+.closers__gerkon-title {
+    margin-bottom: 10px;
+}
+
+.closers__gerkon-description {
+    margin-top: 10px;
+}
+
+.closers__gerkonFeatures {
+    margin-top: 48px;
+}
+
+.closers__gerkonFeatures-list {
+    list-style: disc!important;
+    margin-left: 20px!important;
+    margin-top: 15px!important;
+}
+
+.closers__gerkonFeatures-item {
+    color: #696C6F!important;
+    margin-top: 10px;
+}
+
+.closers__features-imgBlock {
+    position: relative;
+}
+
+.closers__features img {
+    display: block;
+}
+ 
+.closers__features-imgBlock::after {
+    box-shadow: inset 0px -160px 100px -40px #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    content: "";
+}
+
+.closers__features-content {
+    position: relative;
+    z-index: 100;
+    top: -100px;
+}
+
+.closers__features .closers__gerkonFeatures {
+    margin-top: -60px;
+}
+
+.closers__examples {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.closers__examples-description {
+    margin-left: 80px;
+    width: 280px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .closers__gerkonBlock {
+        margin-top: 25px;
+    }
+
+    .closers__gerkon,
+    .closers__gerkonExamples
+    {
+        width: 100%;
+    }
+
+    .closers__gerkonExamples {
+        margin-top: 25px;
+    }
+
+    .closers__gerkonExamples-description,
+    .closers__gerkonFeatures
+    {
+        margin-top: 15px;
+    }
+
+    .closers__features {
+        width: 360px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .closers__features-content,
+    .closers__gerkonFeatures {
+        width: 330px;
+        margin: auto;
+    }
+
+    .closers__features-content {
+        top: -50px;
+    }
+
+    .closers__features .closers__gerkonFeatures {
+        margin-top: -35px;
+    }
+
+    .closers__examples-description {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 330px;
+    }
+
+    .closers__examples {
+        display: block;
+    }
+}

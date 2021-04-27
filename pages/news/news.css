@@ -78,7 +78,6 @@
     color: #fff;
     max-width: 600px;
     display: inline;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .news__shortNews {
@@ -94,7 +93,6 @@
     line-height: 24px;
     color: #fff;
     display: inline;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .news__shortNews-date {
@@ -159,7 +157,6 @@
     line-height: 24px;
     color: #292E31;
     display: inline;
-    border-bottom: 1px solid rgba(0, 102, 149, 0.2);
 }
 
 .news__newsCard-rightBig .news__newsCard-date,
@@ -175,9 +172,7 @@
 {
     font-size: 30px;
     line-height: 36px;
-    color: #292E31;
     display: inline;
-    border-bottom: 1px solid rgba(0, 102, 149, 0.2);
     margin-top: 5px;
 }
 
