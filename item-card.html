@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Карточка</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/item-card.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/item-card.css">
 </head>
 <body>
   <div class="card">
@@ -196,32 +198,107 @@
         </div>
       </div>
     </div>
-    <div class="card-banner wrapper"></div>
+    <a href="#" class="card-banner wrapper">
+      <img class="card-banner__img" src="./static/images/item-card/banner.png" alt="">
+    </a>
     <div class="card-specs">
       <div class="card-specs-tabs">
         <div class="wrapper">
-          <a class="card-specs-tabs__item" href=""></a>
-          <a class="card-specs-tabs__item" href=""></a>
-          <a class="card-specs-tabs__item" href=""></a>
-          <a class="card-specs-tabs__item" href=""></a>
-          <a class="card-specs-tabs__item" href=""></a>
+          <h2 class="c-h2">Характеристики</h2>
+          <a class="card-specs-tabs__item c-link c-h4 active">Внешняя отделка</a>
+          <a class="card-specs-tabs__item c-link c-h4">Внутренняя</a>
+          <a class="card-specs-tabs__item c-link c-h4">Конструкция</a>
+          <a class="card-specs-tabs__item c-link c-h4">Замковая система</a>
+          <a class="card-specs-tabs__item c-link c-h4">Доп. параметры</a>
         </div>
       </div>
-      <div class="card-specs-table wrapper"></div>
+      <div class="card-specs-tables wrapper">
+        <div class="card-specs-tables-item active">
+          <ul class="card-specs-tables-item-list params">
+            <li>
+              <p class="card-specs-tables-item-list__text">Параметры</p>
+            </li>
+            <li>
+              <p class="card-specs-tables-item-list__text">Ширина</p>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+              </svg>
+            </li>
+            <li>
+              <p class="card-specs-tables-item-list__text">Высота</p>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+              </svg>
+            </li>
+            <li>
+              <p class="card-specs-tables-item-list__text">Контуры уплотнения, шт.</p>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+              </svg>
+            </li>
+          </ul>
+          <div class="card-specs-tables-item__slider swiper-container">
+            <div class="swiper-wrapper">
+              <ul class="card-specs-tables-item-list swiper-slide">
+                <li>Серия 60</li>
+                <li>860, 950 мм</li>
+                <li>2050 мм</li>
+                <li>4</li>
+              </ul>
+              <ul class="card-specs-tables-item-list swiper-slide">
+                <li>Серия 70</li>
+                <li>860, 950 мм</li>
+                <li>2050 мм</li>
+                <li>4</li>
+              </ul>
+              <ul class="card-specs-tables-item-list swiper-slide">
+                <li>Серия 80</li>
+                <li>860, 880, 950 мм</li>
+                <li>2050 мм</li>
+                <li>до 20</li>
+              </ul>
+              <ul class="card-specs-tables-item-list swiper-slide">
+                <li>Серия 90</li>
+                <li>860, 950 мм</li>
+                <li>2050 мм</li>
+                <li>до 20</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="card-quote wrapper">
-      <div class="card-quote-text"></div>
-      <img class="card-quote__photo" src="" alt="Сергей Карпенко - главный инженер салона «Стальная линия»">
+      <div class="card-quote-text">
+        <h3 class="c-h3">Подбираем оптимальную теплоизоляцию</h3>
+        <p class="c-p1">Двери утепляем под разные места установки: внутри дома, с&nbsp;улицы в&nbsp;холодный или тёплый тамбур, с&nbsp;улицы в&nbsp;прихожую. Предлагаем оптимальный уровень защиты от&nbsp;холода без переплат.</p>
+        <p class="c-p1">Для особой защиты добавляем терморазрыв&nbsp;&mdash; технологию, которая останавливает промерзание конструкции. На&nbsp;внутренней стороне такой двери не&nbsp;выпадает конденсат и&nbsp;не&nbsp;образуется наледь.</p>
+        <h4 class="c-h4">Сергей Карпенко</h4>
+        <p class="c-p4">главный инженер завода «Стальная линия»</p>
+      </div>
+      <img class="card-quote__photo" src="./static/images/item-card/engineer.png" alt="Сергей Карпенко - главный инженер салона «Стальная линия»">
     </div>
     <div class="card-choose_door">
       <div class="card-choose_door-main">
-        <h2 class="c-h1"></h2>
-        <div class="card-choose_door-main-designer"></div>
-        <h3 class="c-h3"></h3>
-        <p class="c-p1"></p>
+        <h2 class="c-h1">Выбираем дверь в&nbsp;дом: мнение дизайнера</h2>
+        <div class="card-choose_door-main-designer">
+          <img src="./static/images/item-card/designer.png" alt="">
+          <div class="card-choose_door-main-designer__desc">
+            <h4 class="c-h4">Александра Лисица</h4>
+            <p class="c-p4">дизайнер интерьеров,</p>
+            <p class="c-p4">владелица студии «Лисица дизайн»</p>
+          </div>
+        </div>
+        <h3 class="c-h3">Под экстерьер одна отделка, под&nbsp;интерьер&nbsp;&mdash; другая</h3>
+        <p class="c-p1">Входная дверь — это не только безопасность вашего дома, но и «одёжка», по которой встречают.</p>
+        <p class="c-p1">Уличная сторона двери не должна выбиваться из общей концепции экстерьера. Пусть она гармонирует с крышей, фасадом, ограждениями или навесом.</p>
+        <p class="c-p1">Интерьерной стороне необязательно быть как снаружи. Выбирайте любую отделку, чтобы добиться идеального сочетания с обстановкой.</p>
       </div>
-      <img src="" alt="">
-      <img src="" alt="">
+      <img class="card-choose_door__img" src="./static/images/item-card/choose-door-1.png" alt="">
+      <img class="card-choose_door__img"src="./static/images/item-card/choose-door-2.png" alt="">
     </div>
     <div class="card-video wrapper">
       <!-- Можно взять из салона на Дзержинского -->
@@ -323,7 +400,7 @@
       </div>
     </div>
     <div class="card-stages wrapper">
-      <!-- Можно взять из комплексных решений -->
+      <!-- Можно взять из текущей карточки -->
     </div>
     <div class="card-config card-config--last wrapper">
       <!-- Копипаст внутренностей первого блока -->
@@ -360,6 +437,8 @@
       <!-- Можно взять c главной -->
     </div>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/itemCard.js"></script>
 </body>
 </html>

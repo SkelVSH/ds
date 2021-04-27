@@ -155,6 +155,11 @@ body * {
   font-weight: 700;
   color: #292E31;
 }
+.c-p1 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #292E31;
+}
 .c-p2 {
   font-size: 18px;
   line-height: 27px;
