@@ -81,6 +81,32 @@ select {
   background: #0B79C9;
   box-shadow: 0px 3px 0px #025EBB;
 }
+.btn-green {
+  padding: 8px 46px 9px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #fff;
+  background: #07BE6A;
+  box-shadow: 0px 4px 0px #099152;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  box-shadow: 0px 3px 0px #099152;
+  transform: translateY(1px);
+  transition: 0.08s;
+}
+
+.btn-green:active {
+  transform: translateY(4px);
+  box-shadow: inset 0px 7px 7px rgba(9, 145, 82, 0.35);
+  transition: 0.08s;
+}
 
 .btn-blue:hover {
   box-shadow: 0px 2px 0px #025EBB;
@@ -259,6 +285,11 @@ a:hover .c-link {
   }
   .wrapper {
     width: 330px;
+  }
+
+  .btn-green {
+    font-size: 20px!important;
+    line-height: 27px!important;
   }
 }
 
