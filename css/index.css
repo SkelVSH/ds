@@ -81,6 +81,52 @@ select {
   background: #0B79C9;
   box-shadow: 0px 3px 0px #025EBB;
 }
+.btn-green {
+  padding: 8px 46px 9px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #fff;
+  background: #07BE6A;
+  box-shadow: 0px 4px 0px #099152;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  box-shadow: 0px 3px 0px #099152;
+  transform: translateY(1px);
+  transition: 0.08s;
+}
+
+.btn-green:active {
+  transform: translateY(4px);
+  box-shadow: inset 0px 7px 7px rgba(9, 145, 82, 0.35);
+  transition: 0.08s;
+}
+
+.btn-blue:hover {
+  box-shadow: 0px 2px 0px #025EBB;
+  transform: translateY(1px);
+}
+
+.btn-blue:active {
+  box-shadow: inset 0px 3px 7px rgba(0, 24, 41, 0.35);
+  transform: translateY(2px);
+}
+
+.btn-gray:hover {
+  box-shadow: 0px 1px 0px #E2E2E2;
+  transform: translateY(1px);
+}
+
+.btn-gray:active {
+  box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.08);
+  transform: translateY(2px);
+}
 
 .btn-gray {
   background: #F9F9F9;
@@ -176,6 +222,12 @@ body * {
   color: #292E31;
 }
 
+.c-p4 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #292E31;
+}
+
 .c-link {
   text-decoration: none;
   color: #006695;
@@ -214,6 +266,14 @@ a:hover .c-link {
     font-size: 22px;
     line-height: 26px;
   }
+  .c-h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .c-p1 {
+    font-size: 18px;
+    line-height: 25px;  
+  }
   .c-p2 {
     font-size: 16px;
     line-height: 22px;
@@ -222,8 +282,18 @@ a:hover .c-link {
     font-size: 14px;
     line-height: 21px;
   }
+  .c-p4 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #292E31;
+  }
   .wrapper {
     width: 330px;
+  }
+
+  .btn-green {
+    font-size: 20px!important;
+    line-height: 27px!important;
   }
 }
 
