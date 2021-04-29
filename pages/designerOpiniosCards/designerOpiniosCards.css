@@ -1,0 +1,363 @@
+
+.designerOpin__container {
+    width: 1304px;
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+    padding: 80px 0;
+    margin: 200px auto;
+}
+
+.designerOpinion__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 1220px;
+    flex-wrap: wrap;
+}
+
+.neomodern .designerOpinion__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.designerOpinion__wrapper > div {
+    order: 1;
+}
+
+.designerOpinion__titleBlock,
+.designerOpinion__descriptionBlock {
+    width: 540px;
+}
+
+.designerOpinion__imgBlock,
+.designerOpinion__designerBlock {
+    width: 570px;
+}
+
+.designerOpinion__imgBlock {
+    margin-top: 20px;
+}
+
+
+.englishStyle .designerOpinion__titleBlock * {
+    color: #018B72;
+}
+
+.designerOpinion__titleBlock-description {
+    margin-top: 40px;
+}
+
+.designerOpinion__descriptionBlock {
+    width: 500px;
+    margin-top: 30px;
+}
+
+.designerOpinion__descriptionBlock p:nth-child(4) {
+    margin-top: 20px;
+}
+
+.designerOpinion__imgBlock-description {
+    font-size: 14px;
+    line-height: 120%;
+    margin-top: 15px;
+}
+
+.designerOpinion__designerBlock {
+    margin-top: 40px;
+    padding-left: 50px;
+    border-left: 1px solid  #292E31;
+    display: flex;
+    align-items: center;
+}
+
+.designerOpinion__designerDescription {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.designerOpinion__designerDescription-description {
+    font-size: 14px;
+    line-height: 120%;
+    margin-top: 10px;
+    font-family: 'PT Sans';
+}
+
+.minimalistic .designerOpinion__wrapper {
+    max-height: 845px;
+}
+
+.minimalistic .designerOpinion__titleBlock * {
+    color: #484C51;
+    width: 486px;
+}
+
+
+.minimalistic .designerOpinion__designerDescription-description {
+    width: 161px;
+}
+
+.neoclassic .designerOpinion__designerDescription-description {
+    width: 203px;
+}
+
+.minimalistic .designerOpinion__designerBlock {
+    align-items: flex-end;
+}
+
+.minimalistic .designerOpinion__designerBlock {
+    margin-top: 20px;
+    margin-bottom: 110px;
+}
+
+
+.neoclassic .designerOpinion__descriptionBlock p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.neoclassic .designerOpinion__wrapper {
+    max-height: 751px;
+}
+
+.neoclassic .designerOpinion__titleBlock * {
+    color: #998C84;
+}
+
+.eclecticism .designerOpinion__wrapper {
+    max-height: 817px;
+}
+
+.eclecticism .designerOpinion__designerBlock {
+    margin-bottom: 0;
+    margin-top: 66px;
+}
+
+.eclecticism .designerOpinion__imgBlock {
+    margin-top: 110px;
+}
+
+.eclecticism .designerOpinion__titleBlock * {
+    color: #903236;
+}
+
+.eclecticism .designerOpinion__designerDescription-description {
+    width: 232px;
+}
+
+.modernClassic .designerOpinion__titleBlock-title {
+    width: 687px;
+    color: #000;
+}
+
+.fusion .designerOpinion__wrapper {
+    max-height: 283px;
+    justify-content: space-between;
+}
+
+.fusion .designerOpinion__titleBlock {
+    width: 780px;
+}
+
+.fusion .designerOpinion__designerBlock {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 203px;
+    margin-top: 87px;
+}
+
+.fusion .designerOpinion__designerDescription {
+    margin-left: 0;
+    width: 203px
+}
+
+.designerOpinion__imgBlockWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.designerOpinion__imgBlockWrapper > div:first-child {
+    width: 370px;
+}
+
+.designerOpinion__imgBlockWrapper > div:last-child {
+    width: 770px;
+}
+
+.fusion .designerOpinion__imgBlock p:nth-child(2) {
+    margin-top: 40px;
+}
+
+.fusion .designerOpinion__imgBlock:first-child p:nth-child(2) {
+    width: 270px;
+}
+
+.fusion .designerOpinion__imgBlock:last-child p:nth-child(3) {
+    margin-top: 5px;
+}
+
+.fusion .designerOpinion__titleBlock * {
+    color: #11688D;
+}
+
+.artDeco .designerOpinion__titleBlock * {
+    color: #000;
+}
+
+.artDeco .designerOpinion__imgBlock:last-child {
+    width: 570px;
+}
+
+.artDeco .designerOpinion__imgBlock:first-child,
+.artDeco .designerOpinion__imgBlock:first-child p {
+    margin-top: 5px;
+    width: 538px!important;
+}
+
+.artDeco .designerOpinion__wrapper  {
+    max-height: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 40px;
+}
+
+.neomodern .designerOpinion__imgBlock {
+    width: 1170px;
+}
+
+.neomodern .designerOpinion__titleBlock {
+    width: 1170px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.neomodern .designerOpinion__descriptionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.neomodern .designerOpinion__wrapper .designerOpinion__descriptionBlock {
+    width: 400px;
+}
+
+.neomodern .designerOpinion__wrapper  .designerOpinion__designerBlock {
+    display: initial;
+    width: 250px;
+}
+
+.neomodern .designerOpinion__wrapper  .designerOpinion__designerDescription {
+    margin-left: 0;
+    width: 203px;
+}
+
+.neomodern .designerOpinion__designerDescription-title,
+.fusion .designerOpinion__designerDescription-title {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .designerOpin__container {
+        width: 360px;
+        padding: 40px 15px 45px;
+    }
+    
+    .designerOpinion__designerBlock {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 20px;
+        margin-top: 30px;
+        border-top: 1px solid #292E31;
+    }
+
+    .designerOpinion__designerDescription {
+        margin-left: 20px;
+    }
+
+    .designerOpin__container * {
+        max-width: 330px;
+    }
+
+    .designerOpin__container * {
+        max-height: initial!important;
+    }
+
+    .englishStyle .designerOpinion__imgBlock {
+        order: 2;
+        margin-top: 25px;
+    }
+
+    .designerOpinion__titleBlock-description {
+        margin-top: 20px;
+    }
+
+    .englishStyle .designerOpinion__descriptionBlock {
+        order: 3;
+        margin-top: 30px;
+    }
+
+    .englishStyle .designerOpinion__designerBlock {
+        order: 4;
+    }
+
+    .minimalistic .designerOpinion__imgBlock {
+        order: 2;
+        margin-top: 25px;
+    }
+
+    .minimalistic .designerOpinion__descriptionBlock {
+        order: 1;
+        margin-top: 30px;
+    }
+
+    .designerOpinion__descriptionBlock p {
+        margin-top: 5px;
+    }
+
+    .minimalistic .designerOpinion__designerBlock {
+        margin-bottom: 40px;
+    }
+
+    .neoclassic .designerOpinion__designerDescription-description {
+        width: 127px;
+    }
+
+    .eclecticism  .designerOpinion__designerDescription-description {
+        width: 132px;
+    }
+
+    .fusion .designerOpinion__designerBlock {
+        width: 330px;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .fusion .designerOpinion__designerDescription {
+        margin-left: 20px;
+    }
+
+    .designerOpinion__imgBlockWrapper {
+        flex-direction: column;
+    }
+
+    .fusion .designerOpinion__imgBlock p:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .neomodern .designerOpinion__titleBlock {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .neomodern .designerOpinion__descriptionContainer .designerOpinion__designerBlock {
+        width: 330px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .neomodern .designerOpinion__designerDescription {
+        margin-left: 20px!important;
+    }
+
+    .neomodern .designerOpinion__designerDescription-description {
+        width: 127px;
+    }
+}
