@@ -219,4 +219,9 @@
     .basket__footer-addressesItem {
         margin-top: 8px;
     }
+
+    .basket__titleBlock-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
