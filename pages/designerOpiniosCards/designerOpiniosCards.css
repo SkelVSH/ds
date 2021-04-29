@@ -360,4 +360,13 @@
     .neomodern .designerOpinion__designerDescription-description {
         width: 127px;
     }
+
+    .artDeco .designerOpinion__designerBlock {
+        order: 2!important;
+        margin-top: 30px;
+    }
+
+    .artDeco .designerOpinion__imgBlock:last-child {
+        order: 3!important;
+    }
 }
