@@ -1,0 +1,713 @@
+
+.space {
+    margin: 50px;
+}
+
+div {
+    position: relative;
+}
+
+.doorOnOrder__firstScreen-title {
+    margin-top: 40px;
+}
+
+.doorOnOrder__firstScreen-descriptionBlock {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doorOnOrder__firstScreen-description {
+    width: 740px;    
+}
+
+.doorOnOrder__firstScreen-submitBlock button {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 8px 46px 9px;
+}
+
+.doorOnOrder__firstScreen-submitBlock p {
+    width: 231px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 110%;
+    color: #696C6F;
+}
+
+.doorOnOrder__youtube-wrapper {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-height: 421px;
+}
+
+.doorOnOrder__youtube-titleBlock,
+.doorOnOrder__youtube-iconBlock {
+    width: 370px;
+}
+
+.doorOnOrder__youtube-titleBlock {
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.doorOnOrder__youtube-description {
+    width: 315px;
+    margin-top: 20px;
+}
+
+.doorOnOrder__youtube-iconBlock {
+    margin-top: 85px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.doorOnOrder__youtube-iconBlock p {
+    margin-left: 20px;
+    width: 154px;
+}
+
+.doorOnOrder__youtube-videoBlock,
+.doorOnOrder__youtube-videoBlock * {
+    width: 770px;
+    height: 421px;
+}
+
+.doorOnOrder__doorRowWrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#poloImg {
+    margin-left: -14px;
+}
+
+.doorOnOrder__doorRow {
+    width: fit-content;
+}
+
+.doorOnOrder__doorRow-title {
+    margin-top: 25px;
+}
+
+.doorOnOrder__doorRow-description {
+    margin-top: 12px;
+    width: fit-content;
+}
+
+#polo .doorOnOrder__doorRow-description,
+#stvorki .doorOnOrder__doorRow-description {
+    width: 570px;
+}
+
+#troya .doorOnOrder__doorRow-description {
+    width: 470px;
+}
+
+#viking .doorOnOrder__doorRow-description {
+    width: 420px;
+}
+
+#shervud .doorOnOrder__doorRow-description {
+    width: 503px;
+}
+
+#dobori .doorOnOrder__doorRow-description {
+    width: 547px;
+}
+
+#bremen .doorOnOrder__doorRow-description {
+    width: 410px;
+}
+
+#doubleBremen .doorOnOrder__doorRow-description {
+    width: 417px;
+}
+
+.doorOnOrder__example-contentWrapper {
+    margin-top: 25px;
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.doorOnOrder__exampleWrapper {
+    margin-top: 80px;
+    width: 1250px;
+    padding: 40px;
+    background: #F9F9F9;
+}
+
+.doorOnOrder__example-titleBlock {
+    width: 270px;
+}
+
+#sicilia .doorOnOrder__example-titleBlock {
+    width: 275px;
+}
+
+.doorOnOrder__example-descriptionBlock {
+    width: 370px;
+    margin-left: 30px;
+}
+
+.doorOnOrder__example-descriptionBlock:nth-child(2) {
+    margin-left: 148px;
+}
+
+#sicilia .doorOnOrder__example-descriptionBlock:nth-child(2) {
+    margin-left: 125px;
+}
+
+.doorOnOrder__example-titleBlock p {
+    margin-top: 12px;
+}
+
+.doorOnOrder__featureWrapper {
+    max-height: 755px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 117px;
+}
+
+#vitrazi {
+    max-height: 866px;
+    margin-top: 80px;
+}
+
+.doorOnOrder__feature-titleBlock {
+    width: 370px;
+}
+
+.doorOnOrder__feature-descriptionBlock {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.doorOnOrder__feature-descriptionBlock img {
+    width: 99px;
+    height: 188px;
+}
+
+#frezerovka .doorOnOrder__feature-titleBlock {
+    margin-top: 117px;
+}
+
+
+.doorOnOrder__feature-descriptionTitle,
+.doorOnOrder__feature-descriptionContent {
+    margin-top: 20px;
+}
+
+.doorOnOrder__feature-description {
+    margin-top: 12px;
+}
+
+#vitrazi .doorOnOrder__feature-titleBlock:nth-child(2) {
+    margin-top: 168px;
+}
+
+#vitrazi .doorOnOrder__feature-titleBlock:nth-child(2) .doorOnOrder__feature-title {
+    margin-top: 21px;
+}
+
+#bergamo {
+    max-height: 924px;
+    flex-direction: column-reverse;
+}
+
+#bergamo .doorOnOrder__feature-titleBlock .doorOnOrder__feature-title {
+    width: 183px;
+}
+
+#bergamo .doorOnOrder__feature-titleBlock .doorOnOrder__feature-description {
+    width: 238px;
+}
+
+#bergamo .doorOnOrder__feature-titleBlock > div {
+    width: fit-content;
+}
+
+#bergamo .doorOnOrder__feature-titleBlock {
+    display: flex;
+    margin-right: 62px;
+    justify-content: flex-end;
+}
+
+#shevrudConstruct {
+    max-height: 640px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:first-child {
+    width: 300px;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:first-child h3 {
+    width: 335px;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:first-child p {
+    width: 370px;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(3) {
+    width: 233px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) {
+    width: 265px;
+    margin-top: 202px;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) h3 {
+    width: 183px;
+}
+
+#shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) p {
+    width: 265px;
+    margin-top: 12px;
+}
+
+#deco .doorOnOrder__doorRow-description {
+    width: 369px;
+}
+
+#deco img {
+    width: 370px;
+    height: 754px;
+}
+
+#rein {
+    margin-left: 30px;
+}
+
+#rein .doorOnOrder__doorRow-description {
+    width: 422px;
+}
+
+#furniture {
+    margin-left: 41px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#furniture h2 {
+    width: 251px;
+}
+
+#furniture p {
+    margin-top: 20px;
+    width: 233px;
+}
+
+.bgImg {
+    position: absolute;
+}
+
+#plant1 {
+    bottom: 0;
+    left: -182px;
+}
+
+#wall1 {
+    top: -37px;
+    left: 315px;
+    z-index: -1;
+}
+
+#plant2 {
+    bottom: 0;
+    left: -145px;
+}
+
+#wall2 {
+    width: 690px;
+    height: 530px;
+    bottom: 0;
+    left: 700px;
+}
+
+#pipe {
+    width: 509px;
+    height: 147px;
+    bottom: 0;
+    left: -139px;
+}
+
+#plant3 {
+    bottom: 0;
+    left: -147px;
+}
+
+#plant4 {
+    left: 930px;
+    bottom: 158px;
+}
+
+#wall3 {
+    left: -357px;
+    z-index: -1;
+}
+
+#plant5 {
+    top: 0;
+    left: 490px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-height: initial;
+    }
+
+    .wrapper * {
+        max-width: 330px!important;
+        max-height: initial!important;
+    }
+
+    .doorOnOrder__firstScreen-title,
+    .doorOnOrder__firstScreen-submitBlock button {
+        margin-top: 25px;
+    }
+
+    .doorOnOrder__firstScreen-descriptionBlock {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .doorOnOrder__firstScreen-submitBlock p {
+        width: 205px;
+    }
+
+    .doorOnOrder__youtube-wrapper {
+        width: 360px;
+    }
+
+    .doorOnOrder__youtube-wrapper > div {
+        margin: auto;
+        width: 330px;
+    }
+
+    .doorOnOrder__youtube-wrapper {
+        margin-top: 40px;
+    }
+
+    .doorOnOrder__youtube-description {
+        margin-top: 20px;
+    }
+
+    
+    .doorOnOrder__youtube-videoBlock,
+    .doorOnOrder__youtube-videoBlock * {
+        max-width: initial!important;
+        width: 360px!important;
+        margin: auto;
+        height: 197px;
+    }
+
+    .doorOnOrder__youtube-videoBlock {
+        margin-top: 25px!important;
+    }
+    
+    .doorOnOrder__youtube-iconBlock {
+        order: 2;
+        margin-top: 20px!important;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .doorOnOrder__doorRowWrapper {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .doorOnOrder__featureWrapper,
+    .doorOnOrder__doorRow-item {
+        margin-top: 40px;
+    }
+
+    .doorOnOrder__feature-descriptionContent {
+        font-size: 16px;
+        line-height: 22px;
+        width: 266px;
+    }
+
+    #poloImg {
+        margin-left: -7px;
+    }
+
+    #plant1 {
+        width: 74px;
+        height: 84px;
+        left: -63px;
+    }
+
+    #frezerovka .doorOnOrder__feature-titleBlock {
+        order: 2;
+    }
+
+    #frezerovka .doorOnOrder__feature-descriptionBlock {
+        margin-bottom: 40px;
+    }
+
+    #frezerovka .frezerovkaImg {
+        width: 298px;
+        height: 321px;
+    }
+
+    #wall1 {
+        top: -16px;
+        left: initial;
+        right: -110px;
+        height: 337px;
+        width: 311px;
+    }
+
+    #frezerovka .doorOnOrder__feature-titleBlock {
+        margin-top: 20px;
+    }
+
+    .doorOnOrder__exampleWrapper {
+        width: 360px;
+        padding: 15px;
+    }
+
+    .doorOnOrder__example-contentWrapper {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .doorOnOrder__example-titleBlock {
+        width: 330px;
+    }
+
+    .doorOnOrder__example-titleBlock p {
+        margin-top: 10px;
+    }
+
+    .doorOnOrder__example-descriptionBlock,
+    .doorOnOrder__example-descriptionBlock:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .doorOnOrder__feature-descriptionBlock {
+        margin-right: 32px;
+    }
+
+    #vitrazi {
+        max-height: initial;
+    }
+
+    #vitrazi img {
+        margin-top: 25px;
+    }
+
+    #vitrazi .doorOnOrder__feature-titleBlock:nth-child(2) {
+        order: 2;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #vitrazi .doorOnOrder__feature-titleBlock:nth-child(2) .doorOnOrder__feature-title {
+        width: 204px;
+    }
+
+    .doorOnOrder__feature-description {
+        width: 242px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #plant2 {
+        width: 94px;
+        height: 105px;
+        left: -81px;
+    }
+
+    .doorOnOrder__doorRow-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #wall2 {
+        display: none;
+    }
+
+    .doorOnOrder__feature-titleBlock {
+        margin-top: 20px;
+    }
+
+    .doorOnOrder__feature-description {
+        margin-top: 10px;
+        width: 330px;
+    }
+
+    #shevrudConstruct {
+        max-height: initial;
+    }
+
+    #shevrudConstruct .doorOnOrder__doorRow-item:first-child img {
+        width: 243px;
+    }
+
+    #shevrudConstruct > .doorOnOrder__doorRow-item:first-child p {
+        width: 231px;
+        margin-bottom: 160px;
+    }
+
+    #pipe {
+        width: 329px;
+        height: 95px;
+        top: 400px;
+        left: 0;
+    }
+
+    #shevrudConstruct .doorOnOrder__doorRow-item:nth-child(2) {
+        margin-top: 0;
+    }
+
+    #shevrudConstruct .doorOnOrder__doorRow-item:nth-child(3) {
+        order: 2;
+    }
+
+    #shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) {
+        margin-top: 20px;
+    }
+
+    #shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4),
+    #shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) p,
+    #shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) h3 {
+        width: 100%;
+        
+    }
+    #shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(4) p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #shevrudConstruct > .doorOnOrder__doorRow-item:nth-child(3) {
+        width: 330px;
+    }
+
+    #plant3 {
+        width: 76px;
+        height: 114px;
+        left: -69px;
+    }
+
+    #rein,
+    #deco {
+        display: flex;
+    }
+
+    #rein img,
+    #deco img {
+        width: 114px;
+        height: 233px;
+    }
+
+    #deco div {
+        margin-left: 25px;
+    }
+
+    #deco .doorOnOrder__doorRow-title,
+    #rein .doorOnOrder__doorRow-title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #deco .doorOnOrder__doorRow-description {
+        width: 192px;
+    }
+    
+    #rein {
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #rein .doorOnOrder__doorRow-description {
+        width: 180px;
+    }
+
+    #rein .doorOnOrder__doorRow-title {
+        margin-top: 40px;
+    }
+
+    #furniture img {
+        width: 196px;
+        height: 104px;
+    }
+
+    #furniture h2 {
+        margin-top: 20px;
+        width: 204px;
+    }
+
+    #furniture p {
+        width: 242px;
+    }
+
+    #bergamo .doorOnOrder__feature-titleBlock {
+        margin-right: 0;
+        justify-content: flex-start
+    }
+
+    #bergamo img:nth-child(2) {
+        width: 227px;
+        height: 272px;
+        align-self: flex-end;
+    }
+
+    #wall3 {
+        width: 284px;
+        height: 282px;
+        top: -10px;
+        left: -87px;
+    }
+
+    #bergamo .doorOnOrder__feature-titleBlock .doorOnOrder__feature-title,
+    #bergamo .doorOnOrder__feature-titleBlock .doorOnOrder__feature-description {
+        width: 100%;
+    }
+
+    #sicilia .doorOnOrder__example-descriptionBlock:nth-child(2) {
+        margin-left: 0;
+    }
+
+    #plant5 {
+        display: none;
+    }
+
+    #sicilia p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
