@@ -141,9 +141,59 @@
     display: none;
 }
 
+.restoration__newDecoration-example {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#widthSlideBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: url(../icons/imageSlideArrow.svg) no-repeat, #fff;
+    background-position: center;
+    width: 76px;
+    height: 76px;
+}
+
+#beforeSlide,
+#afterSlide {
+    position: relative;
+    width: 262px;
+    overflow: hidden;
+}
+
+#beforeSlide img,
+#afterSlide img {
+    width: 525px;
+    max-width: initial;
+}
+
+#afterSlide img {
+    margin-left: -261px;
+}
+
 @media screen and (max-width: 768px) {
     .restoration__wrapper * {
         max-width: 330px;
+    }
+
+
+    #afterSlide img {
+        margin-left: -164px;
+    }
+
+    #beforeSlide,
+    #afterSlide {
+        width: 164px;
+    }
+
+    #beforeSlide img,
+    #afterSlide img {
+        width: 330px;
     }
 
     .restoration__decorationBlock {
