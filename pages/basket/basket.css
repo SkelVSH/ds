@@ -161,9 +161,13 @@
     align-items: center;
 }
 
-.basket__footer-addressesItem img {
+.basket__footer-addressesItem input {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
     margin-right: 10px;
 }
+
 
 @media screen and (max-width: 768px) {
     .basket__wrapper * {
