@@ -83,6 +83,7 @@
   opacity: 0.6;
   transition: 0.3s;
   margin-bottom: 8px;
+  border: 1px solid transparent;
 }
 .card-config-main-colors-item:not(:nth-child(6n+1)) {
   margin-right: 8px;
@@ -100,6 +101,7 @@
 }
 
 .card-config-main-colors-item__img {
+  pointer-events: none;
   max-width: 35px;
   max-height: 75px;
 }
@@ -152,6 +154,7 @@
   color: #292E31;
   text-transform: uppercase;
   margin-bottom: 7px;
+  pointer-events: none;
 }
 
 .card-config-main-kit-item__new_price {
@@ -160,6 +163,7 @@
  color: #B60000;
  font-weight: 700;
  margin-bottom: 7px;
+ pointer-events: none;
 }
 
 .card-config-main-kit-item__old_price {
@@ -168,6 +172,7 @@
   font-size: 16px;
   line-height: 14px;
   color: #ACACAC;
+  pointer-events: none;
 }
 
 .card-config-main-kit-item__old_price::before {
@@ -619,7 +624,7 @@
   margin-right: 4px;
 }
 
-.card-floating-specs__item span {
+.card-floating-specs__title {
   font-weight: 700;
 }
 
@@ -731,6 +736,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-similar > .c-h2 {
@@ -744,11 +751,92 @@
 }
 
 .card-similar__arrow {
-  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 82px;
   opacity: 0.5;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .card-similar__arrow:hover {
   opacity: 1;
+}
+
+.card-similar__arrow.prev {
+  left: 0;
+}
+
+.card-similar__arrow.next {
+  right: 0;
+}
+
+.card-coating h2 {
+  margin-bottom: 40px;
+}
+
+.card-coating-info__item {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 0.15s;
+  opacity: 1;
+}
+
+.card-coating-info__item.fade {
+  opacity: 0;
+}
+
+.card-coating-info__item.active {
+  display: flex;
+}
+
+.card-coating-info__item>img {
+  max-width: 770px;
+}
+
+.card-coating-info-main {
+  width: 370px;
+}
+
+.card-coating-info-main img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-coating-tabs {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.card-coating-tabs__item {
+  min-width: fit-content;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #292E31;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-coating-tabs__item:first-child {
+  padding-left: 0;
+}
+
+.card-coating-tabs__item:last-child {
+  padding-right: 0;
+}
+
+.card-coating-tabs__item:hover {
+  color: #006695;
+}
+
+.card-coating-tabs__item.active {
+  color: #006695;
+  pointer-events: none;
 }
