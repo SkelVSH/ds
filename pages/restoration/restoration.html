@@ -41,8 +41,14 @@
                 <img src="./img/rainbowCircle.png" alt="">
                 <p class="c-p3 restoration__rainbowCircleBlock-description">Двери красим<br /> в 190 цветов<br />по палитре RAL</p>
             </div>
-            <div class="restoration__decorationExample restoration__newDecoration-example">
-                <img src="./img/beforeRepair.png" alt="">
+            <div id="imageWidthSlide" class="restoration__decorationExample restoration__newDecoration-example">
+                <div id="beforeSlide">
+                    <img src="./img/beforeRepair.png" alt="">
+                </div>
+                <div id="afterSlide">
+                    <img id='afterSlideImg' src="./img/beforeRepair.png" alt="">
+                </div>
+                <div class="pointer" id='widthSlideBtn'></div>
             </div>
             <div class="restoration__decorationDescription">
                 <h2 class="c-h2 restoration__decorationDescription-title">
@@ -96,5 +102,17 @@
             </div>
         </div>
     </div>
+
+    <script src="../../js/imageWidthSlide.js"></script>
+    <script>
+        widthSliderInit({
+            leftBlockId: "beforeSlide",
+            rightBlockId: 'afterSlide',
+            rightImgId: 'afterSlideImg',
+            width: 525,
+            buttonId: 'widthSlideBtn',
+            mobileWidth: 330,
+        })
+    </script>
 </body>
 </html>
