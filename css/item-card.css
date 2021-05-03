@@ -840,3 +840,60 @@
   color: #006695;
   pointer-events: none;
 }
+
+.card-non_standard {
+  position: relative;
+}
+
+.card-non_standard > img {
+  max-width: 100%;
+}
+
+.card-non_standard .c-h2 {
+  max-width: 287px;
+}
+
+.card-non_standard-info {
+  position: absolute;
+  top: 50px;
+  left: 55px;
+  width: 1060px;
+  display: flex;
+  padding: 25px 74px 47px 34px;
+  background: #fff;
+}
+
+.card-non_standard-info .c-p2 {
+  margin-top: 9px;
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.card-non_standard-info__last {
+  max-width: 240px;
+  margin-top: 12px;
+}
+
+.card-non_standard-info__last .c-p3 {
+  margin-top: 17px;
+  margin-left: 6px;
+}
+
+.card-additions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-additions-main {
+  width: 570px;
+}
+
+.card-additions-main__percent {
+  max-width: 181px;
+  margin-top: auto;
+}
+
+.card-additions-slider {
+  width: 570px;
+}
