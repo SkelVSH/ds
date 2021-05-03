@@ -242,6 +242,14 @@
     border-top: 1px solid #f0f0f0;
 }
 
+.featureBlock__infoBlock {
+    width: 270px;
+}
+.featureBlock__infoBlock-description {
+    width: 270px;
+}
+
+
 .youtube__wrapper {
     margin-top: 80px;
 }

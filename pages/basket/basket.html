@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/aktsii.css">
+    <link rel="stylesheet" href="./basket.css">
+</head>
+<body>
+    <div class="wrapper basket__wrapper">
+        <div class="basket__mainContainer">
+            <div class="basket__titleBlock">
+                <h1 class="c-h1 basket__titleBlock-title">Заявка на заказ двери</h1>
+                <p class="c-p1 basket__titleBlock-description">
+                    Заполните форму. Менеджер перезвонит, согласует дату и время замера, расскажет про дополнительные опции и шаги покупки.
+                </p>
+            </div>
+            <div class="basket__inputForm">
+                <div class="basket__inputForm-item">
+                    <label for="">Имя</label>
+                    <input class="c-p3" type="text" placeholder="Василий">
+                </div>
+                <div class="basket__inputForm-item">
+                    <label for="">Телефон</label>
+                    <input class="c-p3" type="text" placeholder="+ 375">
+                </div>
+                <div class="basket__inputForm-item">
+                    <label for="">Электронная почта</label>
+                    <input class="c-p3" type="text" placeholder="a@gmail.com">
+                </div>
+                <div class="basket__inputForm-item">
+                    <label for="">Комментарий</label>
+                    <div class="basket__inputForm-textArea">
+                        <textarea class="c-p3" type="text"></textarea>
+                        <p class="basket__inputForm-textAreaInfo">
+                            В какое время вам удобно разговаривать?
+                        </p>
+                        <p class="basket__inputForm-textAreaInfo">
+                            Если время не указано — менеджер перезвонит в будни с 10 до 20 разговаривать
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__itemBlock">
+                <div class="basket__itemBlock-images">
+                    <img src="./img/basketItem.png" alt="">
+                    <img src="./img/basketItem.png" alt="">
+                </div>
+                <div class="basket__itemBlock-itemInfo">
+                    <h3 class="c-h3 basket__itemBlock-title">Николь</h3>
+                    <p class="basket__itemBlock-price">2 430,0 <span class="basket__itemBlock-oldPrice">2 545,0 руб.</span></p>
+                </div>
+                <div class="basket__itemBlock-itemDesc">
+                    <div class="basket__itemBlock-infoBlock">
+                        <p class="basket__itemBlock-itemSide">снаружи</p>
+                        <p class="basket__itemBlock-sideName">Экошпон, &laquo;Венге тёмный&raquo;</p>
+                    </div>
+                    <div class="basket__itemBlock-infoBlock">
+                        <p class="basket__itemBlock-itemSide">ВНУТРИ</p>
+                        <p class="basket__itemBlock-sideName">Экошпон, &laquo;Пломбир&raquo;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="basket__footerConainer wrapper">
+        <div class="basket__footer">
+            <div class="basket__footer-shopInfo">
+                <h4 class="c-h4 basket__footer-title">Ближайший фирменный салон</h4>
+                <div class="basket__footer-descirption">
+                    По какому адресу удобно приехать, чтобы ознакомиться с образцами, задать вопросы или заключить договор
+                </div>
+            </div>
+            <div class="basket__footer-shopAddresses">
+                <ul class="basket__footer-addressesList">
+                    <li class="basket__footer-addressesItem"><img src="./img/circle.svg" alt=""> ул. Кальварийская, 7Б &middot; ТЦ&nbsp;&laquo;Трюм&raquo;</li>
+                    <li class="basket__footer-addressesItem"><img src="./img/circle.svg" alt="">пр-т Дзержинского, 131</li>
+                    <li class="basket__footer-addressesItem"><img src="./img/circle.svg" alt="">ул. Олешева, 1</li>
+                    <li class="basket__footer-addressesItem"><img src="./img/circle.svg" alt="">пр-т Победителей, 133</li>
+                </ul>
+            </div>
+            <div class="basket__footer-shopBtn">
+                <button class="btn btn-green">Оправить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
