@@ -80,6 +80,12 @@
     display: inline;
 }
 
+.news__mainNews-title,
+.news__shortNews-title {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2))!important;
+}
+
+
 .news__shortNews {
     margin-top: 24px;
 }
