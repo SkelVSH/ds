@@ -1,10 +1,14 @@
 window.onload = () => {
     const filters = document.querySelectorAll('.filter');
     const clearFiltersBtn = document.getElementById('clearFilters')
-    const popularFilter = document.querySelector('.filter__filterSelect-title')
+    const popularFilter = document.querySelectorAll('.filter__filterSelect-title')[1];
     const filterOptions = document.querySelector('.filter__filterOptionsBlock')
     const pagingList = document.querySelector('.catalog__pagingList');
     const textWrapperBtn = document.querySelector('.catalog__chooseDescription-btn');
+    const mobileFilterToggler = document.querySelector('.filter__filterMenu-filterToggler')
+    const mobileDoorTypeToggler = document.querySelector('.filter__filterMenu-doorType')
+
+
 
     const filterClickHandler = (e) => {
         const targetLastClassName = e.currentTarget.classList[e.currentTarget.classList.length - 1];
@@ -87,8 +91,9 @@ window.onload = () => {
 
     const filterOptionsToggle = () => {
         console.log('hello')
-        const menu = document.querySelector('.filter__filterOptionsBlock');
+        const menu = document.querySelectorAll('.filter__filterOptionsBlock')[2];
         menu.style.display = menu.style.display == 'block' ?  'none' : 'block';
+        console.log(menu)
     }
 
     const filterOptionClickHandler = (e) => {
@@ -114,7 +119,7 @@ window.onload = () => {
 
     const textWrapperClickHandler = () => {
         const textWrapper = document.querySelector('.catalog__chooseDescription-textWrapper')
-        textWrapper.style.height = textWrapper.style.height ==  '1550px' ? '168px' : '1550px';
+        textWrapper.style.height = textWrapper.style.height ==  '97%' ? '168px' : '97%';
         
         const img = createImg('../icons/arrow.svg');
 
@@ -130,14 +135,38 @@ window.onload = () => {
         textWrapperBtn.appendChild(img);
     }
 
+    const mobileFilterToggle = () => {
+        const filterBlock = document.querySelector('.catalog__filterWrapper');
+
+        filterBlock.style.display = filterBlock.style.display == 'block' ? 'none' : 'block'
+    }
+
+    const doorTypeToggle = () => {
+        const filterBlock = document.querySelector('.filter__filterOptionsBlock');
+        filterBlock.style.display = filterBlock.style.display == 'block' ? 'none' : 'block'
+        const filterMenu = document.querySelector('.filter__filterMenu');
+        filterMenu.style.borderRadius = filterMenu.style.borderRadius == '5px 5px 0px 0px' ? '5px' : '5px 5px 0px 0px'
+        filterMenu.style.borderBottom = filterMenu.style.borderBottom == 'none' ? '1px solid #F0F0F0' : 'none';
+
+    }
+
+
+    const doorTypeClickHandler = (e) => {
+        mobileDoorTypeToggler.innerText = e.target.innerText;
+        mobileDoorTypeToggler.appendChild(createImg('./img/select_arrow-black.svg'));
+
+        document.querySelector('.filter__filterOption-active').classList.remove('filter__filterOption-active');
+        e.target.classList.add('filter__filterOption-active');
+    }
 
 
 
-
+    popularFilter.addEventListener('click', filterOptionsToggle);
+    mobileDoorTypeToggler.addEventListener('click', doorTypeToggle);
+    mobileFilterToggler.addEventListener('click', mobileFilterToggle);
     textWrapperBtn.addEventListener('click', textWrapperClickHandler)
     pagingList.addEventListener('click', pageItemClickHandler)
-    filterOptions.addEventListener('click', filterOptionClickHandler);
-    popularFilter.addEventListener('click', filterOptionsToggle);
+    filterOptions.addEventListener('click', window.screen.width > 768 ? filterOptionClickHandler : doorTypeClickHandler);
     clearFiltersBtn.addEventListener('click', clearFilters)
     filters.forEach((filter) => filter.addEventListener('click', filterClickHandler));
     
