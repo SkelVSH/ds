@@ -11,8 +11,24 @@
 <body>
     <div class="space"></div>
     <div class="catalog__wrapper">
+        <h1 class="c-h1 catalog__pageTitle hide-desktop">Входные двери</h1>
+        <div class="filter__filterMenu hide-desktop">
+            <span class="c-h4 filter__filterMenu-doorType">
+                Все двери
+                <img src="./img/select_arrow-black.svg" alt="">
+            </span>
+            <span class="filter__filterMenu-filterToggler">
+                Фильтры
+                <img src="./img/select_arrow-black.svg" alt="">
+            </span>
+            <ul class="filter__filterOptionsBlock ">
+                <li class="c-h4 filter__filterOption filter__filterOption-active">Все двери</li>
+                <li class="c-h4 filter__filterOption">В квартиру</li>
+                <li class="c-h4 filter__filterOption">В дом</li>
+            </ul>
+        </div>
         <div class="catalog__filterWrapper">
-            <ul class="catalog__filterBlock-placement">
+            <ul class="catalog__filterBlock-placement hide-mobile">
                 <li class="c-h4 filter placementFilter"><span>В квартиру</span></li>
                 <li class="c-h4 filter placementFilter"><span>Дом</span></li>
             </ul>
@@ -39,20 +55,33 @@
                 <li class="c-link c-p2 filter promotionsFilter">Топ-10</li>
                 <li class="c-link c-p2 filter promotionsFilter">Распродажа</li>
             </ul>
+            <div class="filter__filterSelect hide-desktop">
+                <span>
+                    Сортировать
+                    <span onselectstart="return false"  class="filter__filterSelect-title">по популярности <img src="./img/select_arrow.svg" alt=""></span>
+                </span>
 
+                <ul class="filter__filterOptionsBlock ">
+                    <li class="filter__filterOption filter__filterOption-active">по популярности</li>
+                    <li class="filter__filterOption">от эконом к премиум</li>
+                    <li class="filter__filterOption">от премиум к эконом</li>
+                </ul>
+            </div>
+            
+            <button id='showDoorMobile' class="btn btn-blue hide-desktop">Показать 8 дверей</button>
             <button id='clearFilters' class="btn">Сбросить фильтры <img src="./img/cross.png" alt=""></button>
         </div>
         <div class="catalog__contentWrapper">
 
-            <h1 class="c-h1 catalog__pageTitle">Входные двери</h1>
+            <h1 class="c-h1 catalog__pageTitle hide-mobile">Входные двери</h1>
             <div class="catalog__filtersInfo">
                 <ul id='catalog__filterList' class="catalog__filterList">
                 </ul>
 
-                <div class="filter__filterSelect">
+                <div class="filter__filterSelect hide-mobile">
                     <p onselectstart="return false"  class="filter__filterSelect-title">по популярности <img src="./img/select_arrow.svg" alt=""></p>
 
-                    <ul class="filter__filterOptionsBlock">
+                    <ul class="filter__filterOptionsBlock ">
                         <li class="filter__filterOption filter__filterOption-active">по популярности</li>
                         <li class="filter__filterOption">от эконом к премиум</li>
                         <li class="filter__filterOption">от премиум к эконом</li>
@@ -60,6 +89,206 @@
                 </div>
             </div>
             <div class="catalog__mainWrapper">
+                <div class="catalog__cardContainer">
+                    <div class="catalogCard__mainImgBlock">
+                        <img src="./img/doorPhoto.png" alt="">
+                        <img src="./img/doorPhoto.png" alt="">
+                    </div>
+                    <div class="catalogCard__smallImgContainer">
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                    </div>
+                    <div class="catalogCard__titleContainer">
+                        <h3 class="c-h3 c-link catalogCard__titleContainer-title">Николь</h3>
+                        <p class="catalogCard__titleContainer-newPrice">2 430,0<span class="catalogCard__titleContainer-oldPrice">2 545,0 руб.</span></p>
+                    </div>
+                    <div class="catalogCard__infoContainer">
+                        <div class="catalogCard__typesBlock">
+                            <p class="catalogCard__type catalogCard__type-blue">для квартиры</p>
+                            <p class="catalogCard__type catalogCard__type-green">в салоне</p>
+                            <p class="catalogCard__type catalogCard__type-purple">топ-10</p>
+                            <p class="catalogCard__type catalogCard__type-red">на скидке</p>
+                        </div>
+                        <div class="catalogCard__infoContainer-youtubeBlock">
+                            <div class="catalogCard__youtubeBlock">
+                                <span>видеообзор</span>
+                                <img src="../icons/youtube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__cardContainer">
+                    <div class="catalogCard__mainImgBlock">
+                        <img src="./img/doorPhoto.png" alt="">
+                        <img src="./img/doorPhoto.png" alt="">
+                    </div>
+                    <div class="catalogCard__smallImgContainer">
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                    </div>
+                    <div class="catalogCard__titleContainer">
+                        <h3 class="c-h3 c-link catalogCard__titleContainer-title">Николь</h3>
+                        <p class="catalogCard__titleContainer-newPrice">2 430,0<span class="catalogCard__titleContainer-oldPrice">2 545,0 руб.</span></p>
+                    </div>
+                    <div class="catalogCard__infoContainer">
+                        <div class="catalogCard__typesBlock">
+                            <p class="catalogCard__type catalogCard__type-blue">для квартиры</p>
+                            <p class="catalogCard__type catalogCard__type-green">в салоне</p>
+                            <p class="catalogCard__type catalogCard__type-purple">топ-10</p>
+                            <p class="catalogCard__type catalogCard__type-red">на скидке</p>
+                        </div>
+                        <div class="catalogCard__infoContainer-youtubeBlock">
+                            <div class="catalogCard__youtubeBlock">
+                                <span>видеообзор</span>
+                                <img src="../icons/youtube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__cardContainer">
+                    <div class="catalogCard__mainImgBlock">
+                        <img src="./img/doorPhoto.png" alt="">
+                        <img src="./img/doorPhoto.png" alt="">
+                    </div>
+                    <div class="catalogCard__smallImgContainer">
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                    </div>
+                    <div class="catalogCard__titleContainer">
+                        <h3 class="c-h3 c-link catalogCard__titleContainer-title">Николь</h3>
+                        <p class="catalogCard__titleContainer-newPrice">2 430,0<span class="catalogCard__titleContainer-oldPrice">2 545,0 руб.</span></p>
+                    </div>
+                    <div class="catalogCard__infoContainer">
+                        <div class="catalogCard__typesBlock">
+                            <p class="catalogCard__type catalogCard__type-blue">для квартиры</p>
+                            <p class="catalogCard__type catalogCard__type-green">в салоне</p>
+                            <p class="catalogCard__type catalogCard__type-purple">топ-10</p>
+                            <p class="catalogCard__type catalogCard__type-red">на скидке</p>
+                        </div>
+                        <div class="catalogCard__infoContainer-youtubeBlock">
+                            <div class="catalogCard__youtubeBlock">
+                                <span>видеообзор</span>
+                                <img src="../icons/youtube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__cardContainer">
+                    <div class="catalogCard__mainImgBlock">
+                        <img src="./img/doorPhoto.png" alt="">
+                        <img src="./img/doorPhoto.png" alt="">
+                    </div>
+                    <div class="catalogCard__smallImgContainer">
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                        <div class="catalogCard__smallImgBlock">
+                            <img src="./img/doorPhoto.png" alt="">
+                            <img src="./img/doorPhoto.png" alt="">
+                        </div>
+                    </div>
+                    <div class="catalogCard__titleContainer">
+                        <h3 class="c-h3 c-link catalogCard__titleContainer-title">Николь</h3>
+                        <p class="catalogCard__titleContainer-newPrice">2 430,0<span class="catalogCard__titleContainer-oldPrice">2 545,0 руб.</span></p>
+                    </div>
+                    <div class="catalogCard__infoContainer">
+                        <div class="catalogCard__typesBlock">
+                            <p class="catalogCard__type catalogCard__type-blue">для квартиры</p>
+                            <p class="catalogCard__type catalogCard__type-green">в салоне</p>
+                            <p class="catalogCard__type catalogCard__type-purple">топ-10</p>
+                            <p class="catalogCard__type catalogCard__type-red">на скидке</p>
+                        </div>
+                        <div class="catalogCard__infoContainer-youtubeBlock">
+                            <div class="catalogCard__youtubeBlock">
+                                <span>видеообзор</span>
+                                <img src="../icons/youtube.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="catalog__cardContainer">
                     <div class="catalogCard__mainImgBlock">
                         <img src="./img/doorPhoto.png" alt="">

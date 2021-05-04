@@ -391,7 +391,25 @@
     font-weight: bold;
 }
 
+.hide-desktop {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    
+    .hide-desktop {
+        display: block;
+    }
+
+    .catalog__wrapper {
+        width: 360px;
+        flex-direction: column;
+    }
+
     .catalog__wrapper * {
         max-width: 330px;
     }
@@ -435,5 +453,131 @@
 
     .catalog__cardContainer .catalogCard__type-red {
         background: #B60000;
+    }
+
+    .catalog__filterWrapper {
+        width: 100%;
+    }
+
+    /* .catalog__filterBlock-existence,
+    .catalog__filterBlock-promotions,
+    .catalog__filterBlock-glass,
+    .catalog__filterBlock-theme,
+    .catalog__filterBlock-design {
+        margin-top: 10px!important;
+    } */
+
+    .catalog__filterBlock-promotions,
+    .catalog__filterBlock-glass,
+    .catalog__filterBlock-theme {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .catalog__filterBlock-promotions li,
+    .catalog__filterBlock-glass li,
+    .catalog__filterBlock-theme li {
+        width: fit-content;
+        margin-right: 30px;
+    }
+
+    .catalog__filterBlock-promotions {
+        padding: 25px 0 35px 0!important;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+
+    .filter__filterSelect {
+        margin-top: 25px;
+        width: fit-content;
+    }
+
+    .filter__filterSelect span {
+        display: flex;
+    }
+
+    .filter__filterSelect-title {
+        margin-left: 10px;
+    }
+
+    #showDoorMobile {
+        margin-top: 45px;
+        padding: 6px 40px 7px;
+    }
+
+    #clearFilters {
+        margin-top: 20px;
+    }
+
+    .catalog__filterList {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        height: initial;
+    }
+
+    .filter__filterMenu-doorType,
+    .filter__filterMenu-filterToggler {
+        display: flex;
+        align-items: center;
+    }
+
+    .filter__filterMenu-doorType img,
+    .filter__filterMenu-filterToggler img {
+        margin-left: 10px;
+    }
+
+    .filter__filterMenu-filterToggler img {
+        transform: rotate(-90deg);
+        height: 6px;
+        width: 10px;
+    }
+
+    .filter__filterMenu {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 14px;
+        margin-left: -15px;
+        border: 1px solid #F0F0F0;
+        border-radius: 5px;
+        margin-top: 25px;
+        background: #F9F9F9;
+        width: 360px;
+        max-width: 360px;
+        position: relative;
+    }
+
+    .catalog__filterWrapper {
+        display: none;
+    }
+
+    .filter__filterOptionsBlock  {
+        left: -1px;
+        bottom: initial;
+        top: 44px;
+        width: 360px;
+        max-width: 360px;
+        padding-top: 0!important;
+        background: #F9F9F9;
+
+        border: 1px solid #F0F0F0;
+        border-top: none;
+        box-shadow: none;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .filter__filterMenu-doorType,
+    .filter__filterOption {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .filter__filterOption {
+        margin-top: 10px;
+    }
+
+    .filter__filterOption-active,
+    .filter__filterOption:hover {
+        color: #292E31;
     }
 }
