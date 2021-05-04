@@ -73,6 +73,7 @@ select {
   font-size: 22px;
   line-height: 28px;
   border-radius: 3px;
+  outline: none;
 }
 
 .btn-blue {
