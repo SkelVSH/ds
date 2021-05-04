@@ -39,7 +39,7 @@ rotatePhoto = (block) => {
   })
 }
 
-changeColor = (mainBlock, floatingBlock) => {
+changeColor = (mainBlock) => {
   const colorsWrap = mainBlock.querySelector('.card-config-main-colors')
   const colors = colorsWrap.querySelectorAll('.card-config-main-colors-item')
   colorsWrap.addEventListener('click', (e) => {
@@ -55,15 +55,9 @@ changeColor = (mainBlock, floatingBlock) => {
   })
 }
 
-changeKit = (mainBlock, floatingBlock) => {
+changeKit = (mainBlock) => {
   const kitsWrap = mainBlock.querySelector('.card-config-main-kit__wrap')
   const kits = kitsWrap.querySelectorAll('.card-config-main-kit-item')
-  /*
-  const floatingBlockSeries = floatingBlock.querySelector('.card-floating-specs__item.series .card-floating-specs__value')
-  const floatingBlockOldPrice = floatingBlock.querySelector('.card-floating-cost__old')
-  const floatingBlockNewPrice = floatingBlock.querySelector('.card-floating-cost__new')
-  const floatingBlockCommonPrice = floatingBlock.querySelector('.card-floating-cost__common')
-  */
   kitsWrap.addEventListener('click', (e) => {
     if (e.target.classList.contains('card-config-main-kit-item') && !e.target.classList.contains('active')) {
       for (elem of kits) {
@@ -73,20 +67,6 @@ changeKit = (mainBlock, floatingBlock) => {
         }
       }
       e.target.classList.add('active')
-      /*
-      const series = e.target.querySelector('.card-config-main-kit-item__series span').innerHTML.trim()
-      const newPrice = e.target.querySelector('.card-config-main-kit-item__new_price').innerHTML.trim()
-      const oldPrice = e.target.querySelector('.card-config-main-kit-item__old_price').innerHTML.trim()
-      const commonPrice = e.target.querySelector('.card-config-main-kit-item__price').innerHTML.trim()
-      floatingBlockSeries.innerHTML = series
-      if(commonPrice.length !== 0) {
-        floatingBlockCommonPrice.innerHTML = commonPrice
-      }
-      else {
-        floatingBlockNewPrice.innerHTML = newPrice
-        floatingBlockOldPrice.innerHTML = oldPrice
-      }
-      */
     }
   })
 }
@@ -97,37 +77,10 @@ changeKit = (mainBlock, floatingBlock) => {
   for (elem of mainBlocks) {
     fastOrder(elem)
     rotatePhoto(elem)
-    changeColor(elem, floatingBlock)
-    changeKit(elem, floatingBlock)
+    changeColor(elem)
+    changeKit(elem)
   }
 })();
-
-
-/*
-(switchSpecsTabs = () => {
-  const tabs = document.querySelectorAll('.card-specs-tabs__item')
-  const tables = document.querySelectorAll('.card-specs-tables-item')
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click', (e) => {
-      for (let j = 0; j < tables.length; j++) {
-        tables[j].classList.remove('active')
-        tabs[j].classList.remove('active')
-      }
-      tables[i].classList.add('active')
-      tabs[i].classList.add('active')
-    })
-  }
-})();
-
-(initSpecsSlider = () => {
-  if (document.documentElement.clientWidth <= 768) {
-    const specsSlider = new Swiper('.card-specs-tables-item__slider.swiper-container', {
-      slidesPerView: 'auto',
-      freeMode: true
-    })
-  }
-})();
-*/
 
 (floatingBlockInit = () => {
   const floatingBlockWrap = document.querySelector('.card-floating__wrapper')
@@ -158,13 +111,13 @@ changeKit = (mainBlock, floatingBlock) => {
   })
 })();
 
-(switchCoatingTabs = () => {
-  const tabsWrap = document.querySelector('.card-coating-tabs')
-  const tabs = tabsWrap.querySelectorAll('.card-coating-tabs__item')
-  const contents = document.querySelectorAll('.card-coating-info__item')
+switchTabs = ({tabsWrapSelector, tabsClass, contentsSelector}) => {
+  const tabsWrap = document.querySelector(tabsWrapSelector)
+  const tabs = tabsWrap.querySelectorAll(`.${tabsClass}`)
+  const contents = document.querySelectorAll(contentsSelector)
   tabsWrap.addEventListener('click', (e) => {
-    if(e.target.classList.contains('card-coating-tabs__item')) {
-      for(let i = 0; i < tabs.length; i++) {
+    if (e.target.classList.contains(tabsClass)) {
+      for (let i = 0; i < tabs.length; i++) {
         if (tabs[i].classList.contains('active')) {
           tabs[i].classList.remove('active')
           contents[i].classList.add('fade')
@@ -179,7 +132,35 @@ changeKit = (mainBlock, floatingBlock) => {
         const chosenContent = contents[Array.from(tabs).indexOf(e.target)]
         chosenContent.classList.add('active')
         chosenContent.classList.remove('fade')
-      },150)
+      }, 150)
     }
   })
+}
+
+initInteractivePhoto({
+  buttonSelector: '.card-additions-slider-right__button',
+  containerSelector: '.card-additions-slider',
+  rightPhotoWrapSelector: '.card-additions-slider-right__wrap',
+  leftPhotoWidthRelation: 2
+});
+
+(showSpecsHelp = () => {
+  helpButtons = document.querySelectorAll('.card-specs-tables-item__help')
+  for (let elem of helpButtons) {
+    elem.addEventListener('click', () => {
+      elem.nextElementSibling.classList.toggle('active')
+    })
+  }
 })();
+
+switchTabs({
+  tabsWrapSelector: '.card-coating-tabs',
+  tabsClass: 'card-coating-tabs__item',
+  contentsSelector: '.card-coating-info__item'
+})
+
+switchTabs({
+  tabsWrapSelector: '.card-specs-tabs .wrapper',
+  tabsClass: 'card-specs-tabs__item',
+  contentsSelector: '.card-specs-tables-item'
+})
