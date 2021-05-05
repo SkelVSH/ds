@@ -24,6 +24,10 @@
           <li class="card-config-main-tags__item for_house">для дома</li>
           <li class="card-config-main-tags__item by_order">под заказ за 15-30 дней</li>
         </ul>
+        <div class="card-config-main-img--mobile">
+          <img src="./static/images/item-card/mock/sample-front.png" alt="">
+          <img src="./static/images/item-card/mock/sample-back.png" alt="">
+        </div>
         <div class="card-config-main-colors">
           <h3 class="c-h3">Цветовые исполнения</h3>
           <div class="card-config-main-colors-item active">
@@ -572,6 +576,8 @@
     </div>
 
     <div class="card-video wrapper">
+      <h3 class="block--mobile c-h3">Посмотрите на&nbsp;эту модель ближе не&nbsp;выходя из&nbsp;дома</h3>
+      <p class="block--mobile c-p2">На&nbsp;видео показываем, как выглядит образец этой двери в&nbsp;интерьере и&nbsp;в&nbsp;салоне. Снимаем детали, которые здесь видны лучше, чем на&nbsp;фото.</p>
       <iframe class="card-video__iframe"></iframe>
       <div class="card-video-main">
         <h3 class="c-h3">Посмотрите на&nbsp;эту модель ближе не&nbsp;выходя из&nbsp;дома</h3>
@@ -722,6 +728,8 @@
     </div>
 
     <div class="card-non_standard wrapper">
+      <h2 class="c-h2 block--mobile">Нестандартные размеры</h2>
+      <p class="c-p2 block--mobile">Создаём величественный вход с&nbsp;помощью доборов и&nbsp;фрамуг разнообразной формы.</p>
       <img src="./static/images/item-card/non-standard-bg.png" alt="">
       <div class="card-non_standard-info">
         <h2 class="c-h2">Нестандартные размеры</h2>
@@ -802,6 +810,8 @@
         <p class="c-p3">лет гарантии от&nbsp;производителя</p>
       </div>
       <iframe class="card-video__iframe"></iframe>
+      <p class="card-locks_video-main__fact block--mobile">10</p>
+      <p class="c-p3 block--mobile">лет гарантии от&nbsp;производителя</p>
     </div>
     <div class="card-smartlocks wrapper">
       <a href="/danalock/" class="card-smartlocks__item">
@@ -1016,6 +1026,7 @@
         </div>
       </div>
     </div>
+
     <div class="card-floating__wrapper">
       <div class="card-floating float">
         <div class="wrapper">
@@ -1052,33 +1063,105 @@
         </div>
       </div>
     </div>
+
+    <div class="card-cheaper_form__wrap">
+      <form class="card-cheaper_form active" action="">
+        <svg class="card-cheaper_form__close" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M20.2246 1.72383L19.4246 0.923828L10.2246 10.1238L1.02461 0.923828L0.224609 1.72383L9.42461 10.9238L0.224609 20.1238L1.02461 20.9238L10.2246 11.7238L19.4246 20.9238L20.2246 20.1238L11.0246 10.9238L20.2246 1.72383Z" fill="white" stroke="white" stroke-width="0.6"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="21" height="22" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+          
+        <div class="card-cheaper_form-main">
+          <h2 class="c-h2">Вы смотрите дверь Николь серии 70 за 1 059 руб.</h2>
+          <p class="c-p1">Предложите свою цену. Менеджер составит возможные варианты комплектации, перезвонит и&nbsp;расскажет о&nbsp;них.</p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__price">Желаемая цена</label>
+            <input class="card-cheaper_form__field__input price" type="text" name="price" id="card-cheaper_form__field__price">
+            <span class="card-cheaper_form__field__additional">руб.</span>
+          </p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__name">Имя</label>
+            <input placeholder="Василий" class="card-cheaper_form__field__input" type="text" name="name" id="card-cheaper_form__field__name">
+            <span class="card-cheaper_form__error active">Мы не сможем обратиться к&nbsp;вам по этому имени</span>
+          </p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__email">Электронная почта</label>
+            <input placeholder="a@gmail.com" class="card-cheaper_form__field__input" type="text" name="email" id="card-cheaper_form__field__email">
+            <span class="card-cheaper_form__error">Не сможем отправить письмо на&nbsp;этот адрес</span>
+          </p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__phone">Телефон</label>
+            <input placeholder="+ 375" class="card-cheaper_form__field__input" type="text" name="phone" id="card-cheaper_form__field__phone">
+            <span class="card-cheaper_form__error">Не дозвонимся по&nbsp;этому номеру</span>
+          </p>
+          <label class="card-cheaper_form__accept_terms">
+            <input class="card-cheaper_form__accept_terms__input" type="checkbox" checked>
+            <span></span>
+            <p class="card-cheaper_form__accept_terms__text">Принимаю условия <a class="c-link" href="#">пользовательского соглашения</a></p>
+          </label>
+          <button class="card-cheaper_form__button disabled" type="submit" id="card-cheaper_form__send">Отправить</button>
+        </div>
+        
+        <img src="./static/images/item-card/form-image.png" alt="">
+        <div class="card-cheaper_form__bottom"></div>
+      </form>
+      <div class="card-cheaper_form_success">
+        <svg class="card-cheaper_form__close" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M20.2246 1.72383L19.4246 0.923828L10.2246 10.1238L1.02461 0.923828L0.224609 1.72383L9.42461 10.9238L0.224609 20.1238L1.02461 20.9238L10.2246 11.7238L19.4246 20.9238L20.2246 20.1238L11.0246 10.9238L20.2246 1.72383Z" fill="white" stroke="white" stroke-width="0.6"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="21" height="22" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <p class="c-h2">Заявка отправлена</p>
+        <p class="c-p1">Ожидайте звонка с&nbsp;10&nbsp;до&nbsp;20 с&nbsp;понедельника по&nbsp;субботу, до&nbsp;18&nbsp;в&nbsp;воскресенье.</p>
+        <svg class="card-cheaper_form_success__svg" width="242" height="300" viewBox="0 0 242 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 145.362C29.8678 191.753 52.8415 239.693 76.5848 300H89.6019C115.64 218.817 178.44 96.6512 242 10.0518L232.811 0C187.629 44.8463 121 132.99 81.1774 218.817H79.6453C58.968 182.475 30.6339 152.323 10.7226 135.311L0 145.361V145.362Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="card-cheaper_form__outer"></div>
+    </div>
+
     <div class="card-reviews wrapper">
       <h2><a class="c-h2 c-link" href="#">Отзывы о дверях и сервисе</a></h2>
       <div class="card-reviews-item">
         <div class="card-reviews-item-main">
           <p class="c-p2">Ставлю не первую дверь все на высшем уровне как продукция так и персонал с момента оформления заказа ( большая благодарность Елизавете специалисту по продажам все просто , доступно и профессионально) до монтажников дверей !!! Следующую рассматриваю тоже у вашей компании!!! Спасибо</p>
-          <p class="c-h4">Ул. Яковлева 2, Ольга</p>
-          <ul class="card-reviews-item-main__mark">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="card-reviews-item-main__wrap">
+            <p class="c-h4">Ул. Яковлева 2, Ольга</p>
+            <ul class="card-reviews-item-main__mark">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
         <img class="card-reviews-item__img" src="./static/images/item-card/mock/review-img.png" alt="">
       </div>
       <div class="card-reviews-item">
         <div class="card-reviews-item-main">
           <p class="c-p2">Ставлю не первую дверь все на высшем уровне как продукция так и персонал с момента оформления заказа ( большая благодарность Елизавете специалисту по продажам все просто , доступно и профессионально) до монтажников дверей !!! Следующую рассматриваю тоже у вашей компании!!! Спасибо</p>
-          <p class="c-h4">Ул. Яковлева 2, Ольга</p>
-          <ul class="card-reviews-item-main__mark">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="card-reviews-item-main__wrap">
+            <p class="c-h4">Ул. Яковлева 2, Ольга</p>
+            <ul class="card-reviews-item-main__mark">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
         <img class="card-reviews-item__img" src="./static/images/item-card/mock/review-img.png" alt="">
       </div>

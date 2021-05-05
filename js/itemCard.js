@@ -1,4 +1,4 @@
-/* Скрипт для тестирования формы для быстрого заказа. При переносе нужно подогнать форму под стандарт сайта и удалить этот скрипт! */
+/* ПЕРЕРАБОТАТЬ ЭТУ ЧАСТЬ ПОСЛЕ НАТЯЖКИ ИЛИ УБРАТЬ */
 fastOrder = (block) => {
   const form = block.querySelector('.card-config-main-form')
   const success = block.querySelector('.card-config-main-form-success')
@@ -73,7 +73,6 @@ changeKit = (mainBlock) => {
 
 (cardConfigInit = () => {
   const mainBlocks = document.querySelectorAll('.card-config')
-  const floatingBlock = document.querySelector('.card-floating')
   for (elem of mainBlocks) {
     fastOrder(elem)
     rotatePhoto(elem)
@@ -101,17 +100,25 @@ changeKit = (mainBlock) => {
 
 (similarSliderInit = () => {
   const slider = new Swiper('.card-similar-slider.swiper-container', {
-    slidesPerView: 2,
-    spaceBetween: 70,
     navigation: {
       nextEl: '.card-similar__arrow.next',
       prevEl: '.card-similar__arrow.prev',
     },
     loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 70,
+      }
+    }
   })
 })();
 
-switchTabs = ({tabsWrapSelector, tabsClass, contentsSelector}) => {
+switchTabs = ({ tabsWrapSelector, tabsClass, contentsSelector }) => {
   const tabsWrap = document.querySelector(tabsWrapSelector)
   const tabs = tabsWrap.querySelectorAll(`.${tabsClass}`)
   const contents = document.querySelectorAll(contentsSelector)
@@ -137,15 +144,8 @@ switchTabs = ({tabsWrapSelector, tabsClass, contentsSelector}) => {
   })
 }
 
-initInteractivePhoto({
-  buttonSelector: '.card-additions-slider-right__button',
-  containerSelector: '.card-additions-slider',
-  rightPhotoWrapSelector: '.card-additions-slider-right__wrap',
-  leftPhotoWidthRelation: 2
-});
-
 (showSpecsHelp = () => {
-  helpButtons = document.querySelectorAll('.card-specs-tables-item__help')
+  const helpButtons = document.querySelectorAll('.card-specs-tables-item__help')
   for (let elem of helpButtons) {
     elem.addEventListener('click', () => {
       elem.nextElementSibling.classList.toggle('active')
@@ -153,14 +153,75 @@ initInteractivePhoto({
   }
 })();
 
+/* ПЕРЕРАБОТАТЬ ЭТУ ЧАСТЬ ПОСЛЕ НАТЯЖКИ ИЛИ УБРАТЬ */
+(formInteraction = () => {
+  const openFormLink = document.querySelector('.card-floating-cost__cheaper')
+  const formWrap = document.querySelector('.card-cheaper_form__wrap')
+  const form = formWrap.querySelector('form')
+  const sendSuccess = formWrap.querySelector('.card-cheaper_form_success')
+  const formOuter = formWrap.querySelector('.card-cheaper_form__outer')
+  const sendButton = formWrap.querySelector('#card-cheaper_form__send')
+  const testInput = formWrap.querySelector('#card-cheaper_form__field__price')
+  const closeFormButtons = formWrap.querySelectorAll('.card-cheaper_form__close')
+  const body = document.querySelector('body')
+  openForm = () => {
+    formWrap.classList.add('active')
+    setTimeout(() => {
+      formWrap.classList.add('fade')
+    },0)
+    body.classList.add('body-fixed')
+  }
+  closeForm = () => {
+    formWrap.classList.remove('fade')
+    body.classList.remove('body-fixed')
+    setTimeout(() => {
+      formWrap.classList.remove('active')
+      form.classList.add('active')
+      sendSuccess.classList.remove('active')
+    },300)
+  }
+  openFormLink.addEventListener('click', () => {
+    openForm()
+  })
+  for(let elem of closeFormButtons) {
+    elem.addEventListener('click', () => {
+      closeForm()
+    })
+  }
+  formOuter.addEventListener('click', () => {
+    closeForm()
+  })
+  
+  testInput.addEventListener('keyup', () => {
+    if (testInput.value.length >= 1) {
+      sendButton.classList.remove('disabled')
+    }
+    else {
+      sendButton.classList.add('disabled')
+    }
+  })
+  sendButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (sendButton.classList.contains('disabled')) return;
+    form.classList.remove('active')
+    sendSuccess.classList.add('active')
+  })
+})();
+
 switchTabs({
   tabsWrapSelector: '.card-coating-tabs',
   tabsClass: 'card-coating-tabs__item',
   contentsSelector: '.card-coating-info__item'
-})
+});
 
 switchTabs({
   tabsWrapSelector: '.card-specs-tabs .wrapper',
   tabsClass: 'card-specs-tabs__item',
   contentsSelector: '.card-specs-tables-item'
-})
+});
+
+initInteractivePhoto({
+  buttonSelector: '.card-additions-slider-right__button',
+  containerSelector: '.card-additions-slider',
+  rightPhotoWrapSelector: '.card-additions-slider-right__wrap'
+});
