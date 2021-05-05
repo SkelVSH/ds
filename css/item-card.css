@@ -1424,7 +1424,6 @@
   right: 118px;
 }
 
-
 .body-fixed {
   overflow: hidden;
 }
@@ -1461,7 +1460,8 @@
   .card-locks_video-main .card-locks_video-main__fact,
   .card-locks_video-main .c-p3,
   .card-floating-specs,
-  .card-similar__arrow {
+  .card-similar__arrow,
+  .card-cheaper_form > img {
     display: none;
   }
   .block--mobile {
@@ -1476,7 +1476,8 @@
   .card-locks_video,
   .card-smartlocks,
   .card-floating .wrapper,
-  .card-reviews-item {
+  .card-reviews-item,
+  .card-cheaper_form__field {
     flex-wrap: wrap;
   }
   .card-config-main,
@@ -1487,7 +1488,8 @@
   .card-smartlocks__item,
   .card-floating__buy,
   .card-reviews-item,
-  .card-similar-slider {
+  .card-similar-slider,
+  .card-cheaper_form-main {
     width: 100%;
   }
   .card-config-main-img--mobile {
@@ -1755,5 +1757,41 @@
   }
   .card-similar > .c-h2 {
     text-align: start;
+  }
+  .card-cheaper_form__wrap {
+    overflow: auto;
+  }
+  .card-cheaper_form {
+    width: 360px;
+    height: auto;
+    padding: 40px 15px 142px;
+  }
+  .card-cheaper_form__error {
+    display: none !important;
+  }
+  .card-cheaper_form__field__input.price {
+    width: 180px;
+  }
+  .card-cheaper_form__accept_terms {
+    margin-left: 0;
+  }
+  .card-cheaper_form__button {
+    left: 15px;
+  }
+  .card-cheaper_form_success {
+    width: 360px;
+    height: 324px;
+    padding: 40px 15px 0;
+    justify-content: flex-start;
+  }
+  .card-cheaper_form_success__svg {
+    width: 140px;
+    height: 173px;
+    top: auto;
+    bottom: 35px;
+    right: 15px;
+  }
+  .card-cheaper_form_success .c-h2 {
+    margin-bottom: 8px;
   }
 }
