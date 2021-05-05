@@ -1,8 +1,8 @@
 window.onload = () => {
     const filters = document.querySelectorAll('.filter');
     const clearFiltersBtn = document.getElementById('clearFilters')
-    const popularFilter = document.querySelectorAll('.filter__filterSelect-title')[1];
-    const filterOptions = document.querySelector('.filter__filterOptionsBlock')
+    const popularFilter = document.querySelectorAll('.filter__filterSelect-title');
+    const filterOptions = document.querySelectorAll('.filter__filterOptionsBlock')
     const pagingList = document.querySelector('.catalog__pagingList');
     const textWrapperBtn = document.querySelector('.catalog__chooseDescription-btn');
     const mobileFilterToggler = document.querySelector('.filter__filterMenu-filterToggler')
@@ -89,20 +89,21 @@ window.onload = () => {
         })
     }
 
-    const filterOptionsToggle = () => {
-        console.log('hello')
-        const menu = document.querySelectorAll('.filter__filterOptionsBlock')[2];
+    const filterOptionsToggle = (index) => (e) => {
+        console.log(document.querySelectorAll('.filter__filterOptionsBlock'))
+        const menu = document.querySelectorAll('.filter__filterOptionsBlock')[index];
+        console.log(index)
         menu.style.display = menu.style.display == 'block' ?  'none' : 'block';
         console.log(menu)
     }
 
-    const filterOptionClickHandler = (e) => {
-        const menu = document.querySelector('.filter__filterOptionsBlock');
+    const filterOptionClickHandler = (index) => (e) => {
+        const menu = document.querySelector('.filter__filterOptionsBlock')[index];
+        console.log(menu)
+        popularFilter[index].innerText = e.target.innerText;
+        popularFilter[index].appendChild(createImg('./img/select_arrow.svg'));
 
-        popularFilter.innerText = e.target.innerText;
-        popularFilter.appendChild(createImg('./img/select_arrow.svg'));
-
-        document.querySelector('.filter__filterOption-active').classList.remove('filter__filterOption-active');
+        document.querySelectorAll('.filter__filterOption-active')[index].classList.remove('filter__filterOption-active');
         e.target.classList.add('filter__filterOption-active');
 
         menu.style.display = 'none';
@@ -142,7 +143,7 @@ window.onload = () => {
     }
 
     const doorTypeToggle = () => {
-        const filterBlock = document.querySelector('.filter__filterOptionsBlock');
+        const filterBlock = document.querySelector('.filter__filterMenu-doorOptionsBlock');
         filterBlock.style.display = filterBlock.style.display == 'block' ? 'none' : 'block'
         const filterMenu = document.querySelector('.filter__filterMenu');
         filterMenu.style.borderRadius = filterMenu.style.borderRadius == '5px 5px 0px 0px' ? '5px' : '5px 5px 0px 0px'
@@ -161,12 +162,16 @@ window.onload = () => {
 
 
 
-    popularFilter.addEventListener('click', filterOptionsToggle);
+    popularFilter.forEach((item, index) => {
+        item.addEventListener('click', filterOptionsToggle(index))
+    });
     mobileDoorTypeToggler.addEventListener('click', doorTypeToggle);
     mobileFilterToggler.addEventListener('click', mobileFilterToggle);
     textWrapperBtn.addEventListener('click', textWrapperClickHandler)
     pagingList.addEventListener('click', pageItemClickHandler)
-    filterOptions.addEventListener('click', window.screen.width > 768 ? filterOptionClickHandler : doorTypeClickHandler);
+    filterOptions.forEach((filterOption, index) => {
+        filterOption.addEventListener('click', window.screen.width > 768 ? filterOptionClickHandler(index) : doorTypeClickHandler)
+    })
     clearFiltersBtn.addEventListener('click', clearFilters)
     filters.forEach((filter) => filter.addEventListener('click', filterClickHandler));
     
