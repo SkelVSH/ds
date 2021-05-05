@@ -325,6 +325,7 @@
     margin-left: 9px;
 }
 
+.filter__filterMenu-doorOptionsBlock,
 .filter__filterOptionsBlock {
     position: absolute;
     right: 0;
@@ -596,6 +597,7 @@
         display: none;
     }
 
+    .filter__filterMenu-doorOptionsBlock,
     .filter__filterOptionsBlock  {
         left: -1px;
         bottom: initial;
