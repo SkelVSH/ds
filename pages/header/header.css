@@ -67,6 +67,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 553px;
+    align-self: flex-start;
+    margin-top: -2px;
 }
 
 .header__navBlock {
@@ -221,6 +223,16 @@
 
 .show-tablet {
     display: none;
+}
+
+.header__menuItem {
+    position: relative;
+}
+
+.header__menuItem img {
+    position: absolute;
+    top: -5px;
+    right: -16px;
 }
 
 @media screen and (max-width: 1170px) {
@@ -398,5 +410,13 @@
     .header__menuUtility .header__menuColumn:nth-child(3) * {
         width: 150px;
         margin-top: 0;
+    }
+
+    .header__wrapper {
+        padding-bottom: 17px;
+    }
+
+    .header__menuContainer {
+        padding-top: 10px;
     }
 }
