@@ -5,11 +5,1203 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Карточка</title>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/item-card.css">
 </head>
 <body>
   <div class="card">
+    <div class="card-config card-config--first wrapper">
+      <div class="card-config-main">
+        <h1 class="c-h1">Николь</h1>
+        <ul class="card-config-main-tags">
+          <li class="card-config-main-tags__item for_apartments">для квартиры</li>
+          <li class="card-config-main-tags__item in_salon">в салоне</li>
+          <li class="card-config-main-tags__item top_10">топ-10</li>
+          <li class="card-config-main-tags__item on_discount">на скидке</li>
+          <li class="card-config-main-tags__item new">новинка</li>
+          <li class="card-config-main-tags__item for_house">для дома</li>
+          <li class="card-config-main-tags__item by_order">под заказ за 15-30 дней</li>
+        </ul>
+        <div class="card-config-main-img--mobile">
+          <img src="./static/images/item-card/mock/sample-front.png" alt="">
+          <img src="./static/images/item-card/mock/sample-back.png" alt="">
+        </div>
+        <div class="card-config-main-colors">
+          <h3 class="c-h3">Цветовые исполнения</h3>
+          <div class="card-config-main-colors-item active">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+        </div>
+        <div class="card-config-main-kit">
+          <h3 class="c-h3">Комплектации</h3>
+          <div class="card-config-main-kit__wrap">
+            <div class="card-config-main-kit-item active">
+              <p class="card-config-main-kit-item__series">Серия <span>70</span></p>
 
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 036,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 152,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>80</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 103,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 226,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>90</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 178,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 309,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>100</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 593,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 770,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>70У</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 036,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 152,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>80У</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 103,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 226,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>90У</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 178,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 309,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>92УТ</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 593,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 770,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+          </div>
+        </div>
+        <form action="" class="card-config-main-form">
+          <p class="c-p3">Оставьте телефон для быстрого заказа</p>
+          <input type="text" class="card-config-main-form__input" placeholder="+375">
+          <button type="submit" class="card-config-main-form__submit disabled">Отправить</button>
+        </form>
+        <div class="card-config-main-form-success">
+          <p class="c-p3">
+            Менеджер позвонит для подтверждения заказа, согласует детали и&nbsp;время замера. Ожидайте звонка с&nbsp;10&nbsp;до&nbsp;18&nbsp;в будние дни.
+          </p>
+          <svg width="72" height="89" viewBox="0 0 72 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 43.1242C8.8863 56.8868 15.7214 71.1089 22.7856 89H26.6584C34.4052 64.9158 53.0895 28.6732 72 2.98204L69.2661 0C55.8234 13.3044 36 39.4537 24.1519 64.9158H23.6961C17.5442 54.1342 9.11422 45.1891 3.19019 40.1422L0 43.1238V43.1242Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="card-config-main-howto">
+          <div class="card-config-main-howto-item">
+            <h4 class="c-h4">Как купить выгоднее</h4>
+            <p class="c-p4"> <a class="c-link" href="/oplata/kartoi-rassrochki/">Рассрочка</a> по картам от 2 до 8 месяцев.</p>
+            <p class="c-p4">Партнёрские, социальные и комплексные скидки, всем -5% при полной предоплате.</p>
+          </div>
+          <div class="card-config-main-howto-item">
+            <h4 class="c-h4">Как выбрать серию быстрее</h4>
+            <p class="c-p4"> <a class="c-link" href="https://mrqz.me/5fad22c77352bd0044f78b0c" target="_blank" rel="nofollow">Ответьте на&nbsp;5&nbsp;вопросов&nbsp;</a>  &mdash; и&nbsp;менеджер пришлёт список подходящих вам дверей, а&nbsp;также подарит бонус&nbsp;&mdash; скидку&nbsp;5%.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-config-img">
+        <img class="card-config-img__item front active" src="./static/images/item-card/mock/sample-front.png" alt="">
+        <img class="card-config-img__item back" src="./static/images/item-card/mock/sample-back.png" alt="">
+        <div class="card-config-img-turn">
+          <span class="card-config-img-turn__svg">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0V3.75C10.4392 3.73879 6.32257 6.47989 4.57572 10.691C2.82887 14.9022 3.79722 19.7508 7.02779 22.9687L10.0901 19.9219C10.2832 19.7307 10.5717 19.6728 10.8237 19.7748C11.0757 19.8768 11.2427 20.119 11.2484 20.3906V29.0625C11.2484 29.5803 10.8285 30 10.3105 30H1.62075C1.34897 29.9943 1.10668 29.8274 1.00466 29.5755C0.902646 29.3237 0.960511 29.0353 1.1518 28.8422L4.39227 25.6031C0.103368 21.3133 -1.17917 14.864 1.14235 9.26068C3.46387 3.65741 8.93259 0.00281143 15 0ZM28.8576 20.7393C31.1792 15.136 29.8966 8.68673 25.6077 4.39688L28.881 1.12969C29.0713 0.94062 29.1284 0.65535 29.0256 0.407631C28.9228 0.159912 28.6804 -0.00113297 28.4121 7.62939e-06H19.7036C19.1856 7.62939e-06 18.7657 0.419739 18.7657 0.937508V9.6375C18.7646 9.9057 18.9257 10.148 19.1735 10.2508C19.4213 10.3536 19.7067 10.2965 19.8959 10.1063L22.9722 7.03125C26.2028 10.2492 27.1711 15.0978 25.4243 19.309C23.6774 23.5201 19.5608 26.2612 15 26.25V30C21.0674 29.9972 26.5361 26.3426 28.8576 20.7393Z"/>
+            </svg>
+          </span>
+          <span class="card-config-img-turn__text">Отделка внутри</span>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="card-banner wrapper">
+      <img class="card-banner__img" src="./static/images/item-card/banner.png" alt="">
+    </a>
+    <div class="card-specs">
+      <div class="card-specs-tabs">
+        <div class="wrapper">
+          <h2 class="c-h2">Характеристики</h2>
+          <a class="card-specs-tabs__item c-link c-h4 active">Внешняя отделка</a>
+          <a class="card-specs-tabs__item c-link c-h4">Внутренняя</a>
+          <a class="card-specs-tabs__item c-link c-h4">Конструкция</a>
+          <a class="card-specs-tabs__item c-link c-h4">Замковая система</a>
+          <a class="card-specs-tabs__item c-link c-h4">Доп. параметры</a>
+        </div>
+      </div>
+      <div class="card-specs-tables wrapper">
+        <div class="card-specs-tables-item active">
+          <table>
+            <tr class="card-specs-tables-item__header">
+              <td>Параметры</td>
+              <td>Серия 60</td>
+              <td>Серия 70</td>
+              <td>Серия 80</td>
+              <td>Серия 90</td>
+            </tr>
+            <tr>
+              <td>
+                Ширина
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>860, 950 мм</td>
+              <td>860, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Высота
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Контуры уплотнения, шт
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>4</td>
+              <td>4</td>
+              <td>до 20</td>
+              <td>до 20</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card-specs-tables-item fade">
+          <table>
+            <tr class="card-specs-tables-item__header">
+              <td>Параметры</td>
+              <td>Серия 60</td>
+              <td>Серия 70</td>
+              <td>Серия 80</td>
+              <td>Серия 90</td>
+            </tr>
+            <tr>
+              <td>
+                Ширина
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>860, 950 мм</td>
+              <td>860, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Высота
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Контуры уплотнения, шт
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>4</td>
+              <td>4</td>
+              <td>до 20</td>
+              <td>до 20</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card-specs-tables-item fade">
+          <table>
+            <tr class="card-specs-tables-item__header">
+              <td>Параметры</td>
+              <td>Серия 60</td>
+              <td>Серия 70</td>
+              <td>Серия 80</td>
+              <td>Серия 90</td>
+            </tr>
+            <tr>
+              <td>
+                Ширина
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>860, 950 мм</td>
+              <td>860, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Высота
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Контуры уплотнения, шт
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>4</td>
+              <td>4</td>
+              <td>до 20</td>
+              <td>до 20</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card-specs-tables-item fade">
+          <table>
+            <tr class="card-specs-tables-item__header">
+              <td>Параметры</td>
+              <td>Серия 60</td>
+              <td>Серия 70</td>
+              <td>Серия 80</td>
+              <td>Серия 90</td>
+            </tr>
+            <tr>
+              <td>
+                Ширина
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>860, 950 мм</td>
+              <td>860, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Высота
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Контуры уплотнения, шт
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>4</td>
+              <td>4</td>
+              <td>до 20</td>
+              <td>до 20</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card-specs-tables-item fade">
+          <table>
+            <tr class="card-specs-tables-item__header">
+              <td>Параметры</td>
+              <td>Серия 60</td>
+              <td>Серия 70</td>
+              <td>Серия 80</td>
+              <td>Серия 90</td>
+            </tr>
+            <tr>
+              <td>
+                Ширина
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>860, 950 мм</td>
+              <td>860, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+              <td>860, 880, 950 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Высота
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+              <td>2050 мм</td>
+            </tr>
+            <tr>
+              <td>
+                Контуры уплотнения, шт
+                <svg class="card-specs-tables-item__help" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" stroke="#ACACAC"/>
+                  <path d="M9.7 14.814C9.688 14.754 9.682 14.688 9.682 14.616C9.682 14.544 9.682 14.478 9.682 14.418C9.682 13.914 9.754 13.47 9.898 13.086C10.054 12.702 10.24 12.354 10.456 12.042C10.684 11.718 10.924 11.418 11.176 11.142C11.44 10.866 11.68 10.59 11.896 10.314C12.124 10.026 12.31 9.726 12.454 9.414C12.61 9.09 12.688 8.724 12.688 8.316C12.688 7.764 12.526 7.314 12.202 6.966C11.89 6.618 11.362 6.444 10.618 6.444C10.186 6.444 9.748 6.522 9.304 6.678C8.86 6.822 8.476 6.996 8.152 7.2L7.666 6.084C8.122 5.808 8.602 5.592 9.106 5.436C9.61 5.268 10.234 5.184 10.978 5.184C11.506 5.184 11.968 5.262 12.364 5.418C12.772 5.562 13.108 5.766 13.372 6.03C13.648 6.294 13.852 6.606 13.984 6.966C14.116 7.326 14.182 7.71 14.182 8.118C14.182 8.658 14.098 9.132 13.93 9.54C13.774 9.936 13.57 10.302 13.318 10.638C13.078 10.962 12.814 11.268 12.526 11.556C12.25 11.844 11.986 12.15 11.734 12.474C11.494 12.786 11.29 13.128 11.122 13.5C10.966 13.872 10.888 14.31 10.888 14.814H9.7ZM9.34 17.172C9.34 16.848 9.43 16.596 9.61 16.416C9.802 16.224 10.054 16.128 10.366 16.128C10.69 16.128 10.948 16.224 11.14 16.416C11.332 16.596 11.428 16.848 11.428 17.172C11.428 17.484 11.332 17.736 11.14 17.928C10.948 18.12 10.69 18.216 10.366 18.216C10.054 18.216 9.802 18.12 9.61 17.928C9.43 17.736 9.34 17.484 9.34 17.172Z" fill="#ACACAC"/>
+                </svg>
+                <div class="card-specs-tables-item-popup">
+                  <p class="card-specs-tables-item-popup__title">Контуры уплотнения, шт</p>
+                  <p class="card-specs-tables-item-popup__text">Резиновый уплотнитель прокладывают в&nbsp;месте прилегания дверного полотна к&nbsp;коробке.</p>
+                  <p class="card-specs-tables-item-popup__text">Чем больше контуров уплотнения, тем лучше дверь задерживает шум и&nbsp;воздух извне.</p>
+                </div>
+              </td>
+              <td>4</td>
+              <td>4</td>
+              <td>до 20</td>
+              <td>до 20</td>
+            </tr>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+    <div class="card-quote wrapper">
+      <div class="card-quote-text">
+        <h3 class="c-h3">Подбираем оптимальную теплоизоляцию</h3>
+        <p class="c-p1">Двери утепляем под разные места установки: внутри дома, с&nbsp;улицы в&nbsp;холодный или тёплый тамбур, с&nbsp;улицы в&nbsp;прихожую. Предлагаем оптимальный уровень защиты от&nbsp;холода без переплат.</p>
+        <p class="c-p1">Для особой защиты добавляем терморазрыв&nbsp;&mdash; технологию, которая останавливает промерзание конструкции. На&nbsp;внутренней стороне такой двери не&nbsp;выпадает конденсат и&nbsp;не&nbsp;образуется наледь.</p>
+        <h4 class="c-h4">Сергей Карпенко</h4>
+        <p class="c-p4">главный инженер завода «Стальная линия»</p>
+      </div>
+      <img class="card-quote__photo" src="./static/images/item-card/engineer.png" alt="Сергей Карпенко - главный инженер салона «Стальная линия»">
+    </div>
+    <div class="card-choose_door">
+      <div class="card-choose_door-main">
+        <h2 class="c-h1">Выбираем дверь в&nbsp;дом: мнение дизайнера</h2>
+        <div class="card-choose_door-main-designer">
+          <img src="./static/images/item-card/designer.png" alt="">
+          <div class="card-choose_door-main-designer__desc">
+            <h4 class="c-h4">Александра Лисица</h4>
+            <p class="c-p4">дизайнер интерьеров,</p>
+            <p class="c-p4">владелица студии «Лисица дизайн»</p>
+          </div>
+        </div>
+        <h3 class="c-h3">Под экстерьер одна отделка, под&nbsp;интерьер&nbsp;&mdash; другая</h3>
+        <p class="c-p1">Входная дверь — это не только безопасность вашего дома, но и «одёжка», по которой встречают.</p>
+        <p class="c-p1">Уличная сторона двери не должна выбиваться из общей концепции экстерьера. Пусть она гармонирует с крышей, фасадом, ограждениями или навесом.</p>
+        <p class="c-p1">Интерьерной стороне необязательно быть как снаружи. Выбирайте любую отделку, чтобы добиться идеального сочетания с обстановкой.</p>
+      </div>
+      <img class="card-choose_door__img" src="./static/images/item-card/choose-door-1.png" alt="">
+      <img class="card-choose_door__img"src="./static/images/item-card/choose-door-2.png" alt="">
+    </div>
+
+    <div class="card-video wrapper">
+      <h3 class="block--mobile c-h3">Посмотрите на&nbsp;эту модель ближе не&nbsp;выходя из&nbsp;дома</h3>
+      <p class="block--mobile c-p2">На&nbsp;видео показываем, как выглядит образец этой двери в&nbsp;интерьере и&nbsp;в&nbsp;салоне. Снимаем детали, которые здесь видны лучше, чем на&nbsp;фото.</p>
+      <iframe class="card-video__iframe"></iframe>
+      <div class="card-video-main">
+        <h3 class="c-h3">Посмотрите на&nbsp;эту модель ближе не&nbsp;выходя из&nbsp;дома</h3>
+        <p class="c-p2">На&nbsp;видео показываем, как выглядит образец этой двери в&nbsp;интерьере и&nbsp;в&nbsp;салоне. Снимаем детали, которые здесь видны лучше, чем на&nbsp;фото.</p>
+        <div class="card-video-main-fact">
+          <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+            <path d="M88.1457 23.3956C87.1082 19.5401 84.0684 16.501 80.2136 15.4628C73.1707 13.5354 44.9991 13.5354 44.9991 13.5354C44.9991 13.5354 16.8282 13.5354 9.78534 15.3893C6.00469 16.4269 2.89077 19.5408 1.85325 23.3956C0 30.4378 0 45.0427 0 45.0427C0 45.0427 0 59.721 1.85325 66.6898C2.89145 70.5446 5.93053 73.5844 9.78603 74.6226C16.9024 76.55 44.9998 76.55 44.9998 76.55C44.9998 76.55 73.1707 76.55 80.2136 74.696C84.0691 73.6585 87.1082 70.6188 88.1464 66.7639C89.9996 59.721 89.9996 45.1168 89.9996 45.1168C89.9996 45.1168 90.0738 30.4378 88.1457 23.3956Z" fill="#FF0000"/>
+            <path d="M36.0293 58.5352L59.4556 45.0426L36.0293 31.55V58.5352Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="90" height="90" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <p class="c-p3">
+            На&nbsp;нашем канале&nbsp;&mdash;
+            <a href="#" class="c-link">50+&nbsp;обзоров дверей</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-furniture wrapper">
+      <div class="card-furniture-main">
+        <h2><a class="c-h2 c-link" href="#">Фурнитура усиливает образ</a></h2>
+        <p class="c-p1">Подходящая ручка и&nbsp;ключевины&nbsp;&mdash; это последний штрих, который делает дверь идеальной. В&nbsp;салоне выбирайте из&nbsp;разных цветов, форм и&nbsp;стилей.</p>
+        <img class="card-furniture__img" src="./static/images/item-card/furniture-1.png" alt="Ручка Armadillo Squid">
+        <p class="c-p4">Ручка Armadillo Squid привносит свежесть в&nbsp;образ двери</p>
+      </div>
+      <div class="card-furniture-aside">
+        <img class="card-furniture__img" src="./static/images/item-card/furniture-2.png" alt="Ручка Sirius Z">
+        <p class="c-p4"><a class="c-link" href="">Ручка Sirius Z</a> идеально сочетается с&nbsp;грубыми и&nbsp;матовыми поверхностями</p>
+      </div>
+    </div>
+
+    <div class="card-coating wrapper">
+      <h2 class="c-h2">Краска, дерево и&nbsp;другие фактуры для любого стиля</h2>
+      <div class="card-coating-tabs">
+        <a class="card-coating-tabs__item active">PVC</a>
+        <a class="card-coating-tabs__item">SteelLak</a>
+        <a class="card-coating-tabs__item">Бриллиант</a>
+        <a class="card-coating-tabs__item">Хамелеон</a>
+        <a class="card-coating-tabs__item">Перламутр</a>
+        <a class="card-coating-tabs__item">Soft Touch</a>
+        <a class="card-coating-tabs__item">SteelTex</a>
+        <a class="card-coating-tabs__item">Камень</a>
+        <a class="card-coating-tabs__item">Сатин</a>
+        <a class="card-coating-tabs__item">Бьорк</a>
+        <a class="card-coating-tabs__item">Экошпон</a>
+        <a class="card-coating-tabs__item">Экошпон Premium</a>
+        <a class="card-coating-tabs__item">+ Патина</a>
+      </div>
+      <div class="card-coating-info">
+        <div class="card-coating-info__item active">
+          <img src="./static/images/item-card/coating-main/pvc.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/pvc.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">PVC</a>&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/steellak.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/steellak.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">SteelLak</a>&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/brilliant.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/brilliant.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">SteelLak Бриллиант</a>&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/chameleon.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/chameleon.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">SteelLak Хамелеон</a>&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/perlamutr.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/perlamutr.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">SteelLak Перламутр</a>&nbsp;&mdash; посмотрите и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/softtouch.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/softtouch.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">SoftTouch</a>&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/steeltex.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/steeltex.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">SteelTex</a>&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/stone.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/stone.png" alt="">
+            <p class="c-p2">Отделка &laquo;Камень&raquo; доступна только в&nbsp;одном цвете&nbsp;&mdash; тёмно-сером</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/satin.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/satin.png" alt="">
+            <p class="c-p2">Отделка &laquo;Сатин&raquo; доступна только в&nbsp;одном цвете&nbsp;&mdash; белом</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/bjork.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/bjork.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета <a class="c-link" href="#">бьорк-панели</a>&nbsp;&mdash; выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/ecospon.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/ecospon.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета экошпона&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/espremium.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/espremium.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета экошпона Premium&nbsp;&mdash; выберите свой</p>
+          </div>
+        </div>
+        <div class="card-coating-info__item fade">
+          <img src="./static/images/item-card/coating-main/patina.png" alt="">
+          <div class="card-coating-info-main">
+            <img src="./static/images/item-card/coating-side/patina.png" alt="">
+            <p class="c-p2">В&nbsp;салоне есть разные цвета патины&nbsp;&mdash; рассмотрите все и&nbsp;выберите свой</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-non_standard wrapper">
+      <h2 class="c-h2 block--mobile">Нестандартные размеры</h2>
+      <p class="c-p2 block--mobile">Создаём величественный вход с&nbsp;помощью доборов и&nbsp;фрамуг разнообразной формы.</p>
+      <img src="./static/images/item-card/non-standard-bg.png" alt="">
+      <div class="card-non_standard-info">
+        <h2 class="c-h2">Нестандартные размеры</h2>
+        <p class="c-p2">Создаём величественный вход с&nbsp;помощью доборов и&nbsp;фрамуг разнообразной формы.</p>
+        <div class="card-non_standard-info__last">
+          <img src="./static/images/item-card/non-standard-portal.png" alt="">
+          <p class="c-p3">Портал&nbsp;&mdash; простой способ сделать любую дверь заметнее</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-additions wrapper">
+      <div class="card-additions-main">
+        <h2 class="c-h2"><a class="c-link" href="#">Доборы и&nbsp;наличники</a> завершают проём</h2>
+        <p class="c-p1">После монтажа в&nbsp;проёме видны анкеры, пластины и&nbsp;пена. Хороший способ их&nbsp;скрыть&nbsp;&mdash; доборы.</p>
+        <p class="c-p1">Они быстро монтируются и&nbsp;долго сохраняют вид, моются влажной тканью. Их&nbsp;можно заказать сразу с&nbsp;дверью.</p>
+        <div class="card-additions-main__percent">
+          <p class="c-h1">-10%</p>
+          <p class="c-p3"><a class="c-link" href="#">на&nbsp;доборы</a> при заказе сразу с&nbsp;дверью</p>
+        </div>
+      </div>
+      <div class="card-additions-slider">
+        <img class="card-additions-slider__left" src="./static/images/item-card/interactive-photo/half.png" alt="">
+        <div class="card-additions-slider-right__wrap">
+          <div class="card-additions-slider-right">
+            <img class="card-additions-slider-right__img" src="./static/images/item-card/interactive-photo/full.png" alt="">
+          </div>
+          <div class="card-additions-slider-right__button">
+            <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="28">
+            <rect x="0.389648" y="0.11084" width="33.6111" height="27.1066" fill="url(#pattern0)"></rect>
+            </mask>
+            <g mask="url(#mask0)">
+            <rect x="-4.91895" y="-6.18799" width="47.0056" height="40.6535" fill="#006695"></rect>
+            </g>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0" transform="translate(0 -0.0072559) scale(0.0227273 0.0281809)"></use>
+            </pattern>
+            <image id="image0" width="44" height="36" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAkCAYAAADy19hsAAACVUlEQVRYCe2Y7ZGCMBCGKeFKsIIjJVjC/ST+soQrwQ6uhABXgCVYgiVYAiVws5ANy7L5gBHwZnTGCSYhefKy+5KYZe9PlqnCHHNdtZ+6/PkXeqhTdQHgXNe3lwJWZ/MBcEr/flEwH7DrX5gj7b/ZtdL1d69k1apTfcaJJWCAzXV131X5McQADfAdWFEaWATr16iTUbi4zcsxzBCzFGpQvNoXFtXpoIvS0LDANigBPtfllS6Ctu9+DQuA+H4ZwCF5wLq6b6MKc0ClSAjcsQ5KUBmTFMtNFhUDznXVOCBiYbsBU9X4tXOIXvk2t07B+73Mb0H9lobLqqBz4wv3EBgOWM7ZU3QJu8Sn4VHChACRqgreg6CkbAAkZRxMWJ9FimPQiVOB4bETQHQPV6YCIHAnFnndi6BQSWG7mxIVphN5wB/eSUkDH4dvrEjXKewcYGplHuCk8OLAMK6YS5AY0kQpITGxMrS0SVleRwoJPwRgCKsptE+hFGDJyqTF2yfm3ogCb+YBnh4GQHYJOgYM7T44qT5mcR7gqcKwWgvtMtsqErQ1nqQSJKsLWpwALMPi4+HxGFI4ZmUM1AkRsjgGHIaVoIPA7rDpdm0Oygdr670WR4DTYDl0CFiK+QioW5BvXHtOnAeL0KGSh04q6NAvbnGh+We3zbGyAXIcOpvt4mB1DKLpN+f1jdVjCDysmzxoeyj5ZisYu6E/s1UX+tokCYOgtiSn6cIcABT6pu7gYiyL21OAFw++xo1v4DVUpWO+FaZqrHFN/82k9gWWt8Z8TxlT2L3dn2lff1bOmtPuDuspAAAAAElFTkSuQmCC"></image>
+            </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card-additions-main__percent block--mobile">
+        <p class="c-h1">-10%</p>
+        <p class="c-p3"><a class="c-link" href="#">на&nbsp;доборы</a> при заказе сразу с&nbsp;дверью</p>
+      </div>
+    </div>
+
+    <div class="card-locks wrapper">
+      <img src="./static/images/item-card/lock.png" alt="Замки Mottura">
+      <div class="card-locks-main">
+        <h2 class="c-h2">Замки на&nbsp;выбор</h2>
+        <p class="c-p1">Выбирайте замки с нужным уровнем защиты: обычным или усиленным. Предлагаем <a class="c-link" href="#">более 10 вариантов</a></p>
+      </div>
+      <div class="card-locks-bottom">
+        <div class="card-locks-bottom-fact">
+          <p class="card-locks-bottom-fact__num">12</p>
+          <p class="c-p3">точек запирания у&nbsp;замков Mottura с&nbsp;девиаторами</p>
+        </div>
+        <div class="card-locks-bottom-aside">
+          <img src="./static/images/item-card/latch.png" alt="">
+          <p class="c-p3">Ночная задвижка открывается только изнутри. Снаружи&nbsp;&mdash; не&nbsp;поможет даже ключ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-locks_video wrapper">
+      <div class="card-locks_video-main">
+        <h3 class="c-h3">
+          Открывайте оба замка одним ключом
+          <img class="card-locks_video-main__flag" src="./static/images/item-card/germany.png" alt="">
+        </h3>
+        <p class="c-p2">Немецкие цилиндры ABUS ставят в&nbsp;верхний и&nbsp;нижний замки входной двери. Они объединяются в&nbsp;систему, которая открывается одним ключом.</p>
+        <p class="card-locks_video-main__fact">10</p>
+        <p class="c-p3">лет гарантии от&nbsp;производителя</p>
+      </div>
+      <iframe class="card-video__iframe"></iframe>
+      <p class="card-locks_video-main__fact block--mobile">10</p>
+      <p class="c-p3 block--mobile">лет гарантии от&nbsp;производителя</p>
+    </div>
+    <div class="card-smartlocks wrapper">
+      <a href="/danalock/" class="card-smartlocks__item">
+        <img src="./static/images/item-card/danalock-bg.png" alt="Замок Даналок купить в Минске">
+        <div class="card-smartlocks__text danalock">
+          <h3 class="c-h3">Замок <span class="c-link" >Даналок</span></h3>
+          <p class="c-p2">Открывается из&nbsp;любой комнаты. Не&nbsp;надо вставать и&nbsp;идти к&nbsp;двери&nbsp;&mdash; просто дотянитесь до&nbsp;смартфона.</p>
+        </div>
+      </a>
+      <a class="card-smartlocks__item">
+        <img src="./static/images/item-card/samsung-bg.png" alt="Замок Самсунг купить в Минске">
+        <div class="card-smartlocks__text samsung">
+          <h3 class="c-h3">Замок <span class="c-link">Самсунг</span></h3>
+          <p class="c-p2">Открывается 6 способами:</p>
+          <ul class="c-p2">
+            <li>– через блютуз</li>
+            <li>– паролем</li>
+            <li>– отпечатком пальца</li>
+            <li>– картой</li>
+            <li>– брелоком</li>
+            <li>– ключом, когда разряжен</li>
+          </ul>
+        </div>
+      </a>
+    </div>
+    <div class="card-stages wrapper">
+      <!-- Взять из текущей карточки -->
+    </div>
+    <div class="card-config card-config--last wrapper">
+      <div class="card-config-img">
+        <img class="card-config-img__item front active" src="./static/images/item-card/mock/sample-front.png" alt="">
+        <img class="card-config-img__item back" src="./static/images/item-card/mock/sample-back.png" alt="">
+        <div class="card-config-img-turn">
+          <span class="card-config-img-turn__svg">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0V3.75C10.4392 3.73879 6.32257 6.47989 4.57572 10.691C2.82887 14.9022 3.79722 19.7508 7.02779 22.9687L10.0901 19.9219C10.2832 19.7307 10.5717 19.6728 10.8237 19.7748C11.0757 19.8768 11.2427 20.119 11.2484 20.3906V29.0625C11.2484 29.5803 10.8285 30 10.3105 30H1.62075C1.34897 29.9943 1.10668 29.8274 1.00466 29.5755C0.902646 29.3237 0.960511 29.0353 1.1518 28.8422L4.39227 25.6031C0.103368 21.3133 -1.17917 14.864 1.14235 9.26068C3.46387 3.65741 8.93259 0.00281143 15 0ZM28.8576 20.7393C31.1792 15.136 29.8966 8.68673 25.6077 4.39688L28.881 1.12969C29.0713 0.94062 29.1284 0.65535 29.0256 0.407631C28.9228 0.159912 28.6804 -0.00113297 28.4121 7.62939e-06H19.7036C19.1856 7.62939e-06 18.7657 0.419739 18.7657 0.937508V9.6375C18.7646 9.9057 18.9257 10.148 19.1735 10.2508C19.4213 10.3536 19.7067 10.2965 19.8959 10.1063L22.9722 7.03125C26.2028 10.2492 27.1711 15.0978 25.4243 19.309C23.6774 23.5201 19.5608 26.2612 15 26.25V30C21.0674 29.9972 26.5361 26.3426 28.8576 20.7393Z"/>
+            </svg>
+          </span>
+          <span class="card-config-img-turn__text">Отделка внутри</span>
+        </div>
+      </div>
+      <div class="card-config-main">
+        <h1 class="c-h1">Николь</h1>
+        <ul class="card-config-main-tags">
+          <li class="card-config-main-tags__item for_apartments">для квартиры</li>
+          <li class="card-config-main-tags__item in_salon">в салоне</li>
+          <li class="card-config-main-tags__item top_10">топ-10</li>
+          <li class="card-config-main-tags__item on_discount">на скидке</li>
+          <li class="card-config-main-tags__item new">новинка</li>
+          <li class="card-config-main-tags__item for_house">для дома</li>
+          <li class="card-config-main-tags__item by_order">под заказ за 15-30 дней</li>
+        </ul>
+        <div class="card-config-main-img--mobile">
+          <img src="./static/images/item-card/mock/sample-front.png" alt="">
+          <img src="./static/images/item-card/mock/sample-back.png" alt="">
+        </div>
+        <div class="card-config-main-colors">
+          <h3 class="c-h3">Цветовые исполнения</h3>
+          <div class="card-config-main-colors-item active">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+          <div class="card-config-main-colors-item">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-front.png" alt="">
+            <img class="card-config-main-colors-item__img" src="./static/images/item-card/mock/small-back.png" alt="">
+          </div>
+        </div>
+        <div class="card-config-main-kit">
+          <h3 class="c-h3">Комплектации</h3>
+          <div class="card-config-main-kit__wrap">
+            <div class="card-config-main-kit-item active">
+              <p class="card-config-main-kit-item__series">Серия <span>70</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 036,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 152,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>80</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 103,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 226,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>90</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 178,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 309,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>100</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 593,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 770,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>70У</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 036,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 152,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>80У</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 103,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 226,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>90У</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 178,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 309,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+            <div class="card-config-main-kit-item">
+              <p class="card-config-main-kit-item__series">Серия <span>92УТ</span></p>
+
+              <!-- В случае если скидка на дверь есть -->
+              <p class="card-config-main-kit-item__new_price">1 593,0 руб.</p>
+              <p class="card-config-main-kit-item__old_price">1 770,0 руб.</p>
+
+              <!-- В случае если скидки на дверь нет -->
+              <p class="card-config-main-kit-item__price"></p>
+            </div>
+          </div>
+        </div>
+        <form action="" class="card-config-main-form">
+          <p class="c-p3">Оставьте телефон для быстрого заказа</p>
+          <input type="text" class="card-config-main-form__input" placeholder="+375">
+          <button type="submit" class="card-config-main-form__submit disabled">Отправить</button>
+        </form>
+        <div class="card-config-main-form-success">
+          <p class="c-p3">
+            Менеджер позвонит для подтверждения заказа, согласует детали и&nbsp;время замера. Ожидайте звонка с&nbsp;10&nbsp;до&nbsp;18&nbsp;в будние дни.
+          </p>
+          <svg width="72" height="89" viewBox="0 0 72 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 43.1242C8.8863 56.8868 15.7214 71.1089 22.7856 89H26.6584C34.4052 64.9158 53.0895 28.6732 72 2.98204L69.2661 0C55.8234 13.3044 36 39.4537 24.1519 64.9158H23.6961C17.5442 54.1342 9.11422 45.1891 3.19019 40.1422L0 43.1238V43.1242Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="card-config-main-howto">
+          <div class="card-config-main-howto-item">
+            <h4 class="c-h4">Как купить выгоднее</h4>
+            <p class="c-p4"> <a class="c-link" href="/oplata/kartoi-rassrochki/">Рассрочка</a> по картам от 2 до 8 месяцев.</p>
+            <p class="c-p4">Партнёрские, социальные и комплексные скидки, всем -5% при полной предоплате.</p>
+          </div>
+          <div class="card-config-main-howto-item">
+            <h4 class="c-h4">Как выбрать серию быстрее</h4>
+            <p class="c-p4"> <a class="c-link" href="https://mrqz.me/5fad22c77352bd0044f78b0c" target="_blank" rel="nofollow">Ответьте на&nbsp;5&nbsp;вопросов&nbsp;</a>  &mdash; и&nbsp;менеджер пришлёт список подходящих вам дверей, а&nbsp;также подарит бонус&nbsp;&mdash; скидку&nbsp;5%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-floating__wrapper">
+      <div class="card-floating float">
+        <div class="wrapper">
+          <div class="card-floating-caption">
+            <div class="card-floating-caption-images">
+              <img src="./static/images/item-card/mock/small-front.png" alt="">
+              <img src="./static/images/item-card/mock/small-back.png" alt="">
+            </div>
+            <h3 class="c-h3">Николь</h3>
+          </div>
+          <div class="card-floating-specs">
+            <p class="card-floating-specs__item series c-p3">
+              <span class="card-floating-specs__title">Серия: </span>
+              <span class="card-floating-specs__value">70</span>
+            </p>
+            <p class="card-floating-specs__item outside c-p3">
+              <span class="card-floating-specs__title">Снаружи: </span>
+              <span class="card-floating-specs__value">Экошпон Premium, «Дуб крафтовый»</span>
+            </p>
+            <p class="card-floating-specs__item inside c-p3">
+              <span class="card-floating-specs__title">Внутри: </span>
+              <span class="card-floating-specs__value">Экошпон Premium, «Дуб снежный»</span>
+            </p>
+          </div>
+          <div class="card-floating-cost">
+            <!-- В случае, если на товар есть скидка -->
+            <p class="card-floating-cost__old">1 152,0 руб.</p>
+            <p class="card-floating-cost__new c-h4">1 036,0 руб.</p>
+            <!-- В случае, если на товар нет скидки -->
+            <p class="card-floating-cost__common c-p1"></p>
+            <a class="c-p3 c-link card-floating-cost__cheaper">Хочу дешевле</a>
+          </div>
+          <a class="card-floating__buy">Оформить заказ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-cheaper_form__wrap">
+      <form class="card-cheaper_form active" action="">
+        <svg class="card-cheaper_form__close" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M20.2246 1.72383L19.4246 0.923828L10.2246 10.1238L1.02461 0.923828L0.224609 1.72383L9.42461 10.9238L0.224609 20.1238L1.02461 20.9238L10.2246 11.7238L19.4246 20.9238L20.2246 20.1238L11.0246 10.9238L20.2246 1.72383Z" fill="white" stroke="white" stroke-width="0.6"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="21" height="22" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+          
+        <div class="card-cheaper_form-main">
+          <h2 class="c-h2">Вы смотрите дверь Николь серии 70 за 1 059 руб.</h2>
+          <p class="c-p1">Предложите свою цену. Менеджер составит возможные варианты комплектации, перезвонит и&nbsp;расскажет о&nbsp;них.</p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__price">Желаемая цена</label>
+            <input class="card-cheaper_form__field__input price" type="text" name="price" id="card-cheaper_form__field__price">
+            <span class="card-cheaper_form__field__additional">руб.</span>
+          </p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__name">Имя</label>
+            <input placeholder="Василий" class="card-cheaper_form__field__input" type="text" name="name" id="card-cheaper_form__field__name">
+            <span class="card-cheaper_form__error active">Мы не сможем обратиться к&nbsp;вам по этому имени</span>
+          </p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__email">Электронная почта</label>
+            <input placeholder="a@gmail.com" class="card-cheaper_form__field__input" type="text" name="email" id="card-cheaper_form__field__email">
+            <span class="card-cheaper_form__error">Не сможем отправить письмо на&nbsp;этот адрес</span>
+          </p>
+          <p class="card-cheaper_form__field">
+            <label class="card-cheaper_form__field__title" for="card-cheaper_form__field__phone">Телефон</label>
+            <input placeholder="+ 375" class="card-cheaper_form__field__input" type="text" name="phone" id="card-cheaper_form__field__phone">
+            <span class="card-cheaper_form__error">Не дозвонимся по&nbsp;этому номеру</span>
+          </p>
+          <label class="card-cheaper_form__accept_terms">
+            <input class="card-cheaper_form__accept_terms__input" type="checkbox" checked>
+            <span></span>
+            <p class="card-cheaper_form__accept_terms__text">Принимаю условия <a class="c-link" href="#">пользовательского соглашения</a></p>
+          </label>
+          <button class="card-cheaper_form__button disabled" type="submit" id="card-cheaper_form__send">Отправить</button>
+        </div>
+        
+        <img src="./static/images/item-card/form-image.png" alt="">
+        <div class="card-cheaper_form__bottom"></div>
+      </form>
+      <div class="card-cheaper_form_success">
+        <svg class="card-cheaper_form__close" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M20.2246 1.72383L19.4246 0.923828L10.2246 10.1238L1.02461 0.923828L0.224609 1.72383L9.42461 10.9238L0.224609 20.1238L1.02461 20.9238L10.2246 11.7238L19.4246 20.9238L20.2246 20.1238L11.0246 10.9238L20.2246 1.72383Z" fill="white" stroke="white" stroke-width="0.6"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="21" height="22" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <p class="c-h2">Заявка отправлена</p>
+        <p class="c-p1">Ожидайте звонка с&nbsp;10&nbsp;до&nbsp;20 с&nbsp;понедельника по&nbsp;субботу, до&nbsp;18&nbsp;в&nbsp;воскресенье.</p>
+        <svg class="card-cheaper_form_success__svg" width="242" height="300" viewBox="0 0 242 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 145.362C29.8678 191.753 52.8415 239.693 76.5848 300H89.6019C115.64 218.817 178.44 96.6512 242 10.0518L232.811 0C187.629 44.8463 121 132.99 81.1774 218.817H79.6453C58.968 182.475 30.6339 152.323 10.7226 135.311L0 145.361V145.362Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="card-cheaper_form__outer"></div>
+    </div>
+
+    <div class="card-reviews wrapper">
+      <h2><a class="c-h2 c-link" href="#">Отзывы о дверях и сервисе</a></h2>
+      <div class="card-reviews-item">
+        <div class="card-reviews-item-main">
+          <p class="c-p2">Ставлю не первую дверь все на высшем уровне как продукция так и персонал с момента оформления заказа ( большая благодарность Елизавете специалисту по продажам все просто , доступно и профессионально) до монтажников дверей !!! Следующую рассматриваю тоже у вашей компании!!! Спасибо</p>
+          <div class="card-reviews-item-main__wrap">
+            <p class="c-h4">Ул. Яковлева 2, Ольга</p>
+            <ul class="card-reviews-item-main__mark">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <img class="card-reviews-item__img" src="./static/images/item-card/mock/review-img.png" alt="">
+      </div>
+      <div class="card-reviews-item">
+        <div class="card-reviews-item-main">
+          <p class="c-p2">Ставлю не первую дверь все на высшем уровне как продукция так и персонал с момента оформления заказа ( большая благодарность Елизавете специалисту по продажам все просто , доступно и профессионально) до монтажников дверей !!! Следующую рассматриваю тоже у вашей компании!!! Спасибо</p>
+          <div class="card-reviews-item-main__wrap">
+            <p class="c-h4">Ул. Яковлева 2, Ольга</p>
+            <ul class="card-reviews-item-main__mark">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <img class="card-reviews-item__img" src="./static/images/item-card/mock/review-img.png" alt="">
+      </div>
+    </div>
+
+    <div class="card-similar wrapper">
+      <h2 class="c-h2">Похожие двери в каталоге</h2>
+      <svg class="card-similar__arrow prev" width="44" height="82" viewBox="0 0 44 82" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" clip-path="url(#clip0)"><path d="M41.634 -0.00305924C42.078 -0.00305927 42.522 0.165939 42.861 0.504936C43.539 1.18294 43.539 2.28094 42.861 2.95894L4.82 40.9999L42.86 79.0399C43.538 79.7179 43.538 80.8159 42.86 81.4939C42.182 82.1719 41.084 82.1719 40.406 81.4939L1.139 42.2269C0.461003 41.5489 0.461003 40.4509 1.139 39.7729L40.407 0.505936C40.745 0.166939 41.19 -0.0030592 41.634 -0.00305924Z" fill="#314E55"></path></g><defs>	<clipPath id="clip0"><rect width="44" height="82" transform="translate(44 82) rotate(180)"></rect></clipPath></defs></svg>
+      <div class="card-similar-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./static/images/mock-snippet.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/mock-snippet.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/mock-snippet.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/mock-snippet.svg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./static/images/mock-snippet.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <svg class="card-similar__arrow next" width="44" height="82" viewBox="0 0 44 82" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2" clip-path="url(#clip0)"><path d="M2.36599 82.0031C1.92199 82.0031 1.47799 81.8341 1.13899 81.4951C0.460993 80.8171 0.460993 79.7191 1.13899 79.0411L39.18 41.0001L1.13999 2.96006C0.461993 2.28206 0.461993 1.18406 1.13999 0.506059C1.81799 -0.171941 2.91599 -0.171941 3.59399 0.506059L42.861 39.7731C43.539 40.4511 43.539 41.5491 42.861 42.2271L3.59299 81.4941C3.25499 81.8331 2.80999 82.0031 2.36599 82.0031Z" fill="#314E55"></path></g>	</svg>
+    </div>
+    <div class="card-salons wrapper">
+      <!-- Взять из текущей карточки -->
+    </div>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/interactivePhoto.js"></script>
+  <script src="./js/itemCard.js"></script>
 </body>
 </html>
