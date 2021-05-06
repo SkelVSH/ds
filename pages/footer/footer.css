@@ -1,0 +1,255 @@
+.space {
+    margin: 50px;
+}
+
+.footer__wrapper {
+    width: 1170px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+.footer__wrapper .header__menuNav {
+    column-gap: 0;
+}
+
+.header__menuColumn-ratingWrapper {
+    margin-top: 50px;
+}
+
+.header__menuColumn-rating {
+    margin-top: 12px;
+    display: flex;
+}
+
+.header__menuColumn-rating img {
+    margin-right: 8px;
+}
+
+.footer__cheshire-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    border-bottom: 1px solid rgba(0, 102, 149, 0.2);
+    width: fit-content;
+}
+
+.footer__cheshire-description {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.footer__copyright-linkBlock img {
+
+    color: #fff;
+    background: #fff
+}
+
+.footer__copyRightContainer > * {
+    order: 2;
+}
+
+.footer__copyRightContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyRightBlock {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.footer__copyright-requisites {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 22px;
+    color: #006695;
+    padding: 11px 16px 15px 17px;
+    background: rgba(223, 235, 242, 0.4);
+    margin-right: 30px;
+}
+
+.footer__copyright-socialNetworksBlock,
+.footer__copyright-emailBlock,
+.footer__copyright-linkBlock {
+    display: flex;
+}
+
+.footer__copyright-contacts {
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer__copyright-bitrix {
+    margin-right: 184px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer__copyright-contacts > div:first-child .footer__copyright-title {
+    margin-right: 12px;
+}
+
+.footer__copyright-title {
+    margin-right: 10px;
+}
+
+.footer__copyright-linkBlock img {
+    margin: 0 5px;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+@media screen and (max-width: 1170px){
+    .hide-desktop {
+        display: flex;
+    }
+
+    .footer__wrapper {
+        width: 690px;
+    }
+
+    .footer__copyRightContainer {
+        order: 4;
+    }
+
+    .footer__copyRightContainer {
+        flex-wrap: wrap;
+        row-gap: 47px;
+        justify-content: initial;
+    }
+
+    .footer__copyRightContainer .header__menuColumn-ratingWrapper {
+        margin-top: 0;
+        font-size: 15px;
+        line-height: 130%;
+        width: 151px;
+    }
+
+    .footer__cheshire,
+    .footer__copyright-bitrix,
+    .footer__copyright-requisites {
+        order: 3;
+    }
+
+    .footer__copyright-emailBlock,
+    .footer__copyright-socialNetworksBlock {
+        flex-direction: column;
+    }
+
+    .footer__copyright-socialNetworksBlock {
+        margin-left: 30px;
+    }
+
+    .footer__copyright-contacts {
+        display: flex;
+        margin-right: 0;
+        margin-left: 19px;
+    }
+
+    .footer__copyright-bitrix {
+        margin-right: 126px;
+    }
+
+    .footer__copyright-requisites {
+        margin-right: 78px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__wrapper {
+        width: 330px
+    }
+
+    .footer__wrapper .header__menu {
+        flex-direction: column;
+    }
+
+    .footer__copyRightContainer {
+        flex-direction: column;
+        height: 275px;
+        row-gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .footer__copyRightContainer > * {
+        order: 2;
+    }
+
+    .footer__copyright-contacts {
+        order: 3;
+    }
+
+    .footer__copyright-requisites {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 7px 14px 13px;
+        max-width: 92px;
+        max-height: 35px;
+        margin-top: 26px;
+    }
+
+    .footer__copyright-contacts {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .footer__copyright-contacts > * {
+        margin-left: 0;
+    }
+
+    .footer__cheshire,
+    .footer__copyright-bitrix {
+        width: 151px;
+        margin-top: 10px;
+    }
+
+    .footer__copyright-bitrix {
+        margin-right: 0;
+        margin-top: 65px;
+    }
+
+
+    .footer__cheshire {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .footer__cheshire-title {
+        min-width: 109px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .footer__cheshire-description {
+        font-size: 10px;
+        line-height: 130%;
+        min-width: 95px;
+        margin-left: 11px;
+    }
+
+    .footer__cheshire p {
+        width: 109px;
+    }
+
+    .footer__copyright-bitrix p {
+        min-width: 330px;
+    }
+
+    .footer__copyright-linkBlock {
+        flex-wrap: wrap;
+    }
+
+    .footer__copyright-linkBlock {
+        width: 154px;
+    }
+
+    .footer__copyright-linkBlock img:nth-child(4n) {
+        display: none
+    }
+}
