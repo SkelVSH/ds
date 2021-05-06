@@ -883,6 +883,15 @@
   margin-left: 6px;
 }
 
+.card-non_standard.huski .card-non_standard-info__last {
+  margin-top: -4px;
+}
+
+.card-non_standard.huski .card-non_standard-info__last .c-p3 {
+  margin-top: 21px;
+  margin-left: 0;
+}
+
 .card-additions {
   display: flex;
   justify-content: space-between;
@@ -1946,6 +1955,7 @@
     padding-bottom: 40px;
     border-bottom: 1px solid #f0f0f0;
   }
+  
   .card-locks-main .c-h2 {
     margin-bottom: 10px;
   }
@@ -2112,5 +2122,12 @@
     max-width: 186px;
     left: 20px;
     bottom: 25px;
+  }
+  .card-non_standard.huski .card-non_standard-info__last {
+    margin-top: 0;
+  }
+  .card-non_standard.huski .card-non_standard-info__last .c-p3 {
+    max-width: 193px;
+    margin-top: 0;
   }
 }
