@@ -402,8 +402,8 @@
   max-width: 100%;
 }
 
-.card-choose_door__img:last-child {
-  margin-top: 59px;
+.card-choose_door__img:not(:last-child) {
+  margin-bottom: 59px;
 }
 
 .card-choose_door-main {
@@ -440,6 +440,7 @@
 
 .card-furniture {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -459,6 +460,59 @@
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.card-furniture-main-handles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  background: #f9f9f9;
+  border: 1px solid #f0f0f0;
+}
+
+.card-furniture-main-handles img:first-child {
+  align-self: flex-end;
+  margin-bottom: -43px;
+}
+
+.card-furniture-main-handles .c-p1 {
+  margin: 60px 40px;
+}
+
+.card-furniture.huski .card-furniture-aside {
+  width: 100%;
+  margin-top: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-furniture.huski.huski-ab .card-furniture-aside {
+  width: 570px;
+  margin-top: 30px;
+}
+
+.card-furniture.huski .card-furniture-aside .c-p1 {
+  max-width: 227px;
+  color: #fff; 
+  position: absolute;
+  left: 40px;
+  bottom: 60px;
+}
+
+.card-furniture-aside-text {
+  width: 270px;
+}
+
+.card-furniture-aside-text .c-p2 {
+  margin-bottom: 40px;
+}
+
+.card-furniture-aside-text .c-h4 {
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+  margin-bottom: 10px;
 }
 
 .card-furniture-aside .c-p4 .c-link {
@@ -753,6 +807,7 @@
 
 .card-coating-tabs {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -854,10 +909,6 @@
   position: relative;
 }
 
-.card-additions-slider__left {
-  width: 287px;
-}
-
 .card-additions-slider-right__wrap {
   width: 50%;
   height: 100%;
@@ -881,6 +932,7 @@
   right: 0;
   top: 0;
   max-width: 570px;
+  width: 570px;
 }
 
 .card-additions-slider-right__button {
@@ -1458,7 +1510,6 @@
   .card-config-main-howto,
   .card-quote,
   .card-video,
-  .card-furniture,
   .card-locks,
   .card-locks-bottom-aside,
   .card-locks_video,
@@ -1485,7 +1536,8 @@
   .card-additions-main__percent,
   .card-coating-info-main,
   .card-coating,
-  .card-specs-tables {
+  .card-specs-tables,
+  .card-furniture-aside-text {
     width: 100%;
   }
   .card-config-main-img--mobile {
@@ -1843,8 +1895,8 @@
   .card-choose_door__img {
     margin-top: 25px;
   }
-  .card-choose_door__img:last-child {
-    margin-top: 15px;
+  .card-choose_door__img:not(:last-child) {
+    margin-bottom: 15px;
   }
   .card-choose_door {
     margin-bottom: 40px;
@@ -1927,9 +1979,6 @@
   }
   .card-similar > .c-h2 {
     margin-bottom: 25px;
-  }
-  .card-additions-slider__left {
-    width: 166px;
   }
   .card-additions-slider-right__img {
     width: 330px;
@@ -2028,5 +2077,40 @@
   }
   .card-banner {
     margin-bottom: 61px;
+  }
+  .card-furniture-main .c-p1 {
+    margin-bottom: 25px;
+  }
+  .card-furniture-main-handles img {
+    width: 243px;
+  }
+  .card-furniture-main-handles img:first-child {
+    width: 133px;
+    margin-bottom: -25px;
+  }
+  .card-furniture-main-handles .c-p1 {
+    margin: 35px 27px 25px 20px;
+  }
+  .card-furniture.huski.huski-ab .card-furniture-aside,
+  .card-furniture.huski .card-furniture-aside {
+    margin-top: 0;
+  }
+  .card-furniture-aside-text {
+    margin-top: 30px;
+  }
+  .card-furniture-aside-text .c-h4 {
+    padding-top: 15px;
+    margin-bottom: 5px;
+  }
+  .card-furniture-aside-text .c-p2 {
+    margin-bottom: 15px;
+  }
+  .card-furniture-aside-text .c-p2:last-child {
+    margin-bottom: 0;
+  }
+  .card-furniture.huski .card-furniture-aside .c-p1 {
+    max-width: 186px;
+    left: 20px;
+    bottom: 25px;
   }
 }
