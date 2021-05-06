@@ -12,6 +12,10 @@
     column-gap: 0;
 }
 
+.footer__wrapper .header__menuColumn {
+    width: 170px;
+}
+
 .header__menuColumn-ratingWrapper {
     margin-top: 50px;
 }
