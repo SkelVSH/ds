@@ -235,6 +235,9 @@
     right: -16px;
 }
 
+
+
+
 @media screen and (max-width: 1170px) {
     .header__menuWrapper,
     .header__wrapper {
