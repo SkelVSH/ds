@@ -1075,6 +1075,7 @@
   display: block;
   padding: 11px 25px 13px ;
   color: #006695;
+  cursor: pointer;
 }
 
 .card-specs-tabs__item.active {
