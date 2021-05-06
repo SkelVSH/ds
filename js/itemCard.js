@@ -208,12 +208,19 @@ switchTabs = ({ tabsWrapSelector, tabsClass, contentsSelector }) => {
   })
 })();
 
+(coatingTabsSliderInit = () => {
+  const slider = new Swiper('.card-coating-tabs__slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    wrapperClass: 'card-coating-tabs'
+  })
+})();
+
 switchTabs({
   tabsWrapSelector: '.card-coating-tabs',
   tabsClass: 'card-coating-tabs__item',
   contentsSelector: '.card-coating-info__item'
 });
-
 switchTabs({
   tabsWrapSelector: '.card-specs-tabs .wrapper',
   tabsClass: 'card-specs-tabs__item',

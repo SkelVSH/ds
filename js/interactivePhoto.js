@@ -20,19 +20,18 @@ initInteractivePhoto = ({ buttonSelector, containerSelector}) => {
 
     onMouseMove = (e) => {
       let event = e
-
       if(e.type === 'touchmove') {
         event = e.changedTouches[0]
       }
 
       let newWidth = containerWidth - (event.pageX - container.offsetLeft - shiftX + buttonWidth / 2)
-      
       if (newWidth > containerWidth) {
         newWidth = containerWidth
       }
       if (newWidth < containerWidth * (1 - 1 / leftPhotoWidthRelation)) {
         newWidth = containerWidth * (1 - 1 / leftPhotoWidthRelation)
       }
+      
       photoWrap.style.width = newWidth + 'px'
     }
 

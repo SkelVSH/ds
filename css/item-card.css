@@ -758,16 +758,17 @@
 
 .card-coating-tabs__item {
   min-width: fit-content;
+  max-width: fit-content;
+  width: fit-content;
   display: block;
-  padding-left: 10px;
-  padding-right: 10px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #292E31;
   text-decoration: none;
-  transition: 0.3s;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card-coating-tabs__item:first-child {
@@ -889,7 +890,7 @@
   background: #fff;
   position: absolute;
   top: calc(50% - 23px);
-  left: -29px;
+  left: -26px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1435,8 +1436,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .card-specs,
-  .card-coating {
+  .card-specs {
     display: none;
   }
 
@@ -1478,7 +1478,8 @@
   .card-floating .wrapper,
   .card-reviews-item,
   .card-cheaper_form__field,
-  .card-additions {
+  .card-additions,
+  .card-coating-info__item {
     flex-wrap: wrap;
   }
   .card-config-main,
@@ -1493,7 +1494,9 @@
   .card-cheaper_form-main,
   .card-additions-main,
   .card-additions-slider,
-  .card-additions-main__percent {
+  .card-additions-main__percent,
+  .card-coating-info-main,
+  .card-coating {
     width: 100%;
   }
   .card-config-main-img--mobile {
@@ -1776,6 +1779,7 @@
     width: 360px;
     height: auto;
     padding: 40px 15px 142px;
+    margin-top: 100px;
   }
   .card-cheaper_form__error {
     display: none !important;
@@ -1912,6 +1916,7 @@
     border-bottom: none;
   }
   .card-locks_video-main > .c-h3 {
+    max-width: 230px;
     margin-bottom: 10px;
   }
   .card-locks_video .card-video__iframe {
@@ -1953,10 +1958,12 @@
   }
   .card-additions-main__percent {
     max-width: none;
-    display: flex;
     align-items: center;
     padding-bottom: 33px;
     border-bottom: 1px solid #f0f0f0;
+  }
+  .card-additions-main__percent.block--mobile {
+    display: flex;
   }
   .card-additions-main__percent .c-p3 {
     max-width: 152px;
@@ -1968,5 +1975,47 @@
   }
   .card-additions {
     margin-bottom: 20px;
+  }
+  .card-additions-slider-right__button {
+    width: 32px;
+    height: 32px;
+    left: -15px;
+    top: calc(50% - 13px);
+  }
+  .card-additions-slider-right__button svg {
+    width: 20px;
+    height: 16px;
+  }
+  .card-coating-info-main {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+  }
+  .card-coating-info-main img {
+    max-width: 166px;
+    margin-bottom: 0;
+    margin-right: 14px;
+  }
+  .card-coating h2,
+  .card-coating-info-main,
+  .card-coating-info__item>img {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-coating-tabs__slider {
+    margin-left: calc(50% - 165px);
+  }
+  .card-coating-tabs,
+  .card-coating h2 {
+    margin-bottom: 20px;
+  }
+  .card-coating {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 20px;
+  }
+  .card-locks_video-main__flag {
+    width: 22px;
   }
 }
