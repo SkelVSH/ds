@@ -223,5 +223,4 @@ switchTabs({
 initInteractivePhoto({
   buttonSelector: '.card-additions-slider-right__button',
   containerSelector: '.card-additions-slider',
-  rightPhotoWrapSelector: '.card-additions-slider-right__wrap'
 });

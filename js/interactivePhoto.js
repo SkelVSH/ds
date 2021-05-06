@@ -1,17 +1,18 @@
-initInteractivePhoto = ({ buttonSelector, containerSelector, rightPhotoWrapSelector}) => {
-  const button = document.querySelector(buttonSelector)
+initInteractivePhoto = ({ buttonSelector, containerSelector}) => {
   const container = document.querySelector(containerSelector)
-  const photoWrap = document.querySelector(rightPhotoWrapSelector)
+  const button = container.querySelector(buttonSelector)
+  const photoWrap = container.querySelector(':scope > div')
   const leftImgWidth = container.querySelector(':scope > img').scrollWidth
   const containerWidth = container.scrollWidth
   const buttonWidth = button.scrollWidth
   const leftPhotoWidthRelation = containerWidth / leftImgWidth
   
-  button.addEventListener('mousedown', (e) => {
+  startMoving = (e) => {
     const shiftX = e.clientX - button.getBoundingClientRect().left
     button.classList.add('active')
-    move = (pageX) => {
-      let newWidth = containerWidth - (pageX - container.offsetLeft - shiftX + buttonWidth / 2)
+
+    onMouseMove = (e) => {
+      let newWidth = containerWidth - (e.pageX - container.offsetLeft - shiftX + buttonWidth / 2)
       if (newWidth > containerWidth) {
         newWidth = containerWidth
       }
@@ -21,17 +22,19 @@ initInteractivePhoto = ({ buttonSelector, containerSelector, rightPhotoWrapSelec
       photoWrap.style.width = newWidth + 'px'
     }
 
-    onMouseMove = (e) => {
-      move(e.pageX)
-    }
-
-    container.addEventListener('mousemove', onMouseMove)
-
-    document.addEventListener('mouseup', () => {
+    onMouseUp = () => {
       button.classList.remove('active')
       container.removeEventListener('mousemove', onMouseMove)
-    })
-  })
+    }
+
+    container.addEventListener('touchmove',onMouseMove)
+    container.addEventListener('mousemove', onMouseMove)
+    document.addEventListener('touchend', onMouseUp)
+    document.addEventListener('mouseup', onMouseUp)
+  }
+
+  button.addEventListener('touchstart', startMoving)
+  button.addEventListener('mousedown', startMoving)
 
   button.ondragstart = () => false
 }
