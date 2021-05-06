@@ -216,6 +216,13 @@ switchTabs = ({ tabsWrapSelector, tabsClass, contentsSelector }) => {
   })
 })();
 
+(specsTabsSliderInit = () => {
+  const slider = new Swiper('.card-specs-tabs .wrapper .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0
+  })
+})();
+
 switchTabs({
   tabsWrapSelector: '.card-coating-tabs',
   tabsClass: 'card-coating-tabs__item',
