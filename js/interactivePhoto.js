@@ -2,11 +2,8 @@ initInteractivePhoto = ({ buttonSelector, containerSelector}) => {
   const container = document.querySelector(containerSelector)
   const button = container.querySelector(buttonSelector)
   const photoWrap = container.querySelector(':scope > div')
-  const leftImgWidth = container.querySelector(':scope > img').scrollWidth
   const containerWidth = container.scrollWidth
   const buttonWidth = button.scrollWidth
-  const leftPhotoWidthRelation = containerWidth / leftImgWidth
-  const minWidth = containerWidth * (1 - 1 / leftPhotoWidthRelation)
   
   startMoving = (e) => {
     const clientX = e.type === 'touchstart' ? e.changedTouches[0].clientX : e.clientX
@@ -21,8 +18,8 @@ initInteractivePhoto = ({ buttonSelector, containerSelector}) => {
       if (newWidth > containerWidth) {
         newWidth = containerWidth
       }
-      if (newWidth < minWidth) {
-        newWidth = minWidth
+      if (newWidth < 0) {
+        newWidth = 0
       }
       
       photoWrap.style.width = newWidth + 'px'
