@@ -6,30 +6,23 @@ initInteractivePhoto = ({ buttonSelector, containerSelector}) => {
   const containerWidth = container.scrollWidth
   const buttonWidth = button.scrollWidth
   const leftPhotoWidthRelation = containerWidth / leftImgWidth
+  const minWidth = containerWidth * (1 - 1 / leftPhotoWidthRelation)
   
   startMoving = (e) => {
-    let clientX = e.clientX
-
-    if(e.type === 'touchstart') {
-      clientX = e.changedTouches[0].clientX
-    }
-
+    const clientX = e.type === 'touchstart' ? e.changedTouches[0].clientX : e.clientX
     const shiftX = clientX - button.getBoundingClientRect().left
 
     button.classList.add('active')
 
     onMouseMove = (e) => {
-      let event = e
-      if(e.type === 'touchmove') {
-        event = e.changedTouches[0]
-      }
+      const event = e.type === 'touchmove' ? e.changedTouches[0] : e
 
       let newWidth = containerWidth - (event.pageX - container.offsetLeft - shiftX + buttonWidth / 2)
       if (newWidth > containerWidth) {
         newWidth = containerWidth
       }
-      if (newWidth < containerWidth * (1 - 1 / leftPhotoWidthRelation)) {
-        newWidth = containerWidth * (1 - 1 / leftPhotoWidthRelation)
+      if (newWidth < minWidth) {
+        newWidth = minWidth
       }
       
       photoWrap.style.width = newWidth + 'px'

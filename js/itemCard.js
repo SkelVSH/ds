@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const helpButtons = document.querySelectorAll('.card-specs-tables-item__help')
     for (let elem of helpButtons) {
       elem.addEventListener('click', () => {
-        elem.nextElementSibling.classList.toggle('active')
+        elem.parentNode.nextElementSibling.classList.toggle('active')
       })
     }
   })();
