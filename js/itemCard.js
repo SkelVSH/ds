@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  const sliderTabs = new Swiper('.card-coating-tabs__slider', {
+  const sliderCoating = new Swiper('.card-coating-tabs__slider', {
     slidesPerView: 'auto',
     spaceBetween: 0,
     wrapperClass: 'card-coating-tabs'
