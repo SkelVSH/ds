@@ -738,6 +738,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 80px;
 }
 
@@ -748,18 +749,27 @@
 
 .card-reviews-item {
   width: 539px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-reviews-item__img {
   max-width: 139px;
   max-height: 186px;
   margin-left: 30px;
+  flex: 1 1 0;
 }
 
-.card-reviews-item-main .c-p2 {
+.card-reviews-item .c-p2 {
   margin-bottom: 20px;
+  flex: 1 1 0;
+  order: -1;
+}
+
+.card-reviews-item-main {
+  width: 100%;
+  order: 10;
 }
 
 .card-reviews-item-main .c-h4 {
@@ -1609,7 +1619,6 @@
   .card-locks_video,
   .card-smartlocks,
   .card-floating .wrapper,
-  .card-reviews-item,
   .card-cheaper_form__field,
   .card-additions,
   .card-coating-info__item {
@@ -1888,18 +1897,6 @@
   .card-floating__buy {
     text-align: center;
   }
-  .card-reviews-item {
-    position: relative;
-    justify-content: flex-end;
-  }
-  .card-reviews-item__img {
-    order: -1;
-  }
-  .card-reviews-item-main__wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   .card-similar {
     padding-bottom: 0;
     border-bottom: none;
@@ -1998,13 +1995,15 @@
   .card-video {
     padding-top: 20px;
     border-top: 1px solid #f0f0f0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .card-video .c-h3 {
     margin-bottom: 10px;
   }
   .card-video-main {
     padding-top: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
   .card-video-main .c-p3 {
     margin-left: 15px;
@@ -2066,12 +2065,22 @@
     margin-bottom: 25px;
   }
   .card-reviews-item__img {
-    margin-bottom: 25px;
+    margin-left: 0;
   }
   .card-reviews-item-main {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #f0f0f0;
+    width: fit-content;
+    order: -1;
+  }
+  .card-reviews-item {
+    justify-content: space-between;
+  }
+  .card-reviews-item .c-p2 {
+    margin-top: 25px;
     margin-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    flex: 0 0 100%;
+    order: 10;
   }
   .card-reviews {
     margin-bottom: 0;
