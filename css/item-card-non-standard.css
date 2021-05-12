@@ -217,3 +217,30 @@
   max-width: 500px;
   margin-bottom: 15px;
 }
+
+.card-banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 73px 50px 50px;
+  background: #E1EDF4;
+  margin-bottom: 80px;
+}
+
+.card-banner__main {
+  max-width: 554px;
+}
+
+.card-banner__main .c-h2 {
+  margin-bottom: 19px;
+}
+
+.card-banner__main .c-h2 svg {
+  margin-left: 10px;
+}
+
+.card-banner__factoid {
+  position: absolute;
+  right: 40px;
+  bottom: 56px;
+}
