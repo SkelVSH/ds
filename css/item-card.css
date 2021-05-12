@@ -969,7 +969,6 @@
 }
 
 .card-additions-slider {
-  width: 570px;
   position: relative;
 }
 
@@ -995,8 +994,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  max-width: 570px;
-  width: 570px;
+  max-width: initial;
 }
 
 .card-additions-slider-right__button {
@@ -2098,8 +2096,6 @@
   .card-additions-main__percent {
     max-width: none;
     align-items: center;
-    padding-bottom: 33px;
-    border-bottom: 1px solid #f0f0f0;
   }
   .card-additions-main__percent.block--mobile {
     display: flex;
@@ -2113,7 +2109,7 @@
     line-height: 70px;
   }
   .card-additions {
-    margin-bottom: 20px;
+    margin-bottom: 33px;
   }
   .card-additions-slider-right__button {
     width: 32px;

@@ -143,44 +143,67 @@
 
 .restoration__newDecoration-example {
     position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 
-#widthSlideBtn {
+.restoration__newDecoration-example *:not(.widthSlideBtn) {
+    user-select: none;
+}
+
+.imageWidthSlide {
+    height: fit-content;
+}
+
+.afterSlide__wrap {
+    width: 50%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: url(../icons/imageSlideArrow.svg) no-repeat, #fff;
-    background-position: center;
-    width: 76px;
-    height: 76px;
+    right: 0;
+    top: 0;
 }
 
-#beforeSlide,
-#afterSlide {
-    position: relative;
-    width: 262px;
+.afterSlide {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    border-left: 3px solid #fff;
 }
 
-#beforeSlide img,
-#afterSlide img {
-    width: 525px;
+.afterSlideImg {
+    position: absolute;
+    right: 0;
+    top: 0;
     max-width: initial;
 }
 
-#afterSlide img {
-    margin-left: -261px;
+.widthSlideBtn {
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top: calc(50% - 38px);
+    left: -37px;
+    border-radius: 50%;
+    background:#fff;
+    cursor: ew-resize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widthSlideBtn * {
+    transition: 0.3s
+}
+.widthSlideBtn.active svg g rect,
+.widthSlideBtn:hover svg g rect {
+    fill: #B60000;
 }
 
 @media screen and (max-width: 768px) {
     .restoration__wrapper * {
         max-width: 330px;
     }
-
 
     #afterSlide img {
         margin-left: -164px;

@@ -41,15 +41,32 @@
                 <img src="./img/rainbowCircle.png" alt="">
                 <p class="c-p3 restoration__rainbowCircleBlock-description">Двери красим<br /> в 190 цветов<br />по палитре RAL</p>
             </div>
-            <div id="imageWidthSlide" class="restoration__decorationExample restoration__newDecoration-example">
-                <div id="beforeSlide">
-                    <img src="./img/beforeRepair.png" alt="">
+
+            <div class="imageWidthSlide restoration__decorationExample restoration__newDecoration-example">
+                <img class="beforeSlide" src="./img/beforeRepair.png" alt="">
+                <div class="afterSlide__wrap">
+                    <div class="afterSlide">
+                        <img class="afterSlideImg" src="./img/beforeRepair.png" alt="">
+                    </div>
+                    <div class="widthSlideBtn">
+                        <svg width="49" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="49" height="39">
+                            <rect x="0.324707" y="0.431152" width="47.7225" height="38.4872" fill="url(#pattern0)"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                            <rect x="-7.21143" y="-8.51123" width="66.7407" height="57.7217" fill="#006695"/>
+                            </g>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0" transform="translate(0 -0.00725596) scale(0.0227273 0.0281809)"/>
+                            </pattern>
+                            <image id="image0" width="44" height="36" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAkCAYAAADy19hsAAACVUlEQVRYCe2Y7ZGCMBCGKeFKsIIjJVjC/ST+soQrwQ6uhABXgCVYgiVYAiVws5ANy7L5gBHwZnTGCSYhefKy+5KYZe9PlqnCHHNdtZ+6/PkXeqhTdQHgXNe3lwJWZ/MBcEr/flEwH7DrX5gj7b/ZtdL1d69k1apTfcaJJWCAzXV131X5McQADfAdWFEaWATr16iTUbi4zcsxzBCzFGpQvNoXFtXpoIvS0LDANigBPtfllS6Ctu9+DQuA+H4ZwCF5wLq6b6MKc0ClSAjcsQ5KUBmTFMtNFhUDznXVOCBiYbsBU9X4tXOIXvk2t07B+73Mb0H9lobLqqBz4wv3EBgOWM7ZU3QJu8Sn4VHChACRqgreg6CkbAAkZRxMWJ9FimPQiVOB4bETQHQPV6YCIHAnFnndi6BQSWG7mxIVphN5wB/eSUkDH4dvrEjXKewcYGplHuCk8OLAMK6YS5AY0kQpITGxMrS0SVleRwoJPwRgCKsptE+hFGDJyqTF2yfm3ogCb+YBnh4GQHYJOgYM7T44qT5mcR7gqcKwWgvtMtsqErQ1nqQSJKsLWpwALMPi4+HxGFI4ZmUM1AkRsjgGHIaVoIPA7rDpdm0Oygdr670WR4DTYDl0CFiK+QioW5BvXHtOnAeL0KGSh04q6NAvbnGh+We3zbGyAXIcOpvt4mB1DKLpN+f1jdVjCDysmzxoeyj5ZisYu6E/s1UX+tokCYOgtiSn6cIcABT6pu7gYiyL21OAFw++xo1v4DVUpWO+FaZqrHFN/82k9gWWt8Z8TxlT2L3dn2lff1bOmtPuDuspAAAAAElFTkSuQmCC"/>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
-                <div id="afterSlide">
-                    <img id='afterSlideImg' src="./img/beforeRepair.png" alt="">
-                </div>
-                <div class="pointer" id='widthSlideBtn'></div>
             </div>
+
             <div class="restoration__decorationDescription">
                 <h2 class="c-h2 restoration__decorationDescription-title">
                     Новая отделка без замены двери
@@ -103,16 +120,12 @@
         </div>
     </div>
 
-    <script src="../../js/imageWidthSlide.js"></script>
+    <script src="../../js/interactivePhoto.js"></script>
     <script>
-        widthSliderInit({
-            leftBlockId: "beforeSlide",
-            rightBlockId: 'afterSlide',
-            rightImgId: 'afterSlideImg',
-            width: 525,
-            buttonId: 'widthSlideBtn',
-            mobileWidth: 330,
-        })
+        initInteractivePhoto({
+            buttonSelector: '.widthSlideBtn',
+            containerSelector: '.imageWidthSlide',
+        });
     </script>
 </body>
 </html>
