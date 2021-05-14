@@ -359,10 +359,6 @@
     text-transform: uppercase;
 }
 
-.featureBlock__priceBlock-subtitle {
-    width: fit-content;
-}
-
 .featureBlock__priceBlock-title {
     font-size: 40px;
     line-height: 46px;

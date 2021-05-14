@@ -1,8 +1,12 @@
 .card-config {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .card-config .c-h1 {
@@ -258,4 +262,338 @@
 
 .card-config-last-adresses .c-h3 {
   margin-bottom: 15px;
+}
+
+.card-video-main {
+  width: 370px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-video-main .c-h3 {
+  margin-bottom: 20px;
+}
+
+.card-video-main .c-p2 {
+  max-width: 315px;
+}
+
+.card-video-main .c-p3 {
+  max-width: 154px;
+  margin-left: 20px;
+  margin-bottom: 9px;
+}
+
+.card-video__iframe {
+  width: 770px;
+  height: 421px;
+}
+
+.card-video-main-fact {
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.card-armadillo {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.armadillo__contentBlock {
+  width: 1060px;
+  background: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 55px;
+  padding: 25px 34px 32px;
+  display: flex;
+}
+
+.armadillo__titleBlock {
+  width: 311px;
+}
+
+.armadillo__featureBlock:nth-child(2) {
+  margin-left: 100px;
+}
+
+.armadillo__featureBlock {
+  width: 264px;
+  margin-left: 36px;
+}
+
+.armadillo__titleBlock .c-h2 {
+  margin-bottom: 10px;
+}
+
+
+.card-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.card-reviews > h2 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.card-reviews-item {
+  width: 539px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-reviews-item__img {
+  max-width: 139px;
+  max-height: 186px;
+  margin-left: 30px;
+  flex: 1 1 0;
+}
+
+.card-reviews-item .c-p2 {
+  margin-bottom: 20px;
+  flex: 1 1 0;
+  order: -1;
+}
+
+.card-reviews-item-main {
+  width: 100%;
+  order: 10;
+}
+
+.card-reviews-item-main .c-h4 {
+  margin-bottom: 15px;
+}
+
+.card-reviews-item-main__mark {
+  display: flex;
+}
+
+.card-reviews-item-main__mark li {
+  width: 19px;
+  height: 18px;
+  background: url(../static/images/item-card/rating-star.svg);
+}
+
+.card-reviews-item-main__mark li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.featureBlock__infoBlock {
+  width: 270px;
+}
+
+.featureBlock__textBlock {
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.featureBlock__textBlock .c-h4,
+.featureBlock__textBlock .c-h2 {
+  margin-bottom: 10px;
+}
+
+.featureBlock__textBlock .c-h1 {
+  margin-bottom: 21px;
+}
+
+.card-armorplate .featureBlock__textBlock:first-child {
+  margin-bottom: 124px;
+}
+
+.card-keys .featureBlock__textBlock:first-child {
+  margin-bottom: 60px;
+}
+
+.card-sealing .featureBlock__textBlock:first-child {
+  margin-bottom: 79px;
+}
+
+.card-aesthetics .featureBlock__textBlock:first-child {
+  margin-bottom: 85px;
+}
+
+.card-doorstep .featureBlock__textBlock:first-child {
+  margin-bottom: 98px;
+}
+
+.card-porch .featureBlock__textBlock:first-child {
+  margin-bottom: 58px;
+}
+
+.card-consult .featureBlock__textBlock:first-child {
+  margin-bottom: 40px;
+}
+
+.card-economy .featureBlock__textBlock:first-child {
+  margin-bottom: 80px;
+}
+
+.card-consult-main {
+  width: 870px;
+  padding: 50px 0 50px 50px;
+  background: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.card-consult-main .c-h4 {
+  display: block;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+.card-consult-main .c-p2:not(:last-child) {
+  max-width: 363px;
+  margin-bottom: 122px;
+  margin-top: 20px;
+}
+
+.card-consult-main img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card-consult .featureBlock__textBlock:last-child .c-p2 {
+  margin-top: 7px;
+}
+
+.card-economy .featureBlock__textBlock p {
+  max-width: 469px;
+}
+
+.card-economy-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-economy-main-factoid {
+  max-width: 179px;
+  margin-top: auto;
+}
+
+.card-economy-main-factoid .c-h1 {
+  margin-bottom: 21px;
+}
+
+.block--mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-video-main .c-h3,
+  .card-video-main .c-p2,
+  .card-config-img-turn,
+  .card-config-specs-cover .c-h3 svg {
+    display: none;
+  }
+  .block--mobile {
+    display: block;
+  }
+  .card-container {
+    flex-wrap: wrap;
+  }
+  .card-reviews-item,
+  .card-video-main,
+  .card-config-specs-table {
+    width: 100%;
+  }
+  .card-video__iframe {
+    width: 360px;
+    height: 197px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 25px;
+  }
+  .card-video {
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    margin-bottom: 40px;
+  }
+  .card-video .c-h3 {
+    margin-bottom: 10px;
+  }
+  .card-video-main {
+    padding-top: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .card-video-main .c-p3 {
+    margin-left: 15px;
+  }
+  .card-locks_video .card-video__iframe {
+    margin-bottom: 25px;
+  }
+  .card-reviews-item__img {
+    margin-left: 0;
+  }
+  .card-reviews-item-main {
+    width: fit-content;
+    order: -1;
+  }
+  .card-reviews-item {
+    justify-content: space-between;
+  }
+  .card-reviews-item .c-p2 {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    flex: 0 0 100%;
+    order: 10;
+  }
+  .card-reviews {
+    margin-bottom: 0;
+  }
+  .featureBlock__infoBlock {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .featureBlock__img {
+    width: 360px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .card-config-last,
+  .card-config-specs,
+  .card-config-specs-table {
+    order: 2;
+  }
+  .card-config-specs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-config-img {
+    justify-content: space-between;
+  }
+  .card-config-img__item {
+    width: auto;
+    position: relative !important;
+  }
+  .card-config-img__item.back {
+    width: auto;
+    transform: none;
+  }
+  .card-config-specs-table__body span,
+  .card-config-specs-cover {
+    width: 150px;
+  }
+  .card-config-specs-table__body span:nth-child(2n + 1) {
+    text-align: start;
+  }
+  .card-config-specs-table__body {
+    justify-content: space-between;
+  }
 }
