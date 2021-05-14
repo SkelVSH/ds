@@ -206,6 +206,10 @@
   margin-bottom: 30px;
 }
 
+.card-config-last-order .c-p2 span {
+  display: block;
+}
+
 .card-config-last-order__old_price {
   position: relative;
   font-size: 24px;
@@ -486,6 +490,16 @@
   margin-bottom: 21px;
 }
 
+.card-similar .featureBlock__infoBlock {
+  padding-top: 35px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-similar-price {
+  margin-top: 30px;
+}
+
 .block--mobile {
   display: none;
 }
@@ -495,7 +509,8 @@
   .card-video-main .c-h3,
   .card-video-main .c-p2,
   .card-config-img-turn,
-  .card-config-specs-cover .c-h3 svg {
+  .card-config-specs-cover .c-h3 svg,
+  .card-similar .card-config-specs-cover__title {
     display: none;
   }
   .block--mobile {
@@ -503,10 +518,12 @@
   }
   .card-container {
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
   .card-reviews-item,
   .card-video-main,
-  .card-config-specs-table {
+  .card-config-specs-table,
+  .featureBlock__infoBlock {
     width: 100%;
   }
   .card-video__iframe {
@@ -576,6 +593,7 @@
     justify-content: space-between;
   }
   .card-config-img {
+    margin-bottom: 25px;
     justify-content: space-between;
   }
   .card-config-img__item {
@@ -595,5 +613,175 @@
   }
   .card-config-specs-table__body {
     justify-content: space-between;
+  }
+  .card-armadillo {
+    width: 360px;
+  }
+  .armadillo__contentBlock {
+    position: relative;
+    width: 330px;
+    flex-direction: column;
+    left: initial;
+    margin: auto;
+    top: -100px;
+    margin-bottom: -100px;
+    padding: 20px;
+  }
+  .armadillo__featureBlock {
+    margin-left: 0!important;
+    margin-top: 10px;
+  }
+  .armadillo__titleBlock {
+    margin-bottom: 10px;
+  }
+  .card-armadillo {
+    margin-bottom: 61px;
+  }
+  .card-config-main-tags {
+    margin-bottom: 25px;
+  }
+  .card-config .c-h1 {
+    margin-bottom: 15px;
+  } 
+  .card-config-specs-cover__title {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .card-config-specs-cover .c-p1 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .card-config-specs-cover .c-h3 {
+    margin-bottom: 10px;
+  }
+  .card-config-specs-cover:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .card-config-specs-table {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  .card-config-specs-table .c-h3 {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .card-config-specs-table__body .c-h4 {
+    margin-top: 10px;
+  }
+  .card-config-last {
+    width: 360px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card-config-last-order {
+    margin-bottom: 25px;
+    padding: 32px 15px 40px;
+  }
+  .card-config-last-order__old_price {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .card-config-last-order__new_price {
+    margin-left: 10px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .card-config-last-order .c-p2 {
+    margin-top: 30px;
+  }
+  .card-config-last-order .c-p2 span {
+    display: inline;
+  }
+  .card-config-last-order__phone {
+    margin-top: 10px;
+  }
+  .card-config-last-order .btn {
+    margin-top: 20px;
+    padding: 6px 62px 7px 63px;
+  }
+  .card-config {
+    border-bottom: none;
+  }
+  .card-config-last-adresses .c-h3 {
+    margin-bottom: 10px;
+  }
+  .featureBlock__textBlock:last-child {
+    border: none;
+    padding-top: 0;
+  }
+  .featureBlock__textBlock:first-child {
+    margin-bottom: 20px !important;
+  }
+  .featureBlock__textBlock .c-h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .card-aesthetics .featureBlock__textBlock:first-child {
+    display: flex;
+    align-items: center;
+  }
+  .card-aesthetics .c-h1 {
+    margin-bottom: 0;
+  }
+  .card-aesthetics .c-p3 {
+    max-width: 100px;
+    margin-left: 15px;
+  }
+  .card-consult-main {
+    order: -2;
+    width: 360px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 40px;
+    padding: 40px 46px 33px 44px;
+  }
+  .card-consult-main img {
+    width: 267px;
+    right: -21px;
+  }
+  .card-consult-main .c-p2:last-child {
+    max-width: 150px;
+  }
+  .card-consult-main .c-p2:not(:last-child) {
+    margin-top: 10px;
+    margin-bottom: 134px;
+  }
+  .card-consult .featureBlock__textBlock:last-child {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+  }
+  .card-consult .featureBlock__infoBlock {
+    margin-bottom: 0;
+  }
+  .card-economy > img {
+    order: -1;
+    margin-bottom: 40px;
+  }
+  .card-economy-main-factoid {
+    max-width: 290px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .card-economy-main-factoid .c-h1 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .card-similar .featureBlock__infoBlock {
+    padding-top: 20px;
+    border-bottom: none;
+    margin-bottom: 19px;
+  }
+  .card-similar .c-p2 {
+    margin-top: 10px;
+  }
+  .card-similar > img {
+    max-width: 360px;
+    width: 360px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
