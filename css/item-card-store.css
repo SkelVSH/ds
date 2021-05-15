@@ -95,6 +95,10 @@
   z-index: 2;
 }
 
+.card-config-img-turn__svg.disabled {
+  pointer-events: none;
+  fill: #b60000;
+}
 
 .card-config-main-tags {
   display: flex;

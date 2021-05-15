@@ -326,6 +326,11 @@
   cursor: pointer;
 }
 
+.card-config-img-turn__svg.disabled {
+  pointer-events: none;
+  fill: #b60000;
+}
+
 .card-config-img-turn__text {
   position: relative;
   display: block;

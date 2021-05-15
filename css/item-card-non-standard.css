@@ -36,6 +36,11 @@
   position: absolute;
 }
 
+.card-config-img-turn__svg.disabled {
+  pointer-events: none;
+  fill: #b60000;
+}
+
 .card-config-img.back_active .card-config-img__item.back.active {
   transform: rotateY(0deg);
 }

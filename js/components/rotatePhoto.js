@@ -1,10 +1,11 @@
 rotatePhoto = ({ block, photoWrapSelector, swapButtonSelector, backImgSelector, coverTitlesSelector }) => {
-  console.log(block)
-  console.log(photoWrapSelector)
-  const photoWrap = block.parentNode.querySelector(photoWrapSelector)
+  let photoWrap = block.querySelector(photoWrapSelector)
+  if(!photoWrap) {
+    photoWrap = block.parentNode.querySelector(photoWrapSelector)
+  }
   const swapButton = photoWrap.querySelector(swapButtonSelector)
   const backImg = photoWrap.querySelector(backImgSelector)
-  const coverTitles = block.querySelectorAll(coverTitlesSelector)
+  const coverTitles = coverTitlesSelector ? block.querySelectorAll(coverTitlesSelector) : []
 
   blockButton = () => {
     swapButton.classList.add('disabled')
@@ -13,7 +14,8 @@ rotatePhoto = ({ block, photoWrapSelector, swapButtonSelector, backImgSelector, 
     }, 300)
   }
 
-  swapButton.addEventListener('click', () => {
+  swapButton.addEventListener('click', (e) => {
+    e.stopImmediatePropagation()
     blockButton()
     if (photoWrap.classList.contains('back_active')) {
       backImg.classList.remove('active')

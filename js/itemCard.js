@@ -103,8 +103,14 @@ document.addEventListener('DOMContentLoaded', () => {
   (cardConfigInit = () => {
     const configBlocks = document.querySelectorAll('.card-config')
     for (elem of configBlocks) {
+      console.log(elem)
       fastOrder(elem)
-      rotatePhoto(elem)
+      rotatePhoto({
+        block: elem,
+        photoWrapSelector: '.card-config-img',
+        swapButtonSelector: '.card-config-img-turn__svg',
+        backImgSelector: '.card-config-img__item.back'
+      })
       changeColor(elem)
       changeKit(elem)
     }

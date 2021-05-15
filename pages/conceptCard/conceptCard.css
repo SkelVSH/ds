@@ -436,7 +436,8 @@
 
 .card-config__cover {
     margin-left: -185px;
-    margin-bottom: 13px;
+    width: 770px;
+    margin-bottom: 50px;
 }
 
 .card-config-cover_title {
@@ -454,12 +455,6 @@
 
 .card-config-cover_type.checked .card-config-specs-cover__checked {
     opacity: 1;
-}
-
-.card-config p.c-p1 {
-    margin-left: -185px;
-    width: 770px;
-    margin-bottom: 50px;
 }
 
 .card-config-specs-table {
