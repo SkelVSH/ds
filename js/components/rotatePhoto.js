@@ -1,8 +1,20 @@
-rotatePhoto = (block) => {
-  const photoWrap = block.querySelector('.card-config-img')
-  const swapButton = photoWrap.querySelector('.card-config-img-turn__svg')
-  const backImg = photoWrap.querySelector('.card-config-img__item.back')
+rotatePhoto = ({ block, photoWrapSelector, swapButtonSelector, backImgSelector, coverTitlesSelector }) => {
+  console.log(block)
+  console.log(photoWrapSelector)
+  const photoWrap = block.parentNode.querySelector(photoWrapSelector)
+  const swapButton = photoWrap.querySelector(swapButtonSelector)
+  const backImg = photoWrap.querySelector(backImgSelector)
+  const coverTitles = block.querySelectorAll(coverTitlesSelector)
+
+  blockButton = () => {
+    swapButton.classList.add('disabled')
+    setTimeout(() => {
+      swapButton.classList.remove('disabled')
+    }, 300)
+  }
+
   swapButton.addEventListener('click', () => {
+    blockButton()
     if (photoWrap.classList.contains('back_active')) {
       backImg.classList.remove('active')
       setTimeout(() => {
@@ -14,6 +26,9 @@ rotatePhoto = (block) => {
       setTimeout(() => {
         backImg.classList.add('active')
       }, 150)
+    }
+    for (elem of coverTitles) {
+      elem.classList.toggle('checked')
     }
   })
 }

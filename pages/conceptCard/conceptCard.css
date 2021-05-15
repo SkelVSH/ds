@@ -1,8 +1,8 @@
-
 .concept__firstScreenWrap {
     width: 1270px;
-    margin: auto;
-    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     position: relative;
 }
 
@@ -24,7 +24,6 @@
     line-height: 36px;
     text-decoration-line: line-through;
     color: #ACACAC;
-
 }
 
 .concept__priceCard-newPrice {
@@ -52,7 +51,6 @@
 .concept__priceCard-greenType {
     background: #07BE6A;
 }
-
 
 .concept__priceCard-shopsBlock {
     margin-top: 40px;
@@ -94,88 +92,9 @@
     line-height: 27px;
 }
 
-.doorCard__wrapper {
-    margin-top: 80px;
-    display: block;
-}
-
-.doorCard__doorSide {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #292E31;
-}
-
-.doorCard__doorTitle {
-    margin-top: 5px;
-}
-
-.doorCard__doorDescription {
-    margin-top: 13px;
-}
-
-.doorCard__doorDescription {
-    margin-bottom: 50px;
-}
-
-.doorCard__imgBlock {
-    float: left;
-}
-
-.doorCard__titleBlock,
-.doorCard__imgBlock,
-.doorCard__doorDescription,
-.doorCard__featureTable {
-    display: inline-block;
-}
-
-.doorCard__imgBlock {
-    width: 370px;
-    margin-left: -15px;
-}
-
-.doorCard__imgBlock img {
-    height: 777px;
-}
-
-.doorCard__titleBlock,
-.doorCard__doorDescription {
-    width: 770px;
-    margin-left: 15px;
-}
-
-.doorCard__featureTable {
-    margin-left: 15px;
-    width: 370px;
-}
-
-.doorCard__featureTable-title {
-    border-bottom: 1px solid #F0F0F0;
-}
-
-.doorCard__featureTable-row,
-.doorCard__featureTable-subrow {
-    display: flex;
-    justify-content: space-between;
-}
-
-.doorCard__featureTable-row {
-    margin-top: 15px;
-}
-
-.doorCard__featureTable-subrow {
-    margin-top: 5px;
-}
-
-.doorCard__featureTable-subrow:first-child {
-    margin-top: 10px;
-}
-
 .promotion__wrapper {
     width: 1170px;
     margin: auto;
-    margin-top: 100px;
     background: #E1EDF4;
     padding: 50px;
     position: relative;
@@ -212,8 +131,7 @@
     margin-top: 19px;
 }
 
-.featureBlock,
-.featureBlock-reverse {
+.featureBlock, .featureBlock-reverse {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
@@ -223,7 +141,7 @@
     flex-direction: row-reverse;
 }
 
-.youtube__infoBlock > div {
+.youtube__infoBlock>div {
     display: inline-block;
 }
 
@@ -231,13 +149,11 @@
     float: left;
 }
 
-.featureBlock__titleBlock,
-.featureBlock__subtitleBlock {
+.featureBlock__titleBlock, .featureBlock__subtitleBlock {
     height: 50%;
 }
 
-.featureBlock__infoBlock-title,
-.featureBlock__infoBlock-subtitle {
+.featureBlock__infoBlock-title, .featureBlock__infoBlock-subtitle {
     padding-top: 20px;
     border-top: 1px solid #f0f0f0;
 }
@@ -245,10 +161,10 @@
 .featureBlock__infoBlock {
     width: 270px;
 }
+
 .featureBlock__infoBlock-description {
     width: 270px;
 }
-
 
 .youtube__wrapper {
     margin-top: 80px;
@@ -264,8 +180,7 @@
     width: 370px;
 }
 
-.youtube__titleBlock,
-.youtube__subtitleBlock {
+.youtube__titleBlock, .youtube__subtitleBlock {
     margin-left: 30px;
 }
 
@@ -280,7 +195,7 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
-.youtube__subtitleBlock > * {
+.youtube__subtitleBlock>* {
     display: inline-block;
 }
 
@@ -288,7 +203,6 @@
     width: 154px;
     margin-left: 20px;
 }
-
 
 .armadillo__wrapper {
     width: 1170px;
@@ -314,7 +228,6 @@
 .armadillo_titleBlock-description {
     margin-top: 10px;
 }
-
 
 .armadillo__featureBlock {
     width: 264px;
@@ -366,6 +279,7 @@
     width: fit-content;
     margin-top: 5px;
 }
+
 .featureBlock__priceBlock .concept__priceCard-priceBlock {
     margin-top: 30px;
 }
@@ -380,7 +294,7 @@
     padding: 50px 30px 42px;
 }
 
-.doorExample__cardWrapper > div {
+.doorExample__cardWrapper>div {
     width: fit-content;
 }
 
@@ -435,171 +349,251 @@
     margin-left: -7px;
 }
 
-.space {
-    margin-bottom: 100px;
+.card-config {
+    position: relative;
+    columns: 2 auto;
+    column-gap: 0;
+    margin-bottom: 59px;
 }
 
-
-.doorCard__imgBlock:nth-child(4) {
-    display: none;    
+.card-config-img_wrap {
+    width: 370px;
+    transition: 0.15s;
+    position: relative;
 }
 
+.card-config-img_wrap img {
+    width: 100%;
+    transition: 0.15s;
+}
+
+.card-config-img_wrap.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(90deg);
+}
+
+.card-config.back_active .card-config-img_wrap.front img {
+    transform: rotateY(90deg);
+}
+
+.card-config-img_wrap.back.active {
+    transform: rotateY(0);
+}
+
+.card-config-img-turn {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+}
+
+.card-config-img-turn__svg {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -13px;
+    fill: #006695;
+    transition: 0.3s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card-config-img-turn__svg.disabled {
+    pointer-events: none;
+    fill: #b60000;
+}
+
+.card-config-img-turn__text {
+    position: relative;
+    display: block;
+    width: 64px;
+    padding: 0 7px 9px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #B60000;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.card-config-img-turn__svg:hover, .card-config.back_active .card-config-img-turn__svg {
+    fill: #b60000;
+}
+
+.card-config.back_active .card-config-img-turn__text {
+    opacity: 1;
+    z-index: 2;
+}
+
+.card-config__cover {
+    margin-left: -185px;
+    margin-bottom: 13px;
+}
+
+.card-config-cover_title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #292E31;
+    text-transform: uppercase;
+}
+
+.card-config-specs-cover__checked {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-config-cover_type.checked .card-config-specs-cover__checked {
+    opacity: 1;
+}
+
+.card-config p.c-p1 {
+    margin-left: -185px;
+    width: 770px;
+    margin-bottom: 50px;
+}
+
+.card-config-specs-table {
+    margin-left: -185px;
+    width: 370px;
+}
+
+.card-config-specs-table .c-h3 {
+    border-bottom: 1px solid #acacac;
+    margin-bottom: 8px;
+}
+
+.card-config-specs-table__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-config-specs-table__body span {
+    margin-top: 5px;
+    width: 50%;
+}
+
+.card-config-specs-table__body span:nth-child(2n + 1) {
+    text-align: end;
+}
+
+.card-config-specs-table__body p {
+    width: 100%;
+}
+
+.card-config-specs-table__body .c-h4 {
+    margin-top: 12px;
+}
 
 @media screen and (max-width: 768px) {
+    .card-config-specs-cover__checked {
+        display: none;
+    }
     .concept__priceCard {
         position: initial;
     }
-
     .concept__firstScreenWrap {
         width: 360px;
         margin: auto;
     }
-
     .concept__priceCard {
         padding: 0;
         width: 330px;
         margin: auto;
         margin-top: 20px;
     }
-
     .concept__priceCard-priceBlock {
         margin-top: 10px;
     }
-
     .concept__priceCard-oldPrice {
         font-size: 18px;
         line-height: 26px;
     }
-    
     .concept__priceCard-newPrice {
         font-size: 22px;
         line-height: 26px;
         margin-left: 10px;
         font-weight: bold;
     }
-
-    .concept__priceCard-type  {
+    .concept__priceCard-type {
         font-size: 12px;
         line-height: 16px;
         padding: 6px;
     }
-
     .concept__priceCard-shopsBlock {
         margin-top: 25px;
     }
-
     .concept__priceCard-shopsLinks {
         margin-top: 10px;
     }
-
     .concept__priceCard-managerBlock {
         margin-top: 25px;
         flex-direction: column;
     }
-
     .concept__priceCard-managerBlock p {
         width: 100%;
     }
-
     .concept__priceCard-managerNumber {
         margin-top: 10px;
     }
-
     .concept__priceCard-creditBlock {
         margin-top: 20px;
     }
-
     .concept__priceCard-submitBtn {
         padding: 7px 63px;
     }
-
-    .doorCard__titleBlock, .doorCard__imgBlock, .doorCard__doorDescription, .doorCard__featureTable {
-        margin-left: initial;
-    }
-
-    .doorCard__titleBlock {
-        width: 150px;
-    }
-
-    .doorCard__doorDescription {
-        width: 330px;
-    }
-
-    .doorCard__imgBlock {
-        width: fit-content;
-        display: initial!important;
-    }
-
-    .doorCard__imgBlock img {
-        width: 162px;
-        height: 313px;
-    }
-
-    .doorCard__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .doorCard__doorDescription {
-        margin-top: 20px;
-    }
-
     .promotion__wrapper {
         width: 360px;
         margin: auto;
         margin-top: 68px;
         padding: 30px 15px 40px;
     }
-
-    .promotion__title,
-    .promotion__description
-    {
+    .promotion__title, .promotion__description {
         width: 330px;
     }
-
     .promotion__image {
         position: initial;
         margin-top: 20px;
     }
-
     .promotion__title img {
         position: relative;
         top: 5px;
     }
-
     .promotion__imageDescription .c-h1 {
         font-size: 60px;
         line-height: 63px;
     }
-
     .promotion__imageDescription .c-p3 {
         font-size: 16px;
         line-height: 24px;
     }
-
     .youtube__wrapper {
         width: 360px!important;
         margin: auto;
         display: initial;
     }
-
     .youtube__infoBlock {
         display: block;
         margin: auto;
         width: 360px;
         margin-top: 40px;
     }
-
-    .youtube__infoBlock > div {
+    .youtube__infoBlock>div {
         display: block;
     }
-    
     .youtube__titleBlock {
         width: 330px;
         margin: auto;
     }
-
     .youtube__image * {
         width: 360px;
         height: 197px;
@@ -607,42 +601,34 @@
         margin-top: 25px;
         margin-bottom: 20px;
     }
-
     .youtube__subtitleBlock {
         padding-bottom: 10px;
         border-bottom: initial;
     }
-
     .featureBlock, .featureBlock-reverse {
         flex-direction: column;
         width: 360px;
         margin-top: 0;
     }
-
     .featureBlock__infoBlock {
         width: 330px;
         margin: auto;
     }
-
     .featureBlock__infoBlock-title {
         margin-top: 40px;
         padding-top: 20px;
     }
-
     .featureBlock__infoBlock-subtitle {
         border-top: none;
     }
-    
     .featureBlock__subtitleBlock {
         margin-bottom: 20px;
     }
-
     .armadillo__wrapper {
         width: 360px;
         margin: auto;
         margin-top: 40px;
     }
-
     .armadillo__contentBlock {
         position: relative;
         width: 330px;
@@ -653,80 +639,63 @@
         margin-bottom: -100px;
         padding: 20px;
     }
-
     .armadillo__titleBlock {
         margin-bottom: 10px;
     }
-
     .armadillo__featureBlock {
         margin-left: 0!important;
         margin-top: 10px;
     }
-
     .armadillo__featureBlock-description {
         width: 287px;
     }
-
     .managerBlock {
         flex-direction: column-reverse;
         margin-top: 40px;
     }
-
     .featureBlock__managerWrapper {
         width: 360px;
         padding: 40px 44px 33px
     }
-
     .featureBlock__managerBlock * {
         width: 270px!important;
     }
-
     .featureBlock__phoneBlock {
         margin-top: 134px;
     }
-
     .featureBlock__managerWrapper-img {
         width: 267px;
     }
-
     .featureBlock__phoneBlock p {
         width: 135px;
     }
-
     .doorExample__cardWrapper {
         width: 360px;
-        padding: 23px 15px ;
+        padding: 23px 15px;
         margin-top: 73px;
     }
-
     .doorExample__imgBlock {
         display: none;
     }
-
     .doorExample__contentBlock .concept__priceCard-doorsBlock img {
         width: 150px;
         height: 291px;
         margin-left: 5px;
     }
-
     .doorExample__cardWrapper .concept__priceCard {
         width: 330px;
         margin: auto;
     }
-
     .simmilarDoor__type {
         width: 330px;
     }
-
     .simmilarDoor__title {
         margin-top: 3px;
     }
-
     .simmilarDoor__priceBlock {
         margin-top: 13px!important;
         margin-bottom: 31px;
     }
-
     .featureBlock__managerBlock {
         width: 270px;
     }

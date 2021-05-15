@@ -32,7 +32,6 @@
 
 .card-config-img__item {
   width: 100%;
-  min-height: 100%;
   transition: 0.15s;
 }
 
@@ -193,6 +192,15 @@
 
 .card-config-specs-cover:not(:last-child) {
   margin-bottom: 50px;
+}
+
+.card-config-specs-cover__checked {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card-config-cover_type.checked .card-config-specs-cover__checked {
+  opacity: 1;
 }
 
 .card-config-last {
@@ -509,7 +517,7 @@
   .card-video-main .c-h3,
   .card-video-main .c-p2,
   .card-config-img-turn,
-  .card-config-specs-cover .c-h3 svg,
+  .card-config-specs-cover__checked,
   .card-similar .card-config-specs-cover__title {
     display: none;
   }

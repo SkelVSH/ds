@@ -288,7 +288,6 @@
 
 .card-config-img__item {
   width: 100%;
-  min-height: 100%;
   transition: 0.15s;
 }
 
@@ -1088,6 +1087,10 @@
   padding-top: 40px;
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.card-locks-main .c-h2 {
+  margin-bottom: 20px;
 }
 
 .card-locks-bottom-fact {
