@@ -4,14 +4,14 @@ window.onload = () => {
     const toggleMenu = () => {
         const menu = document.querySelector('.header__menuContainer');
         const body = document.getElementsByTagName('body')[0];
-
-        if (body.classList.length > 0) 
-            body.classList.remove('openModal')
-        else
+        menu.style.transform = menu.style.transform == "translate(-50%, 100%)" ? "translate(-50%, 0)" : "translate(-50%, 100%)";
+        if (body.classList.length > 0) {
+            setTimeout(() => body.classList.remove('openModal'), 300)
+        }
+        else {
             body.classList.add('openModal') 
-        menu.style.display = menu.style.display == 'block' ? 'none' : 'block'; 
+        }
     }
-
 
     menuTogglers.forEach((toggler) => toggler.addEventListener('click', toggleMenu))
 }
