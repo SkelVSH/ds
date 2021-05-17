@@ -1,5 +1,7 @@
 window.onload = () => {
     const menuTogglers = document.querySelectorAll('.toggleMenu')
+    const body = document.querySelector('body');
+    console.log(body);
 
     const toggleMenu = () => {
         const menu = document.querySelector('.header__menuContainer');
@@ -13,5 +15,6 @@ window.onload = () => {
         }
     }
 
+    body.addEventListener('click', (e) => body.classList.contains('openModal') && e.target == body && toggleMenu())
     menuTogglers.forEach((toggler) => toggler.addEventListener('click', toggleMenu))
 }
