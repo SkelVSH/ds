@@ -79,6 +79,7 @@
   opacity: 0;
   transition: 0.3s;
   z-index: 0;
+  user-select: none;
 }
 .card-config-img-turn__svg:hover,
 .card-config-img.back_active .card-config-img-turn__svg {
