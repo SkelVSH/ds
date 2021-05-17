@@ -1,3 +1,7 @@
+.body-fixed {
+    overflow: hidden;
+}
+
 .concept__firstScreenWrap {
     width: 1270px;
     margin-left: auto;
@@ -608,6 +612,10 @@
     width: 636px;
 }
 
+.concept__form-main .c-p1 {
+    max-width: 510px;
+}
+
 .concept__form-main .c-h2, .concept__form-main .c-p1 {
     color: #fff;
     margin-bottom: 40px;
@@ -845,7 +853,7 @@
     .card-config-img_wrap {
         width: 157px;
     }
-    .concept__form__manager, .card-config-img-turn, .card-config-specs-cover__checked {
+    .concept__form__error.active, .concept__form-manager, .card-config-img-turn, .card-config-specs-cover__checked {
         display: none;
     }
     .card-config__cover {
@@ -922,6 +930,7 @@
     }
     .concept__priceCard-managerNumber {
         margin-top: 10px;
+        justify-content: flex-start;
     }
     .concept__priceCard-creditBlock {
         margin-top: 20px;
@@ -1076,5 +1085,35 @@
     }
     .featureBlock__managerBlock {
         width: 270px;
+    }
+    .concept__form__wrap {
+        overflow: auto;
+        padding-top: 200px;
+    }
+    .concept__form {
+        width: 360px;
+        padding: 40px 15px 30px;
+        margin-bottom: 30px;
+    }
+    .concept__form-main {
+        width: 100%;
+    }
+    .concept__form__hint,
+    .concept__form__accept_terms,
+    .concept__form__button {
+        margin-left: 0;
+    }
+    .concept__form__accept_terms {
+        align-items: flex-start;
+        margin-bottom: 70px;
+    }
+    .concept__form__bottom_line {
+        height: 100px;
+    }
+    .concept__form__button {
+        width: 173px;
+        font-size: 20px;
+        line-height: 27px;
+        padding: 5px 0 8pxs;
     }
 }
