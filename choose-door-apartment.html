@@ -16,6 +16,7 @@
       <img src="./static/images/choose-door/apartment/city.svg" alt="">
     </div>
     <form action="" class="choose_door-form">
+      <!-- Для обязательных выборов добавляется класс important -->
       <div class="choose_door-form-block important">
         <div class="choose_door-form-block-main">
           <p class="c-h2">Куда будет установлена дверь?</p>
@@ -38,6 +39,7 @@
           <p class="c-p3">В&nbsp;угловой квартире нужно учесть сторону открывания, чтобы дверь не&nbsp;сталкивалась с&nbsp;соседской</p>
         </div>
       </div>
+      <!-- Для обязательных выборов добавляется класс important -->
       <div class="choose_door-form-block important">
         <div class="choose_door-form-block-main">
           <p class="c-h2">На&nbsp;каком этаже квартира?</p>
@@ -60,11 +62,12 @@
             </label>
           </div>
         </div>
-        <div class="choose_door-form-block-side">
+        <div class="choose_door-form-block-side factoid">
           <p class="c-h1">200</p>
           <p class="c-p3">раз в&nbsp;день открывается парадная дверь девятиэтажного дома</p>
         </div>
       </div>
+      <!-- Для обязательных выборов добавляется класс important -->
       <div class="choose_door-form-block important">
         <div class="choose_door-form-block-main">
           <p class="c-h2">В&nbsp;доме есть лифт?</p>
@@ -87,13 +90,13 @@
           <img class="choose_door-form-block-side__elevator" src="./static/images/choose-door/apartment/elevator.svg" alt="">
           <p class="c-p3">Входная дверь не&nbsp;убережёт от&nbsp;шума, если у&nbsp;квартиры общая стена с&nbsp;шахтой лифта. В&nbsp;этом случае нужна звукоизоляция стен</p>
         </div>
-        
       </div>
 
-      <div class="choose_door-form-block non_important">
+      <div class="choose_door-form-block">
         <div class="choose_door-form-block-main">
           <p class="c-h2">Какой стиль двери вам нужен?</p>
           <p class="c-p2">Чтобы вам было проще выбрать дизайн, мы&nbsp;разделили двери на&nbsp;современные и&nbsp;классические. Выберите стиль отделки, подходящий интерьеру вашей квартиры.</p>
+          <!-- Для выборов с картинками добавляется класс flex -->
           <div class="choose_door-form-block-main-input flex">
             <label class="choose_door-form-block-main-input__label">
               <input class="choose_door__input" type="radio" name="style" value="modern">
@@ -131,7 +134,7 @@
       <div class="choose_door-result-main">
         <div class="choose_door-result-main__text">
           <p class="c-h2">Результат</p>
-          <p class="c-p1">Из&nbsp;более 300 моделей мы&nbsp;отобрали&nbsp;те, которые вам подходят&nbsp;&mdash; это двери серии &laquo;60&raquo;, &laquo;70&raquo;, &laquo;80&raquo; в&nbsp;классическом стиле.</p>
+          <p class="c-p1">Из&nbsp;более 300 моделей мы&nbsp;отобрали&nbsp;те, которые вам подходят&nbsp;&mdash; это двери серии &laquo;60&raquo;, &laquo;70&raquo;, &laquo;80&raquo; в&nbsp;<span class="choose_door-result__dynamic">классическом или современном</span> стиле.</p>
         </div>
         <img src="./static/images/choose-door/apartment/result-img.png" alt="">
       </div>

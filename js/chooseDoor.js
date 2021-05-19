@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const inputs = document.querySelectorAll('.choose_door__input')
   const result = document.querySelector('.choose_door-result')
   const resultBottom = document.querySelector('.choose_door-result-main')
+  const dynamicText = document.querySelector('.choose_door-result__dynamic')
 
   const validateForm = () => {
     setTimeout(() => {
@@ -35,10 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      //выходной объект с выбранными значениями
+      /** Смена динамичного текста в блоке результата */
+      if(values.get('style') === 'classic') {
+        dynamicText.innerHTML = 'классическом'
+      }
+      else if(values.get('style') === 'modern') {
+        dynamicText.innerHTML = 'современном'
+      }
+      else {
+        dynamicText.innerHTML = 'классическом или&nbsp;современном'
+      }
+
+      /** выходной объект с выбранными значениями */
       const output = Object.fromEntries(values)
       console.log(output)
 
+      /** вывод блока с результатом */
       result.classList.add('active')
       resultBottom.scrollIntoView({
         behavior: 'smooth',
