@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('.choose_door-form-submit__button')
   const inputs = document.querySelectorAll('.choose_door__input')
   const result = document.querySelector('.choose_door-result')
-  const resultBottom = document.querySelector('.choose_door-result-main')
+  const resultBottom = document.querySelector('.choose_door-result-outer')
   const dynamicText = document.querySelector('.choose_door-result__dynamic')
 
   const validateForm = () => {
@@ -34,17 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if(elem.checked) {
           values.set(elem.getAttribute('name'),elem.getAttribute('value'))
         }
-      }
-
-      /** Смена динамичного текста в блоке результата */
-      if(values.get('style') === 'classic') {
-        dynamicText.innerHTML = 'классическом'
-      }
-      else if(values.get('style') === 'modern') {
-        dynamicText.innerHTML = 'современном'
-      }
-      else {
-        dynamicText.innerHTML = 'классическом или&nbsp;современном'
       }
 
       /** выходной объект с выбранными значениями */

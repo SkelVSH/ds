@@ -30,6 +30,7 @@
 
 .choose_door-form-block {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   padding-right: 100px;
   margin-bottom: 40px;
@@ -61,7 +62,7 @@
 .choose_door-form-block-main-input__label {
   width: fit-content;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
 }
 
@@ -88,6 +89,7 @@
 }
 
 .choose_door-form-block-main-input__label p {
+  position: relative;
   transition: 0.3s;
 }
 
@@ -100,6 +102,7 @@
   border-radius: 50%;
   position: relative;
   margin-right: 10px;
+  margin-top: 5px;
 }
 
 .choose_door-form-block-main-input__label input+span::before {
@@ -273,6 +276,136 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.choose_door-form-block-side.interior .c-p3 {
+  color: #696c6f;
+}
+
+.choose_door-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.choose_door-header .c-h1 {
+  max-width: 700px;
+}
+
+.choose_door-header__video_link {
+  display: flex;
+  align-items: center;
+  color: #B60000;
+  text-decoration: none;
+  margin-right: 54px;
+}
+
+.choose_door-header__video_link svg {
+  margin-left: 10px;
+}
+
+.choose_door.house .choose_door-desc img {
+  margin-bottom: -7px;
+  margin-right: 59px;
+}
+
+.choose_door-form-block-main-input.house_scheme {
+  width: fit-content;
+  position: relative;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+
+.choose_door-form-block-main-input.house_scheme img {
+  max-width: initial;
+  margin-left: 40px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label {
+  position: absolute;
+  align-items: flex-start;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label span {
+  margin-top: 5px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label p::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background: #979797;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) {
+  top: -45px;
+  left: 150px;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) p::before {
+  width: 76px;
+  transform: rotateZ(74deg);
+  bottom: -40px;
+  left: 78px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) {
+  max-width: 141px;
+  top: 133px;
+  left: 0;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) p::before {
+  width: 73px;
+  transform: rotateZ(63deg);
+  bottom: -32px;
+  left: 44px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) {
+  max-width: 152px;
+  right: 0;
+  top: 130px;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) p::before {
+  width: 143px;
+  transform: rotateZ(-69deg);
+  bottom: -77px;
+  left: -121px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) {
+  left: 478px;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) p::before {
+  width: 118px;
+  transform: rotateZ(54deg);
+  top: -52px;
+  left: -53px;
+}
+
+.choose_door.house .choose_door-form-block-side.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px
+}
+
+.choose_door.house .choose_door-form-block-side .c-p3 {
+  color: #696C6F;
+}
+
+.choose_door-form-block-side.lock img {
+  margin-top: 10px;
+  margin-right: 19px;
+}
+
+.choose_door-form-block-side.rainscreen img {
+  margin-right: 25px;
+}
+
+.choose_door-form-block-side.rainscreen .c-p3 {
+  margin-right: -53px;
+  color: #292E31 !important;
+}
+
 @media screen and (max-width: 768px) {
   .choose_door>.c-h1 {
     font-size: 26px;
@@ -296,15 +429,18 @@
   .choose_door-form-block {
     flex-wrap: wrap;
     padding-right: 0;
-  }
-  .choose_door-form-block-main-input__label {
-    align-items: flex-start;
+    padding-bottom: 40px;
   }
   .choose_door-form-block-main {
     margin-bottom: 35px;
   }
-  .choose_door-form-block-side.factoid {
+  .choose_door.house .choose_door-form-block-side {
+    width: 274px;
+  }
+  .choose_door.apartment .choose_door-form-block-side {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
   .choose_door-form-block-side.factoid .c-p3 {
     max-width: 150px;
@@ -367,5 +503,99 @@
   .choose_door-result-main__text .c-p1 {
     font-size: 16px;
     line-height: 22px;
+  }
+  .choose_door-form-block-main .c-p2,
+  .choose_door-form-block-main .c-h2 {
+    margin-bottom: 15px;
+  }
+  .choose_door-form-block-side__corner+.c-p3 {
+    max-width: 179px;
+  }
+  .choose_door-form-block-side__corner {
+    width: 125px;
+    margin-right: 20px;
+  }
+  .choose_door-form-block-side .c-h1 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 0;
+  }
+  .choose_door-form-block-side__elevator+.c-p3 {
+    max-width: 290px;
+  }
+  .choose_door-form {
+    margin-bottom: 40px;
+  }
+  .choose_door-result__arrow {
+    height: 150px;
+    margin-bottom: 60px;
+  }
+  .choose_door-form-block-main-input.house_scheme {
+    width: 100%;
+    margin-top: 115px;
+    margin-bottom: 70px;
+  }
+  .choose_door-form-block-main-input.house_scheme img {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) {
+    max-width: 158px;
+    top: -100px;
+    left: 0;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) p::before {
+    width: 51px;
+    transform: rotateZ(58deg);
+    left: 22px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) {
+    bottom: -78px;
+    top: auto;
+    left: 0;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) p::before {
+    width: 100px;
+    transform: rotateZ(-85deg);
+    left: -39px;
+    bottom: 118px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) {
+    right: 0;
+    top: -100px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) p::before {
+    width: 161px;
+    transform: rotateZ(88deg);
+    left: -33px;
+    bottom: -97px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) {
+    left: auto;
+    right: -26px;
+    bottom: -35px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) p::before {
+    width: 67px;
+    transform: rotateZ(45deg);
+    left: -53px;
+    top: -22px;
+  }
+  .choose_door-form-block-side .c-h4 {
+    margin-bottom: 10px;
+  }
+  .choose_door-header {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .choose_door-header .c-h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .choose_door-header__video_link {
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
