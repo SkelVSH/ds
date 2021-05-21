@@ -36,11 +36,6 @@
   position: absolute;
 }
 
-.card-config-img-turn__svg.disabled {
-  pointer-events: none;
-  fill: #b60000;
-}
-
 .card-config-img.back_active .card-config-img__item.back.active {
   transform: rotateY(0deg);
 }
@@ -60,9 +55,12 @@
   justify-content: center;
   margin-bottom: -13px;
   fill: #006695;
-  transition: 0.3s;
   z-index: 1;
   cursor: pointer;
+}
+
+.card-config-img-turn__svg svg {
+  transition: 0.3s;
 }
 
 .card-config-img-turn__text {
@@ -79,17 +77,18 @@
   opacity: 0;
   transition: 0.3s;
   z-index: 0;
+  user-select: none;
 }
-.card-config-img-turn__svg:hover,
-.card-config-img.back_active .card-config-img-turn__svg {
+
+.card-config-img-turn__svg:hover svg {
+  transform: rotateZ(-90deg);
   fill: #b60000;
 }
 
-.card-config-img.back_active .card-config-img-turn__text {
+.card-config-img-turn__svg:hover+.card-config-img-turn__text {
   opacity: 1;
   z-index: 2;
 }
-
 
 .card-config-main>.c-h1 {
   margin-bottom: 25px;

@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
   (cardConfigInit = () => {
     const configBlocks = document.querySelectorAll('.card-config')
     for (elem of configBlocks) {
-      console.log(elem)
       fastOrder(elem)
       rotatePhoto({
         block: elem,

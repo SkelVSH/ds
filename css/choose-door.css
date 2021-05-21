@@ -1,0 +1,601 @@
+.choose_door>.c-h1 {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.choose_door-form {
+  margin-bottom: 100px;
+}
+
+.choose_door-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 44px;
+  margin-bottom: 60px;
+  background: linear-gradient(121.83deg, #0B5599 -0.25%, #46AFE1 98.9%);
+  border-radius: 5px;
+}
+
+.choose_door-desc img {
+  margin-bottom: -30px;
+  margin-top: 49px;
+}
+
+.choose_door-desc .c-p1 {
+  max-width: 532px;
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+.choose_door-form-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.choose_door-form-block-main {
+  width: 670px;
+}
+
+.choose_door-form-block-main .c-h2 {
+  margin-bottom: 25px;
+}
+
+.choose_door-form-block-main .c-p2 {
+  margin-bottom: 20px;
+}
+
+.choose_door-form-block-side {
+  width: 270px;
+}
+
+.choose_door-form-block-main-input.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose_door-form-block-main-input__label {
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.choose_door-form-block-main-input.flex .choose_door-form-block-main-input__label {
+  flex-wrap: wrap;
+}
+
+.choose_door-form-block-main-input__label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.choose_door-form-block-main-input.flex .choose_door-form-block-main-input__label:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.choose_door-form-block-main-input__label * {
+  pointer-events: none;
+}
+
+.choose_door-form-block-main-input__label input {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.choose_door-form-block-main-input__label p {
+  position: relative;
+  transition: 0.3s;
+}
+
+.choose_door-form-block-main-input__label span {
+  min-width: 17px;
+  min-height: 17px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #acacac;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.choose_door-form-block-main-input__label input+span::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  background: #006695;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.choose_door-form-block-main-input__label input:checked+span::before {
+  opacity: 1;
+}
+
+.choose_door-form-block-main-input__label input:checked+span+p {
+  color: #006695;
+}
+
+.choose_door-form-block-main-input__label input:checked+span+p+img {
+  border-color: #000;
+}
+
+.choose_door-form-block-main-input__label img {
+  border: 1px solid transparent;
+  margin-top: 7px; 
+  transition: 0.3s;
+}
+
+.choose_door-form-block-side .c-h4 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.choose_door-form-block-side__elevator {
+  margin-bottom: 13px;
+  margin-top: 10px;
+}
+
+.choose_door-form-block-side__corner {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.choose_door-form-block-side .c-h1 {
+  margin-bottom: 21px;
+}
+
+.choose_door-form-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose_door-form-submit__button {
+  padding: 8px 35px 9px 46px;
+  color: #fff;
+  background: #0B79C9;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 700;
+  box-shadow: 0px 3px 0px #025EBB;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.choose_door-form-submit__button:hover {
+  transform: translateY(1px);
+  box-shadow: 0px 2px 0px #025EBB;
+  transition: 0.08s;
+}
+
+.choose_door-form-submit__button:active {
+  transform: translateY(3px);
+  box-shadow: inset 0px 3px 7px rgba(0, 24, 41, 0.35);
+  transition: 0.08s;
+}
+
+.choose_door-form-submit__button.disabled {
+  color: rgba(255, 255, 255, 0.3);
+  transform: none;
+  box-shadow: 0px 3px 0px #025EBB;
+}
+
+.choose_door-form-submit__text {
+  max-width: 195px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #acacac;
+  text-align: center;
+}
+
+.choose_door-result {
+  position: relative;
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.choose_door-result.active {
+  display: flex;
+}
+
+.choose_door-result>.c-h2 {
+  color: #044798;
+  margin-bottom: 41px;
+}
+
+.choose_door-result__arrow {
+  margin-bottom: 135px;
+}
+
+.choose_door-result-main {
+  width: 100%;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(121.83deg, #0B5599 -0.25%, #46AFE1 98.9%);
+  border-radius: 5px;
+}
+
+.choose_door-result-main img {
+  margin-top: -35px;
+}
+
+.choose_door-result-main__text {
+  width: 470px;
+  margin-top: 50px;
+}
+
+.choose_door-result-main__text p {
+  position: relative;
+  color: #fff;
+}
+
+.choose_door-result-main__text .c-h2 {
+  margin-bottom: 20px;
+}
+
+.choose_door-result-main__text .c-p1::before {
+  content: '—';
+  position: absolute;
+  left: -25px;
+}
+
+.choose_door-result-outer {
+  position: absolute;
+  width: 408px;
+  left: 100px;
+  bottom: 79px;
+}
+
+.choose_door-result-outer .c-h4 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.choose_door-result-outer .c-p2 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.choose_door-form-block-side.interior .c-p3 {
+  color: #696c6f;
+}
+
+.choose_door-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.choose_door-header .c-h1 {
+  max-width: 700px;
+}
+
+.choose_door-header__video_link {
+  display: flex;
+  align-items: center;
+  color: #B60000;
+  text-decoration: none;
+  margin-right: 54px;
+}
+
+.choose_door-header__video_link svg {
+  margin-left: 10px;
+}
+
+.choose_door.house .choose_door-desc img {
+  margin-bottom: -7px;
+  margin-right: 59px;
+}
+
+.choose_door-form-block-main-input.house_scheme {
+  width: fit-content;
+  position: relative;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+
+.choose_door-form-block-main-input.house_scheme img {
+  max-width: initial;
+  margin-left: 40px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label {
+  position: absolute;
+  align-items: flex-start;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label span {
+  margin-top: 5px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label p::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background: #979797;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) {
+  top: -45px;
+  left: 150px;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) p::before {
+  width: 76px;
+  transform: rotateZ(74deg);
+  bottom: -40px;
+  left: 78px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) {
+  max-width: 141px;
+  top: 133px;
+  left: 0;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) p::before {
+  width: 73px;
+  transform: rotateZ(63deg);
+  bottom: -32px;
+  left: 44px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) {
+  max-width: 152px;
+  right: 0;
+  top: 130px;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) p::before {
+  width: 143px;
+  transform: rotateZ(-69deg);
+  bottom: -77px;
+  left: -121px;
+}
+
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) {
+  left: 478px;
+}
+.choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) p::before {
+  width: 118px;
+  transform: rotateZ(54deg);
+  top: -52px;
+  left: -53px;
+}
+
+.choose_door.house .choose_door-form-block-side.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px
+}
+
+.choose_door.house .choose_door-form-block-side .c-p3 {
+  color: #696C6F;
+}
+
+.choose_door-form-block-side.lock img {
+  margin-top: 10px;
+  margin-right: 19px;
+}
+
+.choose_door-form-block-side.rainscreen img {
+  margin-right: 25px;
+}
+
+.choose_door-form-block-side.rainscreen .c-p3 {
+  margin-right: -53px;
+  color: #292E31 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .choose_door>.c-h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .choose_door-desc {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 23px 15px 0;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .choose_door-desc .c-p1 {
+    margin-bottom: 25px;
+  }
+  .choose_door-desc img {
+    margin-top: 0;
+    margin-bottom: -22px;
+  }
+  .choose_door-form-block {
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+  .choose_door-form-block-main {
+    margin-bottom: 35px;
+  }
+  .choose_door.house .choose_door-form-block-side {
+    width: 274px;
+  }
+  .choose_door.apartment .choose_door-form-block-side {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .choose_door-form-block-side.factoid .c-p3 {
+    max-width: 150px;
+    margin-left: 15px;
+  }
+  .choose_door-form-block-main-input__label img {
+    width: 150px;
+  }
+  .choose_door-form-block-side .c-h4,
+  .choose_door-form-block-side__elevator,
+  .choose_door-form-block-side__corner {
+    margin-top: 0;
+  }
+  .choose_door-result {
+    width: 360px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .choose_door-result-outer {
+    width: 360px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+    padding: 40px 30px;
+  }
+  .choose_door-result-outer .c-p2,
+  .choose_door-result-outer .c-h4 {
+    color: #292E31;
+  }
+  .choose_door-result-outer .c-h4 {
+    margin-bottom: 15px;
+  }
+  .choose_door-result-outer .c-link.white {
+    color: #006695;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 102, 149, 0.2)), to(rgba(0, 102, 149, 0.2)));
+    background-image: linear-gradient(rgba(0, 102, 149, 0.2), rgba(0, 102, 149, 0.2));
+  }
+  .choose_door-result-main {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    align-items: flex-start;
+  }
+  .choose_door-result-main img {
+    width: 214px;
+    height: auto;
+    margin-top: -20px;
+    margin-left: -60px;
+    margin-right: -13px;
+  }
+  .choose_door-result-main__text {
+    width: 176px;
+    margin-top: 27px;
+  }
+  .choose_door-result-main__text .c-p1::before {
+    left: -15px;
+  }
+  .choose_door-result-main__text .c-p1 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .choose_door-form-block-main .c-p2,
+  .choose_door-form-block-main .c-h2 {
+    margin-bottom: 15px;
+  }
+  .choose_door-form-block-side__corner+.c-p3 {
+    max-width: 179px;
+  }
+  .choose_door-form-block-side__corner {
+    width: 125px;
+    margin-right: 20px;
+  }
+  .choose_door-form-block-side .c-h1 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 0;
+  }
+  .choose_door-form-block-side__elevator+.c-p3 {
+    max-width: 290px;
+  }
+  .choose_door-form {
+    margin-bottom: 40px;
+  }
+  .choose_door-result__arrow {
+    height: 150px;
+    margin-bottom: 60px;
+  }
+  .choose_door-form-block-main-input.house_scheme {
+    width: 100%;
+    margin-top: 115px;
+    margin-bottom: 70px;
+  }
+  .choose_door-form-block-main-input.house_scheme img {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) {
+    max-width: 158px;
+    top: -100px;
+    left: 0;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(2) p::before {
+    width: 51px;
+    transform: rotateZ(58deg);
+    left: 22px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) {
+    bottom: -78px;
+    top: auto;
+    left: 0;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(3) p::before {
+    width: 100px;
+    transform: rotateZ(-85deg);
+    left: -39px;
+    bottom: 118px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) {
+    right: 0;
+    top: -100px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(4) p::before {
+    width: 161px;
+    transform: rotateZ(88deg);
+    left: -33px;
+    bottom: -97px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) {
+    left: auto;
+    right: -26px;
+    bottom: -35px;
+  }
+  .choose_door-form-block-main-input.house_scheme .choose_door-form-block-main-input__label:nth-child(5) p::before {
+    width: 67px;
+    transform: rotateZ(45deg);
+    left: -53px;
+    top: -22px;
+  }
+  .choose_door-form-block-side .c-h4 {
+    margin-bottom: 10px;
+  }
+  .choose_door-header {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .choose_door-header .c-h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .choose_door-header__video_link {
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
