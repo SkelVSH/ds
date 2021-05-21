@@ -8,6 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
     coverTitlesSelector: '.card-config-cover_type'
   });
 
+  (showCallButton = () => {
+    const now = new Date()
+    const phoneBlock = document.querySelector('.concept__priceCard-managerNumber.non_working')
+
+    const changeBlock = () => {
+      phoneBlock.classList.toggle('non_working')
+      phoneBlock.classList.toggle('working')
+    }
+
+    if(now.getDay() === 6 && now.getHours() >= 10 && now.getHours() < 18) {
+      changeBlock()
+      return
+    }
+    if(now.getHours() >= 10 && now.getHours() < 20) {
+      changeBlock()
+    }
+  })();
+
   /* ПЕРЕРАБОТАТЬ ЭТУ ЧАСТЬ ПОСЛЕ НАТЯЖКИ ИЛИ УБРАТЬ */
   (formInteraction = () => {
     const openFormLink = document.querySelector('.concept__priceCard-managerNumber__order_call')
