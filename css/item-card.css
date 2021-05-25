@@ -1599,6 +1599,23 @@
   display: none;
 }
 
+.card-config-main-desc {
+  margin-bottom: 35px;
+}
+
+.card-config-main-salons {
+  margin-bottom: 50px;
+}
+
+.card-config-main-salons .c-h3 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.card-config-main-desc .c-h3 {
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 768px) {
   .card-config-img,
   .card-config-main-colors .c-h3,
@@ -2267,5 +2284,16 @@
   }
   .card-choose_door.horizontal .card-choose_door-main {
     margin-bottom: 0;
+  }
+  .card-config-main-desc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .card-config-main-salons {
+    margin-bottom: 30px;
+  }
+  .card-config-main-salons .c-h3,
+  .card-config-main-desc .c-h3 {
+    margin-bottom: 12px;
   }
 }

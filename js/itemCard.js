@@ -1,24 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  /* ПЕРЕРАБОТАТЬ ЭТУ ЧАСТЬ ПОСЛЕ НАТЯЖКИ ИЛИ УБРАТЬ */
-  fastOrder = (configBlock) => {
-    const form = configBlock.querySelector('.card-config-main-form')
-    const success = configBlock.querySelector('.card-config-main-form-success')
-    const input = form.querySelector('.card-config-main-form__input')
-    const submitButton = form.querySelector('.card-config-main-form__submit')
-    input.addEventListener('keyup', () => {
-      if (input.value.length !== 0) {
-        submitButton.classList.remove('disabled')
-      }
-      else {
-        submitButton.classList.add('disabled')
-      }
-    })
-    submitButton.addEventListener('click', (e) => {
-      e.preventDefault()
-      form.style.display = 'none'
-      success.style.display = 'flex'
-    })
-  }
+  
 
   changeKit = (configBlock) => {
     const kitsWrap = configBlock.querySelector('.card-config-main-kit__wrap')
@@ -35,15 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   }
-
-  (showSpecsHelp = () => {
-    const helpButtons = document.querySelectorAll('.card-specs-tables-item__help')
-    for (let elem of helpButtons) {
-      elem.addEventListener('click', () => {
-        elem.parentNode.nextElementSibling.classList.toggle('active')
-      })
-    }
-  })();
 
   /* ПЕРЕРАБОТАТЬ ЭТУ ЧАСТЬ ПОСЛЕ НАТЯЖКИ ИЛИ УБРАТЬ */
   (formInteraction = () => {
@@ -103,7 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
   (cardConfigInit = () => {
     const configBlocks = document.querySelectorAll('.card-config')
     for (elem of configBlocks) {
-      fastOrder(elem)
+      fastOrderInit({
+        configBlock: elem,
+        formSelector: '.card-config-main-form',
+        successSelector: '.card-config-main-form-success',
+        inputSelector: '.card-config-main-form__input',
+        submitButtonSelector: '.card-config-main-form__submit'
+      })
       rotatePhoto({
         block: elem,
         photoWrapSelector: '.card-config-img',
@@ -143,6 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  showSpecsHelp('.card-specs-tables-item__help');
 
   floatingBlockInit('.card-floating__wrapper');
 
