@@ -2297,3 +2297,27 @@
     margin-bottom: 12px;
   }
 }
+
+/** Для двупольных дверей */
+
+.card-config.double .card-config-img {
+  width: 540px;
+}
+
+.card-config.double .card-config-main-colors-item {
+  width: 121px;
+}
+
+.card-config.double .card-config-main-colors-item__img {
+  max-width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-config-main-img--mobile img {
+    max-height: none;
+    width: 100%;
+  }
+  .card-config.double .card-config-main-colors-item {
+    width: 75px;
+  }
+}
