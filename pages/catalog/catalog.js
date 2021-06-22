@@ -7,7 +7,7 @@ window.onload = () => {
     const textWrapperBtn = document.querySelector('.catalog__chooseDescription-btn');
     const mobileFilterToggler = document.querySelector('.filter__filterMenu-filterToggler')
     const mobileDoorTypeToggler = document.querySelector('.filter__filterMenu-doorType')
-
+    const filterBlock = document.querySelector('.filter__filterMenu-doorOptionsBlock');
 
 
     const filterClickHandler = (e) => {
@@ -90,32 +90,31 @@ window.onload = () => {
     }
 
     const filterOptionsToggle = (index) => (e) => {
-        console.log(document.querySelectorAll('.filter__filterOptionsBlock'))
         const menu = document.querySelectorAll('.filter__filterOptionsBlock')[index];
-        console.log(index)
-        menu.style.display = menu.style.display == 'block' ?  'none' : 'block';
-        console.log(menu)
+        menu.style.opacity = menu.style.opacity == '1' ? '0' : '1';
+        menu.parentNode.querySelector('img').style.transform = menu.style.opacity == '1' ?  'rotate(180deg)' : 'rotate(0)';
     }
 
     const filterOptionClickHandler = (index) => (e) => {
-        const menu = document.querySelector('.filter__filterOptionsBlock')[index];
-        console.log(menu)
-        popularFilter[index].innerText = e.target.innerText;
-        popularFilter[index].appendChild(createImg('./img/select_arrow.svg'));
+        if (e.target.classList.contains('filter__filterOption')) {
+            const menu = document.querySelector('.filter__filterOptionsBlock')[index];
+            popularFilter[index].innerText = e.target.innerText;
+            const img = createImg('./img/select_arrow.svg');
+            img.style.transform = 'rotate(180deg)';
+            popularFilter[index].appendChild(img);
 
-        document.querySelectorAll('.filter__filterOption-active')[index].classList.remove('filter__filterOption-active');
-        e.target.classList.add('filter__filterOption-active');
+            document.querySelectorAll('.filter__filterOption-active')[index + 1].classList.remove('filter__filterOption-active');
+            e.target.classList.add('filter__filterOption-active');
 
-        menu.style.display = 'none';
+            menu.style.display = 'none';
+        }
     }
 
     const pageItemClickHandler = (e) => {
-        if (e.target.innerText == "...") {
-            return;
+        if (e.target.classList.contains('catalog__pagingItem') && !(e.target.innerText == "...")) {
+            document.querySelector('.catalog__pagingItem-active').classList.remove('catalog__pagingItem-active')
+            e.target.classList.add('catalog__pagingItem-active')
         }
-
-        document.querySelector('.catalog__pagingItem-active').classList.remove('catalog__pagingItem-active')
-        e.target.classList.add('catalog__pagingItem-active')
     }
 
     const textWrapperClickHandler = () => {
@@ -137,31 +136,36 @@ window.onload = () => {
     }
 
     const mobileFilterToggle = () => {
-        const filterBlock = document.querySelector('.catalog__filterWrapper');
-
-        filterBlock.style.display = filterBlock.style.display == 'block' ? 'none' : 'block'
+        const filterBlock = document.querySelector('.catalog__filterWrapper'); 
+        filterBlock.style.marginBottom = filterBlock.style.opacity == '1' ? '-680px' : '0';
+        filterBlock.style.opacity = filterBlock.style.opacity == '1' ? '0' : '1';
     }
 
     const doorTypeToggle = () => {
-        const filterBlock = document.querySelector('.filter__filterMenu-doorOptionsBlock');
-        filterBlock.style.display = filterBlock.style.display == 'block' ? 'none' : 'block'
+        filterBlock.style.visibility = filterBlock.style.opacity == '1' ? 'hidden' : 'initial';
+        filterBlock.style.opacity = filterBlock.style.opacity == '1' ? '0' : '1';
         const filterMenu = document.querySelector('.filter__filterMenu');
+        const img = filterMenu.querySelector('.filter__filterMenu-doorType > img');
+        img.style.transform = filterBlock.style.opacity == '1' ? 'rotate(180deg)' : 'rotate(0deg)'
         filterMenu.style.borderRadius = filterMenu.style.borderRadius == '5px 5px 0px 0px' ? '5px' : '5px 5px 0px 0px'
         filterMenu.style.borderBottom = filterMenu.style.borderBottom == 'none' ? '1px solid #F0F0F0' : 'none';
-
     }
 
 
     const doorTypeClickHandler = (e) => {
         mobileDoorTypeToggler.innerText = e.target.innerText;
         mobileDoorTypeToggler.appendChild(createImg('./img/select_arrow-black.svg'));
-
         document.querySelector('.filter__filterOption-active').classList.remove('filter__filterOption-active');
         e.target.classList.add('filter__filterOption-active');
     }
 
 
-
+    filterBlock.addEventListener('click', (e) => {
+        if (e.target.classList.contains('filter__filterOption') && !e.target.classList.contains('filter__filterOption-active')) {
+            e.target.parentNode.querySelector('.filter__filterOption-active').classList.remove('filter__filterOption-active')
+            e.target.classList.add('filter__filterOption-active')
+        }
+    })
     popularFilter.forEach((item, index) => {
         item.addEventListener('click', filterOptionsToggle(index))
     });
