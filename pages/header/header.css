@@ -249,14 +249,6 @@
     height: 40px;
 }
 
-.header__menuColumn * {
-    cursor: pointer;
-}
-
-.header__coptyrightColumn *:not(.header__menuColumn-ratingWrapper *) {
-    cursor: initial;
-}
-
 .header__menuColumn-phone {
     font-weight: bold;
     font-size: 19px;
@@ -283,6 +275,7 @@
     border-radius: 3px;
     margin-top: 39px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .header__menuColumn-certificatesDescription {
@@ -306,8 +299,43 @@
     right: -16px;
 }
 
+.header__menuColumn-certificates:hover {
+    color: #b60000;
+    background: rgba(182, 64, 0, 0.05);
+}
 
+.certificate__wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;   
+    z-index: 1000;
+}
 
+.certificate__wrap.active {
+    display: flex;
+}
+
+.certificate {
+    position: relative;
+    transform: translateY(100vh);
+    transition: 0.3s;
+}
+
+.certificate__wrap.slide .certificate {
+    transform: translateY(0);
+}
+
+.certificate__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1170px) {
     .header__menuContainer {

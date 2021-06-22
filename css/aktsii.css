@@ -30,9 +30,15 @@
 }
 
 .promotions-main-item {
+  display: block;
   padding-bottom: 46px;
   border-bottom: 1px solid #f0f0f0;
   margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.promotions-main-item .c-h3 {
+  display: inline;
 }
 
 .promotions-main-item .c-p2 {

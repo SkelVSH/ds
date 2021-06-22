@@ -3,26 +3,6 @@
     margin-top: 100px;
 }
 
-.oneNews__navList {
-    display: flex;
-    width: fit-content;
-    margin: auto!important;
-}
-
-
-.oneNews__navList-listItem {
-    display: flex;
-    align-items: center;
-}
-
-.oneNews__navList-listItem img {
-    margin: 0 10px;
-}
-
-.oneNews__navList-listLink-unactive {
-    opacity: 0.5;
-}
-
 .oneNews__img {
     margin-top: 35px;
 }
@@ -64,6 +44,7 @@
 }
 
 .oneNews__actionButton {
+    width: fit-content;
     display: flex;
     align-items: center;
     padding: 7px 17px;
@@ -72,13 +53,23 @@
     margin-top: 47px;
     margin-bottom: 100px;
     color: #006695;
+    text-decoration: none;
+    background: rgba(0, 102, 149, 0.05);
+    transition: 0.3s;
 }
 
-.oneNews__actionButton img {
+.oneNews__actionButton svg {
     margin-right: 6px;
-    font-size: 18px;
-    line-height: 27px;
-    transform: rotate(90deg)
+    transition: 0.3s;
+}
+
+.oneNews__actionButton:hover {
+    color: #b64000;
+    background: rgba(182, 64, 0, 0.05);
+}
+
+.oneNews__actionButton:hover svg {
+    fill: #b64000;
 }
 
 .oneNews__otherNews {
@@ -92,6 +83,7 @@
 }
 
 .oneNews__otherNews-cardTitle {
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     display: inline;
@@ -106,6 +98,17 @@
     margin-top: 30px;
 }
 
+.oneNews__descriptionBlock-date-img {
+    margin-top: 40px;
+}
+
+.oneNews__descriptionBlock-date-img__desc {
+    font-size: 14px;
+    line-height: 21px;
+    color: #acacac;
+    margin-top: 15px;
+}
+
 @media (max-width: 768px) {
     .oneNews__wrapper {
         width: 360px;
@@ -113,6 +116,10 @@
 
     .oneNews__contentBlock {
         flex-direction: column;
+    }
+
+    .oneNews__currentNews {
+        width: 330px;
     }
 
     .oneNews__currentNews > * {
@@ -151,5 +158,17 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .oneNews__descriptionBlock-date-img {
+        margin-top: 30px;
+    }
+
+    .oneNews__descriptionBlock-date-img img {
+        width: 360px;
+        max-width: 360px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
 }
 
