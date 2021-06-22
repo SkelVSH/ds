@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка концептов</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/aktsii.css">
+  <link rel="stylesheet" href="./css/conceptCard.css">
+</head>
+
+<body>
+  <div class="concept">
+    <div class="concept__firstScreenWrap">
+      <img src="./static/images/conceptCard/conceptBG.png" alt="">
+      <div class="concept__priceCard">
+        <h1 class="c-h1 concept__priceCard-title">Кармен К</h1>
+        <div class="concept__priceCard-priceBlock">
+          <span class="concept__priceCard-oldPrice">от 3 470</span>
+          <span class="concept__priceCard-newPrice">3 123 руб.</span>
+        </div>
+        <div class="concept__priceCard-typesBlock">
+          <span class="concept__priceCard-type concept__priceCard-blueType">для дома</span>
+          <span class="concept__priceCard-type concept__priceCard-greenType">под заказ за 15–30 дней</span>
+        </div>
+        <div class="concept__priceCard-shopsBlock">
+          <p class="c-h4 concept__priceCard-shopsTitle">Образец представлен в салонах:</p>
+          <ul class="concept__priceCard-shopsLinks c-p2">
+            <li>
+              <a href="" class="concept__priceCard-shopLink c-link">пр-т Дзержинского, 131</a>
+            </li>
+            <li>
+              <a href="" class="concept__priceCard-shopLink c-link">ул. Олешева, 1</a>
+            </li>
+            <li>
+              <a href="" class="concept__priceCard-shopLink c-link">ул. Кальварийская, 7Б в ТЦ
+                &laquo;Трюм&raquo; </a>
+            </li>
+            <li>
+              <a href="" class="c-p2 concept__priceCard-shopLink c-link">пр-т Победителей, 133</a>
+            </li>
+          </ul>
+        </div>
+        <div class="concept__priceCard-managerBlock">
+          <p class="c-p2 concept__priceCard-managerDescription">Менеджер расскажет о двери больше</p>
+          <p class="c-p2 concept__priceCard-managerNumber non_working">
+            <a class="c-link" href="tel:+375 44 731-64-46">+375 44 731-64-46</a>
+            <span class="concept__priceCard-managerNumber__order_call">Заказать звонок</span>
+          </p>
+        </div>
+        <div class="concept__priceCard-creditBlock">
+          <p class="c-p2 concept__priceCard-creditInfo">
+            <a href="#" class="c-link">Рассрочка</a> по картам от 2 до 8 месяцев.
+            Партнёрские, социальные и комплексные <a href="https://ds-steelline.by/clientu/politika-skidok/"
+              class="c-link">скидки</a>
+          </p>
+        </div>
+        <a class="btn concept__priceCard-submitBtn btn-green">Заказать замер</a>
+      </div>
+    </div>
+  
+    <div class="concept__form__wrap">
+      <form class="concept__form active">
+        <svg class="concept__form__close" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M20.225 1.72407L19.425 0.924072L10.225 10.1241L1.02498 0.924072L0.224976 1.72407L9.42498 10.9241L0.224976 20.1241L1.02498 20.9241L10.225 11.7241L19.425 20.9241L20.225 20.1241L11.025 10.9241L20.225 1.72407Z" fill="white" stroke="white" stroke-width="0.6"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="21" height="22" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        <div class="concept__form-main">
+          <p class="c-h2">Заявка на&nbsp;звонок</p>
+          <p class="c-p1">Рабочий день в&nbsp;салоне закончился или выходной. Оставьте заявку и&nbsp;менеджер перезвонит в&nbsp;рабочее время.</p>
+          <p class="concept__form__field">
+            <label class="concept__form__field__title" for="concept__form__field__name">Имя</label>
+            <input placeholder="Василий" class="concept__form__field__input" type="text" name="name" id="concept__form__field__name">
+            <span class="concept__form__error active">Мы не сможем обратиться к&nbsp;вам по этому имени</span>
+          </p>
+          <p class="concept__form__field">
+            <label class="concept__form__field__title" for="concept__form__field__phone">Телефон</label>
+            <input placeholder="+ 375" class="concept__form__field__input" type="text" name="phone" id="concept__form__field__phone">
+            <span class="concept__form__error phone">Не дозвонимся по этому номеру</span>
+            <span class="concept__form__hint">Можем уточнить информацию</span>
+          </p>
+          <p class="concept__form__field">
+            <label class="concept__form__field__title" for="concept__form__field__message">Сообщение</label>
+            <textarea class="concept__form__field__textarea" type="text" name="message" id="concept__form__field__message"></textarea>
+            <span class="concept__form__hint">В&nbsp;какое время вам удобно разговаривать? Задайте вопросы, чтобы менеджер подготовился к&nbsp;разговору.</span>
+          </p>
+          <label class="concept__form__accept_terms">
+            <input class="concept__form__accept_terms__input" type="checkbox" checked="">
+            <span></span>
+            <p class="concept__form__accept_terms__text">Принимаю условия <a class="c-link" href="/polzovatelskoye-soglasheniye/">пользовательского соглашения</a></p>
+          </label>
+          <button class="concept__form__button disabled" type="submit" id="concept__form__send">Отправить</button>
+        </div>
+        <div class="concept__form-manager">
+          <div class="concept__form-manager__text">
+            <p class="concept__form-manager__name">Евгения,</p>
+            <p class="concept__form-manager__desc">менеджер по&nbsp;продажам</p>
+          </div>
+          <img src="./static/images/conceptCard/form-img.png" alt="">
+        </div>
+        <div class="concept__form__bottom_line"></div>
+      </form>
+      <div class="concept__form_success">
+        <svg class="concept__form__close" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M20.2246 1.72383L19.4246 0.923828L10.2246 10.1238L1.02461 0.923828L0.224609 1.72383L9.42461 10.9238L0.224609 20.1238L1.02461 20.9238L10.2246 11.7238L19.4246 20.9238L20.2246 20.1238L11.0246 10.9238L20.2246 1.72383Z" fill="white" stroke="white" stroke-width="0.6"></path>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="21" height="22" fill="white"></rect>
+          </clipPath>
+          </defs>
+        </svg>
+        <p class="c-h2">Заявка отправлена</p>
+        <p class="c-p1">Ожидайте звонка с&nbsp;10&nbsp;до&nbsp;20 с&nbsp;понедельника по&nbsp;субботу, до&nbsp;18&nbsp;в&nbsp;воскресенье.</p>
+        <svg class="concept__form_success__svg" width="242" height="300" viewBox="0 0 242 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 145.362C29.8678 191.753 52.8415 239.693 76.5848 300H89.6019C115.64 218.817 178.44 96.6512 242 10.0518L232.811 0C187.629 44.8463 121 132.99 81.1774 218.817H79.6453C58.968 182.475 30.6339 152.323 10.7226 135.311L0 145.361V145.362Z" fill="white"></path>
+        </svg>
+      </div>
+      <div class="concept__form__outer"></div>
+    </div>
+  
+    <div class="card-config wrapper">
+      <div class="card-config-img_wrap front">
+        <img src="./static/images/conceptCard/doorCard.png" alt="">
+        <div class="card-config-img-turn">
+          <span class="card-config-img-turn__svg">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0V3.75C10.4392 3.73879 6.32257 6.47989 4.57572 10.691C2.82887 14.9022 3.79722 19.7508 7.02779 22.9687L10.0901 19.9219C10.2832 19.7307 10.5717 19.6728 10.8237 19.7748C11.0757 19.8768 11.2427 20.119 11.2484 20.3906V29.0625C11.2484 29.5803 10.8285 30 10.3105 30H1.62075C1.34897 29.9943 1.10668 29.8274 1.00466 29.5755C0.902646 29.3237 0.960511 29.0353 1.1518 28.8422L4.39227 25.6031C0.103368 21.3133 -1.17917 14.864 1.14235 9.26068C3.46387 3.65741 8.93259 0.00281143 15 0ZM28.8576 20.7393C31.1792 15.136 29.8966 8.68673 25.6077 4.39688L28.881 1.12969C29.0713 0.94062 29.1284 0.65535 29.0256 0.407631C28.9228 0.159912 28.6804 -0.00113297 28.4121 7.62939e-06H19.7036C19.1856 7.62939e-06 18.7657 0.419739 18.7657 0.937508V9.6375C18.7646 9.9057 18.9257 10.148 19.1735 10.2508C19.4213 10.3536 19.7067 10.2965 19.8959 10.1063L22.9722 7.03125C26.2028 10.2492 27.1711 15.0978 25.4243 19.309C23.6774 23.5201 19.5608 26.2612 15 26.25V30C21.0674 29.9972 26.5361 26.3426 28.8576 20.7393Z"></path>
+            </svg>
+          </span>
+          <span class="card-config-img-turn__text">Отделка внутри</span>
+        </div>
+      </div>
+      <div class="card-config__cover first">
+        <p class="card-config-cover_title">снаружи</p>
+        <h3 class="c-h3 card-config-cover_type checked">
+          SteelLak Protect, «Капучино»
+          <svg class="card-config-specs-cover__checked" width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 16.4744C3.45578 21.732 6.1139 27.1652 8.86105 34H10.3672C13.3798 24.7993 20.6459 10.9538 28 1.13921L26.9368 0C21.7091 5.08258 14 15.0722 9.39242 24.7993H9.21515C6.82274 20.6805 3.54442 17.2633 1.24063 15.3352L0 16.4744Z" fill="#07BE6A"></path>
+          </svg>
+        </h3>
+      </div>
+      <p class="c-p1">Классическая дверь со&nbsp;стеклянными вставками добавляет дому шарм. Модель станет отличным украшением фасада. Тёплый оттенок капучино делает дверь уютной и&nbsp;распологает к&nbsp;себе гостей дома уже на&nbsp;входе. Бронзовая фурнитура дополняет общую концепцию и&nbsp;создаёт завершённый образ.</p> 
+      <div class="card-config-img_wrap back"><img src="./static/images/conceptCard/doorCardBack.png" alt=""></div>
+      <div class="card-config__cover">
+        <p class="card-config-cover_title">внутри</p>
+        <h3 class="c-h3 card-config-cover_type">
+          SteelLak Protect, «Белый»
+          <svg class="card-config-specs-cover__checked" width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 16.4744C3.45578 21.732 6.1139 27.1652 8.86105 34H10.3672C13.3798 24.7993 20.6459 10.9538 28 1.13921L26.9368 0C21.7091 5.08258 14 15.0722 9.39242 24.7993H9.21515C6.82274 20.6805 3.54442 17.2633 1.24063 15.3352L0 16.4744Z" fill="#07BE6A"></path>
+          </svg>
+        </h3>
+      </div>
+      <p class="c-p1">Технология SteelLak&nbsp;&mdash; это качественно новый уровень защиты дверных панелей от&nbsp;механических воздействий. Белая окраска внутреннего полотна впишется в&nbsp;любой интерьер и&nbsp;визуальное расширит пространство. Чёткие линии фрезеровки помогут правильно расставить акценты в&nbsp;прихожей.</p>
+      
+      <div class="card-config-specs-table">
+        <p class="c-h3">Характеристики, мм</p>
+        <div class="card-config-specs-table__body c-p1">
+          <p class="c-h4">Толщина</p>
+          <span>металла</span>
+          <span>полотна 1,2 и&nbsp;коробки 1,5</span>
+          <span>полотна</span>
+          <span>87</span>
+          <span>коробки</span>
+          <span>122</span>
+          <span class="c-h4">Ширина</span>
+          <span>от 880 до 1000</span>
+          <span class="c-h4">Высота</span>
+          <span>от 2000 до 2140</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="promotion__wrapper">
+      <h2 class="c-h2 promotion__title">
+        Скидка 7% на замки Kale с цилиндрами Abus
+        <img src="./static/images/conceptCard/germany.svg" alt="">
+      </h2>
+      <p class="c-p1 promotion__description">
+        Дарим возможность выгодно усилить входную дверь. Выберите модель, дополните её замками с немецким цилиндром
+        — и получите скидку на весь комплект.
+      </p>
+      <img class="promotion__image" src="./static/images/conceptCard/abus.png" />
+      <div class="promotion__imageDescription">
+        <p class="c-h1">10</p>
+        <p class="c-p3">лет гарантии</p>
+      </div>
+    </div>
+  
+    <div class="wrapper youtube__wrapper">
+      <div class="youtube__infoBlock">
+        <div class="youtube__titleBlock">
+          <h2 class="c-h3 youtube__infoBlock-title">
+            Посмотрите на эту модель ближе не выходя из дома
+          </h2>
+          <p class="c-p2 youtube__infoBlock-description">
+            На видео показываем, как выглядит образец этой двери в интерьереи в салоне. Снимаем детали, которые
+            здесь видны лучше, чем на фото.
+          </p>
+        </div>
+        <div class="youtube__image">
+          <iframe width="770" height="421" src="https://www.youtube.com/embed/Q0UyCo-fTWo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="youtube__subtitleBlock">
+          <img src="./static/images/conceptCard/youtube.svg" alt="">
+          <p class="c-p3 youtube__subtitle-description">
+            На нашем канале —
+            <a href="https://www.youtube.com/c/DssteellineBy_vhodnye_dveri/videos" class="c-link">50+ обзоров
+              дверей</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper featureBlock">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Комплект ключей
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Ключи передают владельцу двери в запечатанном пакете. Это гарантирует максимальную безопасность
+            дома.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Замки Kale
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            В комплекте турецкие замки из оцинкованной стали.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature1.png" alt="">
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock-reverse">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Бронепластина
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Установливается внутри дверного полотна. Усложнит или даже исключит силовой взлом замка.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Конструкция
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Цельногнутый лист стали обладает повышенной устойчивостью к коррозии и силовому взлому.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature2.png" alt="">
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Итальянские петли
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Изготовлены специально для завода «Стальная линия». Более 20 лет безотказной работы.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Правильная эстетика
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Щиты двери доведены до края полотна. Расположение в одной плоскости с коробом улучшает внешний вид
+            модели.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature3.png" alt="">
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock-reverse">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Система герметизации
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Защищает от проникновения сквозняков, шума и запаховс лестничной площадки.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Ночная задвижка
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Позволяет закрыть дверь изнутри, когда вы дома. Станет дополнительной защитой, которую не видно
+            снаружи.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature4.png" alt="">
+      </div>
+    </div>
+  
+    <div class="armadillo__wrapper">
+      <img src="./static/images/conceptCard/armadillo.png" alt="">
+  
+      <div class="armadillo__contentBlock">
+        <div class="armadillo__titleBlock">
+          <h2 class="c-h2 armadillo_titleBlock-title">Ручки Armadillo</h2>
+          <p class="c-p2 armadillo_titleBlock-description">Обтекаемая форма фурнитуры удачно дополняет дизайн
+            дверного полотна.</p>
+        </div>
+        <div class="armadillo__featureBlock">
+          <h4 class="c-h4 armadillo__featureBlock-title">Цвет &laquo;Бронза&raquo;</h4>
+          <p class="c-p2 armadillo__featureBlock-description">
+            Синоним красоты и богатства.
+            Выгодно подчёркивает оттенки полотна и помогает правильно расставить акценты в прихожей.
+          </p>
+        </div>
+        <div class="armadillo__featureBlock">
+          <h4 class="c-h4 armadillo__featureBlock-title">Броненакладка</h4>
+          <p class="c-p2 armadillo__featureBlock-description">
+            Предназначен для защиты цилиндрового механизма секретности от механического повреждения.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Противосъёмные ригели
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Имеют диаметр 14 мм. Исключают возможность срыва двери с петель.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Двухцветная коробка
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Визуально разделяет интерьер квартиры с улицей.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature5.png" alt="">
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock-reverse">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Порог
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Изготовлен из нержавеющей стали. Улучшает тепло- и звукоизоляцию, и не теряет потребительских
+            характеристик.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Уплотнитель Schlegel и&nbsp;Cyclone
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Надёжно герметизирует конструкцию, обеспечивает плотное прилегание дверного полотна к коробке.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature6.png" alt="">
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h2 class="c-h2 featureBlock__infoBlock-title">
+            Регулятор притвора
+          </h2>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Позволяет корректировать плотность прилегания полотна к коробу. Обеспечивает плавную работу замков.
+          </p>
+        </div>
+        <div class="featureBlock__subtitleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-subtitle">
+            Сторона открывания
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            В фирменном салоне можно заказать дверь с правой и левой стороной открывания.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature7.png" alt="">
+      </div>
+    </div>
+  
+    <div class="wrapper featureBlock-reverse managerBlock">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__titleBlock">
+          <h4 class="c-h4 featureBlock__infoBlock-title">
+            Гарантия 2 года
+          </h4>
+          <p class="c-p2 featureBlock__infoBlock-description">
+            Действует на входные двери, которые установили наши специалисты по монтажу.
+          </p>
+        </div>
+      </div>
+      <div class="featureBlock__managerWrapper">
+        <div class="featureBlock__managerBlock">
+          <h2 class="c-h2">
+            Татьяна консультирует
+          </h2>
+          <p class="c-p2">
+            Если что-то не понятно — кликните в чат справа внизу. Менеджер ответит на вопросы и подробнее
+            расскажет о двери.
+          </p>
+        </div>
+        <div class="featureBlock__phoneBlock">
+          <p class="c-h4">
+            +375 44 731-64-63
+          </p>
+          <p class="c-p2">
+            отвечу на вопросы c 10 до 20, в воскресенье до 18
+          </p>
+        </div>
+  
+        <img class="featureBlock__managerWrapper-img" src="./static/images/conceptCard/regina.png" alt="">
+      </div>
+    </div>
+  
+    <div class="doorExample__cardWrapper">
+      <div class="doorExample__contentBlock">
+        <div class="concept__priceCard">
+          <div class="concept__priceCard-doorsBlock">
+            <img src="./static/images/conceptCard/doorCard.png" alt="">
+            <img src="./static/images/conceptCard/doorCard.png" alt="">
+          </div>
+          <div class="concept__priceCard-shopsBlock">
+            <h2 class="c-h2 concept__priceCard-shopsTitle">Кармен К в салонах:</h2>
+            <ul class="concept__priceCard-shopsLinks c-p2">
+              <li>
+                <a href="" class="concept__priceCard-shopLink c-link">пр-т Дзержинского, 131</a>
+              </li>
+              <li>
+                <a href="" class="concept__priceCard-shopLink c-link">ул. Олешева, 1</a>
+              </li>
+              <li>
+                <a href="" class="concept__priceCard-shopLink c-link">ул. Кальварийская, 7Б в ТЦ
+                  &laquo;Трюм&raquo; </a>
+              </li>
+              <li>
+                <a href="" class="concept__priceCard-shopLink c-link">пр-т Победителей, 133</a>
+              </li>
+            </ul>
+          </div>
+          <div class="concept__priceCard-priceBlock">
+            <span class="concept__priceCard-oldPrice">от 3 470</span>
+            <span class="concept__priceCard-newPrice">3 123 руб.</span>
+          </div>
+          <div class="concept__priceCard-typesBlock">
+            <span class="concept__priceCard-type concept__priceCard-blueType">для дома</span>
+            <span class="concept__priceCard-type concept__priceCard-greenType">под заказ за 15–30 дней</span>
+          </div>
+          <div class="concept__priceCard-managerBlock">
+            <p class="c-p2 concept__priceCard-managerDescription">Менеджер расскажет о двери больше</p>
+            <p class="c-p2 concept__priceCard-managerNumber">+375 44 731-64-46</p>
+          </div>
+          <div class="concept__priceCard-creditBlock">
+            <p class="c-p2 concept__priceCard-creditInfo">
+              <a href="#" class="c-link">Рассрочка</a> по картам от 2 до 8 месяцев.
+              Партнёрские, социальные и комплексные <a href="https://ds-steelline.by/clientu/politika-skidok/"
+                class="c-link">скидки</a>
+            </p>
+          </div>
+          <a class="btn btn-green concept__priceCard-submitBtn">Заказать замер</a>
+        </div>
+      </div>
+      <div class="doorExample__imgBlock">
+        <img src="./static/images/conceptCard/interior-example.png" alt="">
+      </div>
+    </div>
+  
+  
+    <div class="wrapper featureBlock">
+      <div class="featureBlock__infoBlock">
+        <div class="featureBlock__priceBlock">
+          <p class="featureBlock__priceBlock-subtitle featureBlock__infoBlock-title simmilarDoor__type">
+            ПОХОЖАЯ ДВЕРЬ
+          </p>
+          <p class="c-h2 c-link featureBlock__priceBlock-title simmilarDoor__title">
+            Лира К1
+          </p>
+          <div class="concept__priceCard-priceBlock simmilarDoor__priceBlock">
+            <span class="concept__priceCard-oldPrice">от 3 470</span>
+            <span class="concept__priceCard-newPrice">3 123 руб.</span>
+          </div>
+        </div>
+      </div>
+      <div class="featureBlock__image">
+        <img src="./static/images/conceptCard/feature8.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="./js/components/rotatePhoto.js"></script>
+  <script src="./js/conceptCard.js"></script>
+</body>
+
+</html>

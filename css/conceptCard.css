@@ -354,7 +354,6 @@
 
 .doorExample__imgBlock img {
     width: 640px;
-    height: 1057px;
 }
 
 .doorExample__cardWrapper .concept__priceCard {
@@ -837,6 +836,26 @@
     right: 118px;
 }
 
+.concept.double .card-config-img_wrap {
+    width: 551px;
+}
+
+.concept.double .card-config .c-p1:not(.card-config-specs-table__body) {
+    width: 597px;
+    margin-left: 38px;
+    margin-bottom: 25px;
+}
+
+.concept.double .card-config-specs-table,
+.concept.double .card-config__cover {
+    margin-left: 38px;
+}
+
+.concept.double .doorExample__contentBlock .concept__priceCard-doorsBlock img {
+    width: auto;
+    height: 308px;
+}
+
 @media screen and (max-width: 768px) {
     .card-config {
         columns: unset;
@@ -1113,6 +1132,43 @@
         width: 173px;
         font-size: 20px;
         line-height: 27px;
-        padding: 5px 0 8pxs;
+        padding: 5px 0 8px;
+    }
+    .concept.double .card-config .c-p1:not(.card-config-specs-table__body),
+    .concept.double .card-config-specs-table, .concept.double .card-config__cover {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .concept.double .card-config__cover.first {
+        order: 1;
+    }
+
+    .concept.double .card-config-img_wrap.front {
+        order: 2;
+    }
+
+    .concept.double .card-config .c-p1:first-of-type {
+        order: 3;
+    }
+
+    .concept.double .card-config__cover {
+        order: 4;
+    }
+
+    .concept.double .card-config-img_wrap.back {
+        order: 5;
+    }
+
+    .concept.double .card-config .c-p1 {
+        order: 6;
+    }
+
+    .concept.double .card-config-specs-table {
+        order: 7;
+    }
+
+    .concept.double .doorExample__contentBlock .concept__priceCard-doorsBlock img {
+        height: 209px;
     }
 }
