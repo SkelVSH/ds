@@ -149,7 +149,6 @@
     width: 1170px;
     margin: auto;
     background: #E1EDF4;
-    padding: 50px;
     position: relative;
 }
 
@@ -960,7 +959,6 @@
         width: 360px;
         margin: auto;
         margin-top: 68px;
-        padding: 30px 15px 40px;
     }
     .promotion__title, .promotion__description {
         width: 330px;
