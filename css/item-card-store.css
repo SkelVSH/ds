@@ -3,6 +3,14 @@
   border-bottom: 1px solid #f0f0f0;
 }
 
+.promotion__wrapper {
+  width: 1170px;
+  margin: auto;
+  margin-bottom: 80px;
+  background: #E1EDF4;
+  position: relative;
+}
+
 .card-container {
   display: flex;
   justify-content: space-between;
@@ -795,5 +803,12 @@
     width: 360px;
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  .promotion__wrapper {
+    margin-bottom: 60px;
+    width: 360px;
+    margin: auto;
+    margin-top: 68px;
   }
 }
