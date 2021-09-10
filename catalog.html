@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="./catalog.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/catalog.css">
 </head>
 <body>
     <div class="space"></div>
@@ -15,11 +15,11 @@
         <div class="filter__filterMenu hide-desktop">
             <span class="c-h4 filter__filterMenu-doorType">
                 Все двери
-                <img src="./img/select_arrow-black.svg" alt="">
+                <img src="./static/images/catalog/select_arrow-black.svg" alt="">
             </span>
             <span class="filter__filterMenu-filterToggler">
                 Фильтры
-                <img src="./img/select_arrow-black.svg" alt="">
+                <img src="./static/images/catalog/select_arrow-black.svg" alt="">
             </span>
             <ul class="filter__filterMenu-doorOptionsBlock">
                 <li class="c-h4 filter__filterOption filter__filterOption-active">Все двери</li>
@@ -54,7 +54,7 @@
             <div class="filter__filterSelect hide-desktop">
                 <span>
                     Сортировать
-                    <span onselectstart="return false"  class="filter__filterSelect-title">по популярности <img src="./img/select_arrow.svg" alt=""></span>
+                    <span onselectstart="return false"  class="filter__filterSelect-title">по популярности <img src="./static/images/catalog/select_arrow.svg" alt=""></span>
                 </span>
 
                 <ul class="filter__filterOptionsBlock ">
@@ -65,7 +65,7 @@
             </div>
             
             <button id='showDoorMobile' class="btn btn-blue hide-desktop">Показать 8 дверей</button>
-            <button id='clearFilters' class="btn">Сбросить фильтры <img src="./img/cross.png" alt=""></button>
+            <button id='clearFilters' class="btn">Сбросить фильтры <img src="./static/images/catalog/cross.png" alt=""></button>
         </div>
         <div class="catalog__contentWrapper">
 
@@ -75,7 +75,7 @@
                 </ul>
 
                 <div class="filter__filterSelect hide-mobile">
-                    <p onselectstart="return false"  class="filter__filterSelect-title">по популярности <img src="./img/select_arrow.svg" alt=""></p>
+                    <p onselectstart="return false"  class="filter__filterSelect-title">по популярности <img src="./static/images/catalog/select_arrow.svg" alt=""></p>
 
                     <ul id='test' class="filter__filterOptionsBlock ">
                         <li class="filter__filterOption filter__filterOption-active">по популярности</li>
@@ -85,12 +85,12 @@
                 </div>
             </div>
             <div class="catalog__mainWrapper">
-                <img src="../../static/images/mock-snippet.svg" alt="">
-                <img src="../../static/images/mock-snippet.svg" alt="">
-                <img src="../../static/images/mock-snippet.svg" alt="">
-                <img src="../../static/images/mock-snippet.svg" alt="">
-                <img src="../../static/images/mock-snippet.svg" alt="">
-                <img src="../../static/images/mock-snippet.svg" alt="">
+                <img src="./static/images/mock-snippet.svg" alt="">
+                <img src="./static/images/mock-snippet.svg" alt="">
+                <img src="./static/images/mock-snippet.svg" alt="">
+                <img src="./static/images/mock-snippet.svg" alt="">
+                <img src="./static/images/mock-snippet.svg" alt="">
+                <img src="./static/images/mock-snippet.svg" alt="">
                 <div class="catalog__pagingWrapper">
                     <ul class="catalog__pagingList">
                         <li class="c-p3 catalog__pagingItem catalog__pagingItem-active">1</li>
@@ -143,7 +143,7 @@
                         </p>
                     </div>
                     <button class="btn catalog__chooseDescription-btn">
-                        Подробнее <img src="../icons/arrow.svg" alt="">
+                        Подробнее <img src="./static/icons/arrow.svg" alt="">
                     </button>
                 </div>
             </div>
@@ -151,8 +151,6 @@
         </div>
     </div>
 
-    <div class="space"></div>
-
-    <script src="./catalog.js"></script>
+    <script src="./js/catalog.js"></script>
 </body>
 </html>
