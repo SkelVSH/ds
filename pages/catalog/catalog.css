@@ -284,9 +284,120 @@
     padding-right: 7px;
 }
 
+.c-factoid {
+    display: block;
+    width: 420px;
+    position: relative;
+}
+
+.factoid_type1 > .factoid-title {
+    position: absolute;
+    top: 49px;
+    left: 29px;
+    width: 189px;
+}
+.factoid_type1 > img {
+    width: 420px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.factoid_type2 {
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+    padding: 43px 20px;
+}
+
+.factoid_type2 > .factoid-video {
+    width: 100%;
+    height: 230px;
+}
+
+.factoid_type2 > .factoid-description {
+    margin-top: 20px;
+    width: 335px;
+}
+
+.factoid_type3 {
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+}
+
+.factoid_type3 .factoid-img {
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+.factoid_type3 .factoid-btn {
+    background: #0B79C9;
+    box-shadow: 0px 3px 0px #025EBB;
+    border-radius: 3px;
+    width: 300px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.factoid_type3 .factoid-description {
+    margin-top: 208px;
+    width: 158px;
+    margin-left: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .hide-mobile {
         display: none;
+    }
+
+    .c-factoid {
+        width: 100%;
+        height: 350px;
+    }
+
+    .factoid_type1 > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .factoid_type1 .factoid-title {
+        width: 160px;
+    }
+
+    .factoid_type2 {
+        padding: 25px 15px;
+    }
+        
+    .factoid_type2 > .factoid-video {
+        width: 100%;
+        height: 180px;
+    }
+
+        
+    .factoid_type2 > .factoid-description {
+        margin-top: 15px;
+        width: 286px;
+    }
+
+    .factoid_type3 .factoid-img {
+        height: 261px;
+    }
+    .factoid_type3 .factoid-description {
+        margin-top: 173px;
+        width: 138px;
+        margin-left: 20px;
+    }
+
+    .factoid_type3 .factoid-btn {
+        margin-left: 20px;
+        width: 290px;
+        height: 40px;
     }
 
     
